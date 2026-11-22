@@ -1,0 +1,4013 @@
+[
+ {
+  "id": "m1-1-0",
+  "grade": 1,
+  "term": 1,
+  "week": "1",
+  "strand": "Measurement and Geometry",
+  "competency": "Identify simple 2-dimensional shapes (triangle, rectangle, square) of different size and in different orientation.",
+  "ready": false,
+  "skill": null,
+  "settings": {}
+ },
+ {
+  "id": "m1-1-1",
+  "grade": 1,
+  "term": 1,
+  "week": "1",
+  "strand": "Measurement and Geometry",
+  "competency": "Compare and distinguish 2-dimensional shapes according to features such as sides and corners.",
+  "ready": true,
+  "skill": "shape_facts",
+  "settings": {
+   "set": "g1"
+  }
+ },
+ {
+  "id": "m1-1-2",
+  "grade": 1,
+  "term": 1,
+  "week": "1",
+  "strand": "Measurement and Geometry",
+  "competency": "Compose and decompose triangles, squares, and rectangles.",
+  "ready": false,
+  "skill": null,
+  "settings": {}
+ },
+ {
+  "id": "m1-1-3",
+  "grade": 1,
+  "term": 1,
+  "week": "2",
+  "strand": "Number and Algebra",
+  "competency": "Count up to 100 (includes counting up or down from a given number and identifying a number that is 1 more or 1 less than a given number).",
+  "ready": true,
+  "skill": "count",
+  "settings": {
+   "max": 100,
+   "steps": [
+    1
+   ]
+  }
+ },
+ {
+  "id": "m1-1-4",
+  "grade": 1,
+  "term": 1,
+  "week": "3",
+  "strand": "Number and Algebra",
+  "competency": "Read and write numerals up to 100.",
+  "ready": true,
+  "skill": "numwords",
+  "settings": {
+   "max": 100
+  }
+ },
+ {
+  "id": "m1-1-5",
+  "grade": 1,
+  "term": 1,
+  "week": "4–5",
+  "strand": "Number and Algebra",
+  "competency": "Recognize and represent numbers up to 100 using a variety of concrete and pictorial models (e.g., number line, block or bar models, and numerals).",
+  "ready": true,
+  "skill": "represent",
+  "settings": {
+   "max": 100
+  }
+ },
+ {
+  "id": "m1-1-6",
+  "grade": 1,
+  "term": 1,
+  "week": "6–7",
+  "strand": "Number and Algebra",
+  "competency": "Compare two numbers up to 20.",
+  "ready": true,
+  "skill": "cmp",
+  "settings": {
+   "max": 20
+  }
+ },
+ {
+  "id": "m1-1-7",
+  "grade": 1,
+  "term": 1,
+  "week": "6–7",
+  "strand": "Number and Algebra",
+  "competency": "Order numbers up to 20 from smallest to largest, and vice versa.",
+  "ready": true,
+  "skill": "order",
+  "settings": {
+   "max": 20
+  }
+ },
+ {
+  "id": "m1-1-8",
+  "grade": 1,
+  "term": 1,
+  "week": "6–7",
+  "strand": "Number and Algebra",
+  "competency": "Describe the position of objects using ordinal numbers: 1st, 2nd, 3rd, up to 10th.",
+  "ready": true,
+  "skill": "ordinal",
+  "settings": {
+   "max": 10
+  }
+ },
+ {
+  "id": "m1-1-9",
+  "grade": 1,
+  "term": 1,
+  "week": "6–7",
+  "strand": "Number and Algebra",
+  "competency": "Compose and decompose numbers up to 10 using concrete materials (e.g., 5 is 5 and 0; 4 and 1; 3 and 2; 2 and 3; 1 and 4; 0 and 5).",
+  "ready": true,
+  "skill": "missing",
+  "settings": {
+   "max": 10,
+   "decomp": true
+  }
+ },
+ {
+  "id": "m1-1-10",
+  "grade": 1,
+  "term": 1,
+  "week": "8",
+  "strand": "Number and Algebra",
+  "competency": "Illustrate addition of numbers with sums up to 20 using a variety of concrete and pictorial models and describes addition as \"counting up,\" and \"putting together.\"",
+  "ready": true,
+  "skill": "add",
+  "settings": {
+   "max": 20
+  }
+ },
+ {
+  "id": "m1-1-11",
+  "grade": 1,
+  "term": 1,
+  "week": "8",
+  "strand": "Number and Algebra",
+  "competency": "Illustrate by applying the following properties of addition, using sums up to 20: the sum of zero and any number is equal to the number; changing the order of the addends does not change the sum.",
+  "ready": true,
+  "skill": "numsentence",
+  "settings": {
+   "max": 20,
+   "props": [
+    "zero",
+    "comm"
+   ]
+  }
+ },
+ {
+  "id": "m1-1-12",
+  "grade": 1,
+  "term": 1,
+  "week": "9",
+  "strand": "Number and Algebra",
+  "competency": "Solve problems (given orally or in pictures) involving addition with sums up to 20.",
+  "ready": true,
+  "skill": "add",
+  "settings": {
+   "max": 20,
+   "word": true
+  }
+ },
+ {
+  "id": "m1-1-13",
+  "grade": 1,
+  "term": 1,
+  "week": "9",
+  "strand": "Measurement and Geometry",
+  "competency": "Measure the length of an object and the distance between two objects using non-standard units.",
+  "ready": false,
+  "skill": null,
+  "settings": {}
+ },
+ {
+  "id": "m1-1-14",
+  "grade": 1,
+  "term": 1,
+  "week": "10",
+  "strand": "Measurement and Geometry",
+  "competency": "Compare lengths and distances using non-standard units.",
+  "ready": true,
+  "skill": "len_cmp",
+  "settings": {
+   "unit": "hand spans"
+  }
+ },
+ {
+  "id": "m1-1-15",
+  "grade": 1,
+  "term": 1,
+  "week": "10",
+  "strand": "Measurement and Geometry",
+  "competency": "Solve problems involving lengths and distances using non-standard units.",
+  "ready": true,
+  "skill": "len_cmp",
+  "settings": {
+   "unit": "hand spans"
+  }
+ },
+ {
+  "id": "m1-2-16",
+  "grade": 1,
+  "term": 2,
+  "week": "1",
+  "strand": "Number and Algebra",
+  "competency": "Order numbers up to 100 from smallest to largest, and vice versa.",
+  "ready": true,
+  "skill": "order",
+  "settings": {
+   "max": 100
+  }
+ },
+ {
+  "id": "m1-2-17",
+  "grade": 1,
+  "term": 2,
+  "week": "2–3",
+  "strand": "Number and Algebra",
+  "competency": "Counts by 2s, 5s and 10s up to 100.",
+  "ready": true,
+  "skill": "count",
+  "settings": {
+   "max": 100,
+   "steps": [
+    2,
+    5,
+    10
+   ]
+  }
+ },
+ {
+  "id": "m1-2-18",
+  "grade": 1,
+  "term": 2,
+  "week": "2–3",
+  "strand": "Number and Algebra",
+  "competency": "Determine: a. the place value of a digit in a 2-digit number b. the value of a digit c. the digit of a number, given its place value",
+  "ready": true,
+  "skill": "pv",
+  "settings": {
+   "digits": 2
+  }
+ },
+ {
+  "id": "m1-2-19",
+  "grade": 1,
+  "term": 2,
+  "week": "3–4",
+  "strand": "Number and Algebra",
+  "competency": "Decompose any 2-digit number into tens and ones.",
+  "ready": true,
+  "skill": "expanded",
+  "settings": {
+   "max": 99
+  }
+ },
+ {
+  "id": "m1-2-20",
+  "grade": 1,
+  "term": 2,
+  "week": "5",
+  "strand": "Number and Algebra",
+  "competency": "Add numbers by expressing addends as tens and ones (expanded form).",
+  "ready": true,
+  "skill": "add",
+  "settings": {
+   "max": 99,
+   "regroup": "no",
+   "expanded": true
+  }
+ },
+ {
+  "id": "m1-2-21",
+  "grade": 1,
+  "term": 2,
+  "week": "6",
+  "strand": "Number and Algebra",
+  "competency": "Add numbers with sums up to 100 without regrouping, using a variety of concrete and pictorial models for: a. 2-digit and 1-digit numbers b. 2-digit and 2-digit numbers",
+  "ready": true,
+  "skill": "add",
+  "settings": {
+   "max": 100,
+   "regroup": "no"
+  }
+ },
+ {
+  "id": "m1-2-22",
+  "grade": 1,
+  "term": 2,
+  "week": "7",
+  "strand": "Number and Algebra",
+  "competency": "Solve problems (given orally or in pictures) involving addition with sums up to 100 without regrouping.",
+  "ready": true,
+  "skill": "add",
+  "settings": {
+   "max": 100,
+   "regroup": "no",
+   "word": true
+  }
+ },
+ {
+  "id": "m1-2-23",
+  "grade": 1,
+  "term": 2,
+  "week": "8",
+  "strand": "Data and Probability",
+  "competency": "Collect data in one variable through a simple interview.",
+  "ready": false,
+  "skill": null,
+  "settings": {}
+ },
+ {
+  "id": "m1-2-24",
+  "grade": 1,
+  "term": 2,
+  "week": "8",
+  "strand": "Data and Probability",
+  "competency": "Present data in a pictograph without a scale.",
+  "ready": false,
+  "skill": null,
+  "settings": {}
+ },
+ {
+  "id": "m1-2-25",
+  "grade": 1,
+  "term": 2,
+  "week": "8",
+  "strand": "Data and Probability",
+  "competency": "Interpret a pictograph without a scale.",
+  "ready": true,
+  "skill": "pictograph",
+  "settings": {
+   "scale": [
+    1
+   ]
+  }
+ },
+ {
+  "id": "m1-2-26",
+  "grade": 1,
+  "term": 2,
+  "week": "8",
+  "strand": "Data and Probability",
+  "competency": "Organize data in a pictograph without a scale into a table.",
+  "ready": true,
+  "skill": "pictograph",
+  "settings": {
+   "scale": [
+    1
+   ]
+  }
+ },
+ {
+  "id": "m1-2-27",
+  "grade": 1,
+  "term": 2,
+  "week": "9",
+  "strand": "Number and Algebra",
+  "competency": "Illustrate subtraction involving numbers up to 20 using a variety of concrete and pictorial models, and describes subtraction as \"taking away.\"",
+  "ready": true,
+  "skill": "sub",
+  "settings": {
+   "max": 19
+  }
+ },
+ {
+  "id": "m1-2-28",
+  "grade": 1,
+  "term": 2,
+  "week": "9",
+  "strand": "Number and Algebra",
+  "competency": "Find the missing number in addition or subtraction sentences involving numbers up to 20.",
+  "ready": true,
+  "skill": "missing",
+  "settings": {
+   "max": 20
+  }
+ },
+ {
+  "id": "m1-2-29",
+  "grade": 1,
+  "term": 2,
+  "week": "9",
+  "strand": "Number and Algebra",
+  "competency": "Write an equivalent expression to a given addition or subtraction expression (e.g., 2+3 = 1+4; 10-5 = 6-1).",
+  "ready": true,
+  "skill": "numsentence",
+  "settings": {
+   "max": 20,
+   "props": [
+    "equiv",
+    "equivsub"
+   ]
+  }
+ },
+ {
+  "id": "m1-2-30",
+  "grade": 1,
+  "term": 2,
+  "week": "10",
+  "strand": "Number and Algebra",
+  "competency": "Solve subtraction problems (given orally or in pictures) where both numbers are less than 20.",
+  "ready": true,
+  "skill": "sub",
+  "settings": {
+   "max": 19,
+   "word": true
+  }
+ },
+ {
+  "id": "m1-2-31",
+  "grade": 1,
+  "term": 2,
+  "week": "10",
+  "strand": "Number and Algebra",
+  "competency": "Subtract numbers where both numbers are less than 100 using concrete and pictorial models, without regrouping: a. 2-digit minus 1-digit numbers b. 2-digit minus 2-digit numbers",
+  "ready": true,
+  "skill": "sub",
+  "settings": {
+   "max": 99,
+   "regroup": "no"
+  }
+ },
+ {
+  "id": "m1-2-32",
+  "grade": 1,
+  "term": 2,
+  "week": "10",
+  "strand": "Number and Algebra",
+  "competency": "Subtract numbers by expressing minuends and subtrahends as tens and ones (expanded form), without regrouping.",
+  "ready": true,
+  "skill": "sub",
+  "settings": {
+   "max": 99,
+   "regroup": "no",
+   "expanded": true
+  }
+ },
+ {
+  "id": "m1-3-33",
+  "grade": 1,
+  "term": 3,
+  "week": "1",
+  "strand": "Number and Algebra",
+  "competency": "Determine the next term/s in a repeating pattern (patterns could use rhythmic properties, visual elements in the arts, …) (e.g., numbers: 2, 4, 2, 4, __; letters: a, b, c, a, b, c, a, __, __).",
+  "ready": true,
+  "skill": "pattern_rep",
+  "settings": {}
+ },
+ {
+  "id": "m1-3-34",
+  "grade": 1,
+  "term": 3,
+  "week": "2",
+  "strand": "Number and Algebra",
+  "competency": "Create repeating patterns using objects, images, or numbers.",
+  "ready": false,
+  "skill": null,
+  "settings": {}
+ },
+ {
+  "id": "m1-3-35",
+  "grade": 1,
+  "term": 3,
+  "week": "3",
+  "strand": "Number and Algebra",
+  "competency": "Illustrate 1/2 and 1/4 as parts of a whole.",
+  "ready": true,
+  "skill": "frac_part",
+  "settings": {
+   "dens": [
+    2,
+    4
+   ],
+   "unit": true
+  }
+ },
+ {
+  "id": "m1-3-36",
+  "grade": 1,
+  "term": 3,
+  "week": "3",
+  "strand": "Number and Algebra",
+  "competency": "Compare 1/2 and 1/4 using models.",
+  "ready": true,
+  "skill": "frac_cmp",
+  "settings": {
+   "type": "halfquarter"
+  }
+ },
+ {
+  "id": "m1-3-37",
+  "grade": 1,
+  "term": 3,
+  "week": "4",
+  "strand": "Number and Algebra",
+  "competency": "Count halves and quarters.",
+  "ready": true,
+  "skill": "frac_count",
+  "settings": {
+   "dens": [
+    2,
+    4
+   ]
+  }
+ },
+ {
+  "id": "m1-3-38",
+  "grade": 1,
+  "term": 3,
+  "week": "5",
+  "strand": "Number and Algebra",
+  "competency": "Recognize coins (excluding centavo coins) and bills up to ₱100 and their notations.",
+  "ready": false,
+  "skill": null,
+  "settings": {}
+ },
+ {
+  "id": "m1-3-39",
+  "grade": 1,
+  "term": 3,
+  "week": "6",
+  "strand": "Number and Algebra",
+  "competency": "Determine the value of a number of bills and/or a number of coins (excluding centavo coins) up to ₱100.",
+  "ready": true,
+  "skill": "money_count",
+  "settings": {
+   "max": 100
+  }
+ },
+ {
+  "id": "m1-3-40",
+  "grade": 1,
+  "term": 3,
+  "week": "7",
+  "strand": "Number and Algebra",
+  "competency": "Compare different denominations of peso coins (excluding centavo coins) and bills up to ₱100.",
+  "ready": true,
+  "skill": "money_cmp",
+  "settings": {
+   "max": 100
+  }
+ },
+ {
+  "id": "m1-3-41",
+  "grade": 1,
+  "term": 3,
+  "week": "8",
+  "strand": "Number and Algebra",
+  "competency": "Solve 1-step problems (given orally or in pictures) involving addition of money where the sum is up to ₱100, or subtraction of money where both amounts are less than ₱100.",
+  "ready": true,
+  "skill": "addsub",
+  "settings": {
+   "max": 100,
+   "word": true,
+   "money": true
+  }
+ },
+ {
+  "id": "m1-3-42",
+  "grade": 1,
+  "term": 3,
+  "week": "8",
+  "strand": "Measurement and Geometry",
+  "competency": "Identify the position of objects moved in half turn or in quarter turn, in clockwise or in counter-clockwise direction, given an initial facing direction.",
+  "ready": true,
+  "skill": "turn",
+  "settings": {}
+ },
+ {
+  "id": "m1-3-43",
+  "grade": 1,
+  "term": 3,
+  "week": "9",
+  "strand": "Measurement and Geometry",
+  "competency": "Read and write time by the hour, half hour, and quarter hour using an analog clock.",
+  "ready": true,
+  "skill": "clock",
+  "settings": {
+   "mode": "quarter"
+  }
+ },
+ {
+  "id": "m1-3-44",
+  "grade": 1,
+  "term": 3,
+  "week": "9",
+  "strand": "Measurement and Geometry",
+  "competency": "Give the days of the week and months of the year in the correct order.",
+  "ready": true,
+  "skill": "days_months",
+  "settings": {}
+ },
+ {
+  "id": "m1-3-45",
+  "grade": 1,
+  "term": 3,
+  "week": "10",
+  "strand": "Measurement and Geometry",
+  "competency": "Determine the day and month of the year using a calendar.",
+  "ready": true,
+  "skill": "calendar",
+  "settings": {}
+ },
+ {
+  "id": "m1-3-46",
+  "grade": 1,
+  "term": 3,
+  "week": "10",
+  "strand": "Measurement and Geometry",
+  "competency": "Solve problems involving time (hour, half hour, quarter hour, days in a week, and months in a year).",
+  "ready": true,
+  "skill": "elapsed",
+  "settings": {
+   "mode": "g1"
+  }
+ },
+ {
+  "id": "m2-1-47",
+  "grade": 2,
+  "term": 1,
+  "week": "1",
+  "strand": "Measurement and Geometry",
+  "competency": "Represent and describe circles, half circles and quarter circles.",
+  "ready": false,
+  "skill": null,
+  "settings": {}
+ },
+ {
+  "id": "m2-1-48",
+  "grade": 2,
+  "term": 1,
+  "week": "1",
+  "strand": "Measurement and Geometry",
+  "competency": "Compose and decompose composite figures made up of squares, rectangles, triangles, circles, half circles, and quarter circles, using cut-outs and square grids.",
+  "ready": false,
+  "skill": null,
+  "settings": {}
+ },
+ {
+  "id": "m2-1-49",
+  "grade": 2,
+  "term": 1,
+  "week": "2",
+  "strand": "Measurement and Geometry",
+  "competency": "Describe and draw the effect of a one-direction multi-step slide (or translation) in basic shapes and figures.",
+  "ready": false,
+  "skill": null,
+  "settings": {}
+ },
+ {
+  "id": "m2-1-50",
+  "grade": 2,
+  "term": 1,
+  "week": "3",
+  "strand": "Number and Algebra",
+  "competency": "Count up to 1000.",
+  "ready": true,
+  "skill": "count",
+  "settings": {
+   "max": 1000,
+   "steps": [
+    1
+   ]
+  }
+ },
+ {
+  "id": "m2-1-51",
+  "grade": 2,
+  "term": 1,
+  "week": "4",
+  "strand": "Number and Algebra",
+  "competency": "Read and write numerals up to 1000.",
+  "ready": true,
+  "skill": "numwords",
+  "settings": {
+   "max": 1000
+  }
+ },
+ {
+  "id": "m2-1-52",
+  "grade": 2,
+  "term": 1,
+  "week": "5",
+  "strand": "Number and Algebra",
+  "competency": "Recognize and represent numbers up to 1000 using a variety of concrete and pictorial models, and numerals.",
+  "ready": true,
+  "skill": "represent",
+  "settings": {
+   "max": 1000
+  }
+ },
+ {
+  "id": "m2-1-53",
+  "grade": 2,
+  "term": 1,
+  "week": "6",
+  "strand": "Number and Algebra",
+  "competency": "Count by 2s, 5s, 10s, 20s, 50s, and 100s (not beyond 1000).",
+  "ready": true,
+  "skill": "count",
+  "settings": {
+   "max": 1000,
+   "steps": [
+    2,
+    5,
+    10,
+    20,
+    50,
+    100
+   ]
+  }
+ },
+ {
+  "id": "m2-1-54",
+  "grade": 2,
+  "term": 1,
+  "week": "6",
+  "strand": "Number and Algebra",
+  "competency": "Order numbers up to 1000 from smallest to largest, and vice versa.",
+  "ready": true,
+  "skill": "order",
+  "settings": {
+   "max": 1000
+  }
+ },
+ {
+  "id": "m2-1-55",
+  "grade": 2,
+  "term": 1,
+  "week": "7",
+  "strand": "Number and Algebra",
+  "competency": "Describe the position of objects using ordinal numbers up to 20th.",
+  "ready": true,
+  "skill": "ordinal",
+  "settings": {
+   "max": 20
+  }
+ },
+ {
+  "id": "m2-1-56",
+  "grade": 2,
+  "term": 1,
+  "week": "7",
+  "strand": "Number and Algebra",
+  "competency": "Determine: a. the place value of a digit in a 3-digit number b. the value of a digit c. the digit of a number, given its place value",
+  "ready": true,
+  "skill": "pv",
+  "settings": {
+   "digits": 3
+  }
+ },
+ {
+  "id": "m2-1-57",
+  "grade": 2,
+  "term": 1,
+  "week": "8",
+  "strand": "Number and Algebra",
+  "competency": "Illustrate addition of 2-digit and by 1-digit numbers as \"counting up\" on the number line.",
+  "ready": true,
+  "skill": "add",
+  "settings": {
+   "max": 100,
+   "b1": true
+  }
+ },
+ {
+  "id": "m2-1-58",
+  "grade": 2,
+  "term": 1,
+  "week": "8",
+  "strand": "Number and Algebra",
+  "competency": "Add numbers with sums up to 1000 in expanded form.",
+  "ready": true,
+  "skill": "add",
+  "settings": {
+   "max": 1000,
+   "regroup": "no",
+   "expanded": true
+  }
+ },
+ {
+  "id": "m2-1-59",
+  "grade": 2,
+  "term": 1,
+  "week": "8–9",
+  "strand": "Number and Algebra",
+  "competency": "Add numbers with sums up to 1000, with or without regrouping.",
+  "ready": true,
+  "skill": "add",
+  "settings": {
+   "max": 1000,
+   "regroup": "mix"
+  }
+ },
+ {
+  "id": "m2-1-60",
+  "grade": 2,
+  "term": 1,
+  "week": "9",
+  "strand": "Number and Algebra",
+  "competency": "Illustrate and apply the following properties of addition using sums up to 1000: a. the sum of zero and any number is equal to the number b. changing the order of the addends does not change the sum c. changing the grouping of the addends does not change the sum.",
+  "ready": true,
+  "skill": "numsentence",
+  "settings": {
+   "max": 1000,
+   "props": [
+    "zero",
+    "comm",
+    "assoc"
+   ]
+  }
+ },
+ {
+  "id": "m2-1-61",
+  "grade": 2,
+  "term": 1,
+  "week": "9",
+  "strand": "Number and Algebra",
+  "competency": "Determine and write the value of a number of bills, or a number of coins, or a combination of bills and coins up to ₱1000 (centavo coins only, peso coins only, peso bills only, combined peso coins and peso bills).",
+  "ready": true,
+  "skill": "money_count",
+  "settings": {
+   "max": 1000
+  }
+ },
+ {
+  "id": "m2-1-62",
+  "grade": 2,
+  "term": 1,
+  "week": "10",
+  "strand": "Number and Algebra",
+  "competency": "Compare the values of different denominations of peso coins and bills up to ₱1000.",
+  "ready": true,
+  "skill": "money_cmp",
+  "settings": {
+   "max": 1000
+  }
+ },
+ {
+  "id": "m2-1-63",
+  "grade": 2,
+  "term": 1,
+  "week": "10",
+  "strand": "Number and Algebra",
+  "competency": "Solve problems involving addition with sums up to 1000, including problems involving money, with and without regrouping.",
+  "ready": true,
+  "skill": "add",
+  "settings": {
+   "max": 1000,
+   "regroup": "mix",
+   "word": true,
+   "money": true
+  }
+ },
+ {
+  "id": "m2-2-64",
+  "grade": 2,
+  "term": 2,
+  "week": "1",
+  "strand": "Measurement and Geometry",
+  "competency": "Measure and compare lengths of objects, in meters (m) or centimeters (cm), and distance in meters, using appropriate measuring tools.",
+  "ready": true,
+  "skill": "len_cmp",
+  "settings": {
+   "unit": "cm"
+  }
+ },
+ {
+  "id": "m2-2-65",
+  "grade": 2,
+  "term": 2,
+  "week": "1",
+  "strand": "Measurement and Geometry",
+  "competency": "Identify and use the appropriate unit (m or cm) to measure the length of an object and the distance between two locations.",
+  "ready": true,
+  "skill": "unit_choice",
+  "settings": {
+   "kind": "len"
+  }
+ },
+ {
+  "id": "m2-2-66",
+  "grade": 2,
+  "term": 2,
+  "week": "2",
+  "strand": "Measurement and Geometry",
+  "competency": "Estimate length using meters or centimeters, and distance using meters.",
+  "ready": false,
+  "skill": null,
+  "settings": {}
+ },
+ {
+  "id": "m2-2-67",
+  "grade": 2,
+  "term": 2,
+  "week": "2",
+  "strand": "Measurement and Geometry",
+  "competency": "Solve problems involving length and distance.",
+  "ready": true,
+  "skill": "len_cmp",
+  "settings": {
+   "unit": "m"
+  }
+ },
+ {
+  "id": "m2-2-68",
+  "grade": 2,
+  "term": 2,
+  "week": "3–7",
+  "strand": "Number and Algebra",
+  "competency": "Illustrate subtraction of 2-digit by 1-digit on the number line and as an inverse of addition.",
+  "ready": true,
+  "skill": "sub",
+  "settings": {
+   "max": 99,
+   "b1": true
+  }
+ },
+ {
+  "id": "m2-2-69",
+  "grade": 2,
+  "term": 2,
+  "week": "3–7",
+  "strand": "Number and Algebra",
+  "competency": "Subtract numbers where both numbers are less than 100 with regrouping: a. 2-digit minus 1-digit numbers b. 2-digit minus 2-digit numbers",
+  "ready": true,
+  "skill": "sub",
+  "settings": {
+   "max": 99,
+   "regroup": "yes"
+  }
+ },
+ {
+  "id": "m2-2-70",
+  "grade": 2,
+  "term": 2,
+  "week": "3–7",
+  "strand": "Number and Algebra",
+  "competency": "Solve problems (given orally or in pictures) involving subtraction where both numbers are less than 100, with and without regrouping.",
+  "ready": true,
+  "skill": "sub",
+  "settings": {
+   "max": 99,
+   "regroup": "mix",
+   "word": true
+  }
+ },
+ {
+  "id": "m2-2-71",
+  "grade": 2,
+  "term": 2,
+  "week": "3–7",
+  "strand": "Number and Algebra",
+  "competency": "Subtract numbers, where both numbers are less than 1000, with and without regrouping.",
+  "ready": true,
+  "skill": "sub",
+  "settings": {
+   "max": 999,
+   "regroup": "mix"
+  }
+ },
+ {
+  "id": "m2-2-72",
+  "grade": 2,
+  "term": 2,
+  "week": "3–7",
+  "strand": "Number and Algebra",
+  "competency": "Solve 1- and 2-step problems involving subtraction where both numbers are less than 1000 (including problems involving money), with and without regrouping.",
+  "ready": true,
+  "skill": "sub",
+  "settings": {
+   "max": 999,
+   "regroup": "mix",
+   "word": true,
+   "money": true
+  }
+ },
+ {
+  "id": "m2-2-73",
+  "grade": 2,
+  "term": 2,
+  "week": "3–7",
+  "strand": "Number and Algebra",
+  "competency": "Determine the next term/s in increasing or decreasing patterns, e.g., numbers, letters and rhythmic properties, visual elements in arts, and repetitions.",
+  "ready": true,
+  "skill": "pattern_inc",
+  "settings": {
+   "max": 1000
+  }
+ },
+ {
+  "id": "m2-2-74",
+  "grade": 2,
+  "term": 2,
+  "week": "3–7",
+  "strand": "Number and Algebra",
+  "competency": "Create increasing or decreasing patterns.",
+  "ready": false,
+  "skill": null,
+  "settings": {}
+ },
+ {
+  "id": "m2-2-75",
+  "grade": 2,
+  "term": 2,
+  "week": "8–9",
+  "strand": "Data and Probability",
+  "competency": "Present raw data, or data in tabular form, in a pictograph with a scale, or vice versa.",
+  "ready": true,
+  "skill": "pictograph",
+  "settings": {
+   "scale": [
+    2,
+    5
+   ]
+  }
+ },
+ {
+  "id": "m2-2-76",
+  "grade": 2,
+  "term": 2,
+  "week": "8–9",
+  "strand": "Data and Probability",
+  "competency": "Interpret data in tabular form and in a pictograph with or without a scale.",
+  "ready": true,
+  "skill": "pictograph",
+  "settings": {
+   "scale": [
+    1,
+    2,
+    5
+   ]
+  }
+ },
+ {
+  "id": "m2-2-77",
+  "grade": 2,
+  "term": 2,
+  "week": "9",
+  "strand": "Number and Algebra",
+  "competency": "Count the number of concrete objects in a group by repeated addition and create equal groups, using language such as \"5 groups of 3\" and \"5 threes\".",
+  "ready": true,
+  "skill": "equal_groups",
+  "settings": {}
+ },
+ {
+  "id": "m2-2-78",
+  "grade": 2,
+  "term": 2,
+  "week": "10",
+  "strand": "Number and Algebra",
+  "competency": "Illustrate and write multiplication as repeated addition, using a variety of concrete and pictorial models and numerals, and using: a. groups of equal quantities b. arrays c. counting by multiples d. equal jumps on a number line",
+  "ready": true,
+  "skill": "equal_groups",
+  "settings": {}
+ },
+ {
+  "id": "m2-3-79",
+  "grade": 2,
+  "term": 3,
+  "week": "1",
+  "strand": "Number and Algebra",
+  "competency": "Multiply numbers using the 2, 3, 4, 5, and 10 multiplication tables.",
+  "ready": true,
+  "skill": "mult_table",
+  "settings": {
+   "tables": [
+    2,
+    3,
+    4,
+    5,
+    10
+   ]
+  }
+ },
+ {
+  "id": "m2-3-80",
+  "grade": 2,
+  "term": 3,
+  "week": "2",
+  "strand": "Number and Algebra",
+  "competency": "Solve multiplication problems using the 2, 3, 4, 5, and 10 multiplication tables, including problems involving money.",
+  "ready": true,
+  "skill": "mult_table",
+  "settings": {
+   "tables": [
+    2,
+    3,
+    4,
+    5,
+    10
+   ],
+   "word": true
+  }
+ },
+ {
+  "id": "m2-3-81",
+  "grade": 2,
+  "term": 3,
+  "week": "2",
+  "strand": "Number and Algebra",
+  "competency": "Illustrate division through equal distribution of a number of objects into several groups.",
+  "ready": true,
+  "skill": "div_table",
+  "settings": {
+   "tables": [
+    2,
+    3,
+    4,
+    5,
+    10
+   ]
+  }
+ },
+ {
+  "id": "m2-3-82",
+  "grade": 2,
+  "term": 3,
+  "week": "3",
+  "strand": "Number and Algebra",
+  "competency": "Illustrate and write division expressions using a variety of concrete and pictorial models and numerals, in modelling division as: a. equal sharing or formation of equal groups of objects b. repeated subtraction.",
+  "ready": true,
+  "skill": "div_table",
+  "settings": {
+   "tables": [
+    2,
+    3,
+    4,
+    5,
+    10
+   ],
+   "repsub": true
+  }
+ },
+ {
+  "id": "m2-3-83",
+  "grade": 2,
+  "term": 3,
+  "week": "3",
+  "strand": "Number and Algebra",
+  "competency": "Divide numbers using the 2, 3, 4, 5, and 10 multiplication tables.",
+  "ready": true,
+  "skill": "div_table",
+  "settings": {
+   "tables": [
+    2,
+    3,
+    4,
+    5,
+    10
+   ]
+  }
+ },
+ {
+  "id": "m2-3-84",
+  "grade": 2,
+  "term": 3,
+  "week": "4",
+  "strand": "Number and Algebra",
+  "competency": "Find the missing number in a number sentence involving multiplication or division by 2, 3, 4, 5, and 10.",
+  "ready": true,
+  "skill": "missing_md",
+  "settings": {
+   "tables": [
+    2,
+    3,
+    4,
+    5,
+    10
+   ]
+  }
+ },
+ {
+  "id": "m2-3-85",
+  "grade": 2,
+  "term": 3,
+  "week": "4",
+  "strand": "Number and Algebra",
+  "competency": "Distinguish even and odd numbers using division by 2.",
+  "ready": true,
+  "skill": "evenodd",
+  "settings": {
+   "max": 100
+  }
+ },
+ {
+  "id": "m2-3-86",
+  "grade": 2,
+  "term": 3,
+  "week": "4",
+  "strand": "Number and Algebra",
+  "competency": "Solve division problems using the 2, 3, 4, 5, and 10 multiplication tables, including problems involving money.",
+  "ready": true,
+  "skill": "div_table",
+  "settings": {
+   "tables": [
+    2,
+    3,
+    4,
+    5,
+    10
+   ],
+   "word": true
+  }
+ },
+ {
+  "id": "m2-3-87",
+  "grade": 2,
+  "term": 3,
+  "week": "5",
+  "strand": "Number and Algebra",
+  "competency": "Represent and identify unit fractions with denominators 2, 3, 4, 5, 6, and 8.",
+  "ready": true,
+  "skill": "frac_part",
+  "settings": {
+   "dens": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    8
+   ],
+   "unit": true
+  }
+ },
+ {
+  "id": "m2-3-88",
+  "grade": 2,
+  "term": 3,
+  "week": "5",
+  "strand": "Number and Algebra",
+  "competency": "Read and write unit fractions in fraction notation.",
+  "ready": true,
+  "skill": "frac_words",
+  "settings": {
+   "unit": true
+  }
+ },
+ {
+  "id": "m2-3-89",
+  "grade": 2,
+  "term": 3,
+  "week": "6",
+  "strand": "Number and Algebra",
+  "competency": "Order unit fractions from smallest to largest, and vice versa.",
+  "ready": true,
+  "skill": "frac_order",
+  "settings": {
+   "type": "unit"
+  }
+ },
+ {
+  "id": "m2-3-90",
+  "grade": 2,
+  "term": 3,
+  "week": "6",
+  "strand": "Number and Algebra",
+  "competency": "Represent and identify similar fractions with denominators 2, 3, 4, 5, 6, and 8 using groups of objects, fraction charts, fraction tiles, and the number line.",
+  "ready": true,
+  "skill": "frac_part",
+  "settings": {
+   "dens": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    8
+   ]
+  }
+ },
+ {
+  "id": "m2-3-91",
+  "grade": 2,
+  "term": 3,
+  "week": "7",
+  "strand": "Number and Algebra",
+  "competency": "Read and write similar fractions in fraction notation.",
+  "ready": true,
+  "skill": "frac_words",
+  "settings": {}
+ },
+ {
+  "id": "m2-3-92",
+  "grade": 2,
+  "term": 3,
+  "week": "7",
+  "strand": "Number and Algebra",
+  "competency": "Order similar fractions from smallest to largest, and vice versa.",
+  "ready": true,
+  "skill": "frac_order",
+  "settings": {
+   "type": "similar"
+  }
+ },
+ {
+  "id": "m2-3-93",
+  "grade": 2,
+  "term": 3,
+  "week": "7",
+  "strand": "Measurement and Geometry",
+  "competency": "Describe the duration of an event in terms of number of days and/or weeks using a calendar.",
+  "ready": true,
+  "skill": "elapsed",
+  "settings": {
+   "mode": "days"
+  }
+ },
+ {
+  "id": "m2-3-94",
+  "grade": 2,
+  "term": 3,
+  "week": "8",
+  "strand": "Measurement and Geometry",
+  "competency": "Read and write time in hours and minutes, with a.m. and p.m., using an analog clock.",
+  "ready": true,
+  "skill": "clock",
+  "settings": {
+   "mode": "minutes"
+  }
+ },
+ {
+  "id": "m2-3-95",
+  "grade": 2,
+  "term": 3,
+  "week": "9",
+  "strand": "Measurement and Geometry",
+  "competency": "Solve problems involving elapsed time (minutes in an hour, hours in a day, days in a week), including timetables.",
+  "ready": true,
+  "skill": "elapsed",
+  "settings": {
+   "mode": "hm"
+  }
+ },
+ {
+  "id": "m2-3-96",
+  "grade": 2,
+  "term": 3,
+  "week": "9",
+  "strand": "Measurement and Geometry",
+  "competency": "Identify and explain the difference between straight and curved lines, and flat and curved surfaces of 3-dimensional objects.",
+  "ready": false,
+  "skill": null,
+  "settings": {}
+ },
+ {
+  "id": "m2-3-97",
+  "grade": 2,
+  "term": 3,
+  "week": "9",
+  "strand": "Measurement and Geometry",
+  "competency": "Identify and measure the perimeter of a plane figure using appropriate tools.",
+  "ready": false,
+  "skill": null,
+  "settings": {}
+ },
+ {
+  "id": "m2-3-98",
+  "grade": 2,
+  "term": 3,
+  "week": "10",
+  "strand": "Measurement and Geometry",
+  "competency": "Find the perimeter of triangles, squares, and rectangles.",
+  "ready": true,
+  "skill": "perim",
+  "settings": {
+   "shapes": [
+    "sq",
+    "rect",
+    "tri"
+   ]
+  }
+ },
+ {
+  "id": "m2-3-99",
+  "grade": 2,
+  "term": 3,
+  "week": "10",
+  "strand": "Measurement and Geometry",
+  "competency": "Solve problems involving the perimeter of triangles, squares, and rectangles.",
+  "ready": true,
+  "skill": "perim",
+  "settings": {
+   "shapes": [
+    "sq",
+    "rect",
+    "tri"
+   ],
+   "word": true
+  }
+ },
+ {
+  "id": "m3-1-100",
+  "grade": 3,
+  "term": 1,
+  "week": "1",
+  "strand": "Measurement and Geometry",
+  "competency": "Illustrate and estimate the area of a square or rectangle using square tile units.",
+  "ready": true,
+  "skill": "area_rect",
+  "settings": {
+   "tiles": true
+  }
+ },
+ {
+  "id": "m3-1-101",
+  "grade": 3,
+  "term": 1,
+  "week": "1",
+  "strand": "Measurement and Geometry",
+  "competency": "Explore inductively the derivation of the formulas for the areas of a square and a rectangle using square tile units.",
+  "ready": true,
+  "skill": "area_rect",
+  "settings": {
+   "tiles": true
+  }
+ },
+ {
+  "id": "m3-1-102",
+  "grade": 3,
+  "term": 1,
+  "week": "2",
+  "strand": "Measurement and Geometry",
+  "competency": "Find the areas of squares and rectangles in sq. cm and sq. m.",
+  "ready": true,
+  "skill": "area_rect",
+  "settings": {}
+ },
+ {
+  "id": "m3-1-103",
+  "grade": 3,
+  "term": 1,
+  "week": "2",
+  "strand": "Measurement and Geometry",
+  "competency": "Solve problems involving areas of squares and rectangles.",
+  "ready": true,
+  "skill": "area_rect",
+  "settings": {
+   "word": true
+  }
+ },
+ {
+  "id": "m3-1-104",
+  "grade": 3,
+  "term": 1,
+  "week": "2",
+  "strand": "Measurement and Geometry",
+  "competency": "Recognize, using models, and draw a point, line, line segment, and ray.",
+  "ready": false,
+  "skill": null,
+  "settings": {}
+ },
+ {
+  "id": "m3-1-105",
+  "grade": 3,
+  "term": 1,
+  "week": "3",
+  "strand": "Measurement and Geometry",
+  "competency": "Recognize and draw parallel, intersecting, and perpendicular lines.",
+  "ready": false,
+  "skill": null,
+  "settings": {}
+ },
+ {
+  "id": "m3-1-106",
+  "grade": 3,
+  "term": 1,
+  "week": "3",
+  "strand": "Measurement and Geometry",
+  "competency": "Identify and draw line segments of equal length using a ruler.",
+  "ready": false,
+  "skill": null,
+  "settings": {}
+ },
+ {
+  "id": "m3-1-107",
+  "grade": 3,
+  "term": 1,
+  "week": "4",
+  "strand": "Number and Algebra",
+  "competency": "Represent numbers up to 10 000 using pictorial models and numerals.",
+  "ready": true,
+  "skill": "represent",
+  "settings": {
+   "max": 10000
+  }
+ },
+ {
+  "id": "m3-1-108",
+  "grade": 3,
+  "term": 1,
+  "week": "5",
+  "strand": "Number and Algebra",
+  "competency": "Read and write numbers up to 10 000 in numerals and in words.",
+  "ready": true,
+  "skill": "numwords",
+  "settings": {
+   "max": 10000
+  }
+ },
+ {
+  "id": "m3-1-109",
+  "grade": 3,
+  "term": 1,
+  "week": "6",
+  "strand": "Number and Algebra",
+  "competency": "Describe the position of objects using ordinal numbers up to 100th.",
+  "ready": true,
+  "skill": "ordinal",
+  "settings": {
+   "max": 100
+  }
+ },
+ {
+  "id": "m3-1-110",
+  "grade": 3,
+  "term": 1,
+  "week": "7–8",
+  "strand": "Number and Algebra",
+  "competency": "Determine: a. the place value of a digit in a 4-digit number b. the value of a digit c. the digit of number, given its place value",
+  "ready": true,
+  "skill": "pv",
+  "settings": {
+   "digits": 4
+  }
+ },
+ {
+  "id": "m3-1-111",
+  "grade": 3,
+  "term": 1,
+  "week": "9",
+  "strand": "Number and Algebra",
+  "competency": "Round numbers to the nearest ten, hundred, or thousand.",
+  "ready": true,
+  "skill": "round",
+  "settings": {
+   "places": [
+    10,
+    100,
+    1000
+   ],
+   "max": 10000
+  }
+ },
+ {
+  "id": "m3-1-112",
+  "grade": 3,
+  "term": 1,
+  "week": "9",
+  "strand": "Number and Algebra",
+  "competency": "Compare numbers up to 10 000 using the symbols =, >, and <.",
+  "ready": true,
+  "skill": "cmp",
+  "settings": {
+   "max": 10000
+  }
+ },
+ {
+  "id": "m3-1-113",
+  "grade": 3,
+  "term": 1,
+  "week": "10",
+  "strand": "Number and Algebra",
+  "competency": "Order numbers up to 10 000 from smallest to largest, and vice versa.",
+  "ready": true,
+  "skill": "order",
+  "settings": {
+   "max": 10000
+  }
+ },
+ {
+  "id": "m3-2-114",
+  "grade": 3,
+  "term": 2,
+  "week": "1",
+  "strand": "Measurement and Geometry",
+  "competency": "Measure mass in grams (g), kilograms (kg) and/or milligrams (mg), using appropriate measuring tools.",
+  "ready": true,
+  "skill": "unit_choice",
+  "settings": {
+   "kind": "mass"
+  }
+ },
+ {
+  "id": "m3-2-115",
+  "grade": 3,
+  "term": 2,
+  "week": "1",
+  "strand": "Measurement and Geometry",
+  "competency": "Estimate mass of an object using grams, kilograms, and/or milligrams.",
+  "ready": false,
+  "skill": null,
+  "settings": {}
+ },
+ {
+  "id": "m3-2-116",
+  "grade": 3,
+  "term": 2,
+  "week": "1",
+  "strand": "Measurement and Geometry",
+  "competency": "Compare masses of objects including the use of a balance scale.",
+  "ready": true,
+  "skill": "meas_cmp",
+  "settings": {
+   "kind": "mass"
+  }
+ },
+ {
+  "id": "m3-2-117",
+  "grade": 3,
+  "term": 2,
+  "week": "2",
+  "strand": "Measurement and Geometry",
+  "competency": "Measure capacity in liters (L) and/or milliliters (mL), using appropriate measuring tools.",
+  "ready": true,
+  "skill": "unit_choice",
+  "settings": {
+   "kind": "cap"
+  }
+ },
+ {
+  "id": "m3-2-118",
+  "grade": 3,
+  "term": 2,
+  "week": "2",
+  "strand": "Measurement and Geometry",
+  "competency": "Estimate capacity using liters and/or milliliters.",
+  "ready": false,
+  "skill": null,
+  "settings": {}
+ },
+ {
+  "id": "m3-2-119",
+  "grade": 3,
+  "term": 2,
+  "week": "2",
+  "strand": "Measurement and Geometry",
+  "competency": "Compare capacities of two containers.",
+  "ready": true,
+  "skill": "meas_cmp",
+  "settings": {
+   "kind": "cap"
+  }
+ },
+ {
+  "id": "m3-2-120",
+  "grade": 3,
+  "term": 2,
+  "week": "3",
+  "strand": "Number and Algebra",
+  "competency": "Read and write money in words and using: a. Philippine currency symbols (₱ and PhP) up to ₱10 000 b. the centavo sign",
+  "ready": true,
+  "skill": "money_words",
+  "settings": {
+   "max": 10000
+  }
+ },
+ {
+  "id": "m3-2-121",
+  "grade": 3,
+  "term": 2,
+  "week": "3",
+  "strand": "Number and Algebra",
+  "competency": "Add numbers with sums up to 10 000, with and without regrouping.",
+  "ready": true,
+  "skill": "add",
+  "settings": {
+   "max": 10000,
+   "regroup": "mix"
+  }
+ },
+ {
+  "id": "m3-2-122",
+  "grade": 3,
+  "term": 2,
+  "week": "4",
+  "strand": "Number and Algebra",
+  "competency": "Estimate the sum of addends with up to 4 digits.",
+  "ready": true,
+  "skill": "est",
+  "settings": {
+   "op": "+",
+   "digits": 4
+  }
+ },
+ {
+  "id": "m3-2-123",
+  "grade": 3,
+  "term": 2,
+  "week": "4–5",
+  "strand": "Number and Algebra",
+  "competency": "Solve problems involving addition of numbers with sums up to 10 000, including problems involving money.",
+  "ready": true,
+  "skill": "add",
+  "settings": {
+   "max": 10000,
+   "word": true,
+   "money": true
+  }
+ },
+ {
+  "id": "m3-2-124",
+  "grade": 3,
+  "term": 2,
+  "week": "5–6",
+  "strand": "Number and Algebra",
+  "competency": "Subtract numbers, where both numbers are less than 10 000, with and without regrouping.",
+  "ready": true,
+  "skill": "sub",
+  "settings": {
+   "max": 9999,
+   "regroup": "mix"
+  }
+ },
+ {
+  "id": "m3-2-125",
+  "grade": 3,
+  "term": 2,
+  "week": "6–7",
+  "strand": "Number and Algebra",
+  "competency": "Estimate the difference of two numbers of up to 4 digits.",
+  "ready": true,
+  "skill": "est",
+  "settings": {
+   "op": "-",
+   "digits": 4
+  }
+ },
+ {
+  "id": "m3-2-126",
+  "grade": 3,
+  "term": 2,
+  "week": "6–7",
+  "strand": "Number and Algebra",
+  "competency": "Perform addition and subtraction of 3 to 4 numbers of up to 2 digits, observing correct order of operations.",
+  "ready": true,
+  "skill": "mdas",
+  "settings": {
+   "mode": "addsub"
+  }
+ },
+ {
+  "id": "m3-2-127",
+  "grade": 3,
+  "term": 2,
+  "week": "8",
+  "strand": "Number and Algebra",
+  "competency": "Solve problems involving addition and subtraction with 3 to 4 numbers of up to 2 digits, including problems involving money.",
+  "ready": true,
+  "skill": "mdas",
+  "settings": {
+   "mode": "addsub"
+  }
+ },
+ {
+  "id": "m3-2-128",
+  "grade": 3,
+  "term": 2,
+  "week": "8",
+  "strand": "Data and Probability",
+  "competency": "Collect data from experiments with a small number of possible outcomes (e.g., rolling a die or tossing a coin).",
+  "ready": false,
+  "skill": null,
+  "settings": {}
+ },
+ {
+  "id": "m3-2-129",
+  "grade": 3,
+  "term": 2,
+  "week": "9",
+  "strand": "Data and Probability",
+  "competency": "Present data in tables and single bar graphs (horizontal and vertical).",
+  "ready": false,
+  "skill": null,
+  "settings": {}
+ },
+ {
+  "id": "m3-2-130",
+  "grade": 3,
+  "term": 2,
+  "week": "9",
+  "strand": "Data and Probability",
+  "competency": "Interpret data in tables and single bar graphs (horizontal and vertical).",
+  "ready": true,
+  "skill": "table_read",
+  "settings": {
+   "series": 1
+  }
+ },
+ {
+  "id": "m3-2-131",
+  "grade": 3,
+  "term": 2,
+  "week": "10",
+  "strand": "Data and Probability",
+  "competency": "Solve problems using data presented in a single bar graph (horizontal and vertical).",
+  "ready": true,
+  "skill": "table_read",
+  "settings": {
+   "series": 1
+  }
+ },
+ {
+  "id": "m3-2-132",
+  "grade": 3,
+  "term": 2,
+  "week": "10",
+  "strand": "Data and Probability",
+  "competency": "Describe and compare outcomes in real-life situations using the following terms: equally likely, less/least likely, more/most likely, certain, and impossible.",
+  "ready": true,
+  "skill": "likely",
+  "settings": {}
+ },
+ {
+  "id": "m3-3-133",
+  "grade": 3,
+  "term": 3,
+  "week": "1",
+  "strand": "Number and Algebra",
+  "competency": "Multiply numbers using the 6, 7, 8, and 9 multiplication tables.",
+  "ready": true,
+  "skill": "mult_table",
+  "settings": {
+   "tables": [
+    6,
+    7,
+    8,
+    9
+   ]
+  }
+ },
+ {
+  "id": "m3-3-134",
+  "grade": 3,
+  "term": 3,
+  "week": "2",
+  "strand": "Number and Algebra",
+  "competency": "Illustrate and apply properties of multiplication for the 6, 7, 8, and 9 multiplication tables (identity, zero, order, grouping, and distributive properties).",
+  "ready": true,
+  "skill": "mult_props",
+  "settings": {}
+ },
+ {
+  "id": "m3-3-135",
+  "grade": 3,
+  "term": 3,
+  "week": "3",
+  "strand": "Number and Algebra",
+  "competency": "Multiply numbers with and without regrouping: a. 2- to 3-digit numbers by a 1-digit number b. 2- to 4-digit numbers by a number whose leading digit is the only non-zero digit, with products up to 10 000",
+  "ready": true,
+  "skill": "mult",
+  "settings": {
+   "mode": "g3"
+  }
+ },
+ {
+  "id": "m3-3-136",
+  "grade": 3,
+  "term": 3,
+  "week": "3",
+  "strand": "Number and Algebra",
+  "competency": "Estimate the product of 2- to 3-digit numbers by 1- to 2-digit numbers by estimating the factors using multiples of 10.",
+  "ready": true,
+  "skill": "est",
+  "settings": {
+   "op": "×"
+  }
+ },
+ {
+  "id": "m3-3-137",
+  "grade": 3,
+  "term": 3,
+  "week": "4",
+  "strand": "Number and Algebra",
+  "competency": "Solve 1-to 2-step multiplication problems, including problems involving money.",
+  "ready": true,
+  "skill": "mult",
+  "settings": {
+   "mode": "g3",
+   "word": true
+  }
+ },
+ {
+  "id": "m3-3-138",
+  "grade": 3,
+  "term": 3,
+  "week": "4",
+  "strand": "Number and Algebra",
+  "competency": "Determine the missing term/s in a pattern with repeating and increasing components or repeating and decreasing components (e.g., 1a, 1b, 1c, 2a, 2b, 2c, …).",
+  "ready": true,
+  "skill": "pattern_combo",
+  "settings": {}
+ },
+ {
+  "id": "m3-3-139",
+  "grade": 3,
+  "term": 3,
+  "week": "4",
+  "strand": "Number and Algebra",
+  "competency": "Explain how to generate a given pattern with repeating and increasing components or repeating and decreasing components.",
+  "ready": true,
+  "skill": "pattern_combo",
+  "settings": {
+   "explain": true
+  }
+ },
+ {
+  "id": "m3-3-140",
+  "grade": 3,
+  "term": 3,
+  "week": "5",
+  "strand": "Number and Algebra",
+  "competency": "Illustrate division through equal jumps on the number line and as inverse of multiplication.",
+  "ready": true,
+  "skill": "div_table",
+  "settings": {
+   "tables": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "inverse": true
+  }
+ },
+ {
+  "id": "m3-3-141",
+  "grade": 3,
+  "term": 3,
+  "week": "6",
+  "strand": "Number and Algebra",
+  "competency": "Divide numbers using the 6, 7, 8, and 9 multiplication tables.",
+  "ready": true,
+  "skill": "div_table",
+  "settings": {
+   "tables": [
+    6,
+    7,
+    8,
+    9
+   ]
+  }
+ },
+ {
+  "id": "m3-3-142",
+  "grade": 3,
+  "term": 3,
+  "week": "6",
+  "strand": "Number and Algebra",
+  "competency": "Find the missing number in a number sentence involving multiplication or division by 6, 7, 8, and 9 (e.g., __ x 7 = 56; 56 ÷ __ = 7).",
+  "ready": true,
+  "skill": "missing_md",
+  "settings": {
+   "tables": [
+    6,
+    7,
+    8,
+    9
+   ]
+  }
+ },
+ {
+  "id": "m3-3-143",
+  "grade": 3,
+  "term": 3,
+  "week": "7",
+  "strand": "Number and Algebra",
+  "competency": "Divide numbers with and without remainder: a. 2- to 3-digit numbers by 1-digit number without remainder b. 2-digit numbers by 1-digit number with remainder c. 2- to 4-digit numbers by 10, 100, and 1000",
+  "ready": true,
+  "skill": "div",
+  "settings": {
+   "mode": "g3"
+  }
+ },
+ {
+  "id": "m3-3-144",
+  "grade": 3,
+  "term": 3,
+  "week": "8–9",
+  "strand": "Number and Algebra",
+  "competency": "Estimate the quotient of 2- to 3-digit numbers divided by 1- to 2-digit numbers, using multiples of 10 or 100 as appropriate.",
+  "ready": true,
+  "skill": "est",
+  "settings": {
+   "op": "÷"
+  }
+ },
+ {
+  "id": "m3-3-145",
+  "grade": 3,
+  "term": 3,
+  "week": "8–9",
+  "strand": "Number and Algebra",
+  "competency": "Solve division problems involving 2- to 3-digit numbers by a 1-digit number, including problems involving money.",
+  "ready": true,
+  "skill": "div",
+  "settings": {
+   "mode": "g3exact",
+   "word": true
+  }
+ },
+ {
+  "id": "m3-3-146",
+  "grade": 3,
+  "term": 3,
+  "week": "8–9",
+  "strand": "Number and Algebra",
+  "competency": "Represent fractions that are equal to one and greater than one using models.",
+  "ready": true,
+  "skill": "frac_gt1",
+  "settings": {}
+ },
+ {
+  "id": "m3-3-147",
+  "grade": 3,
+  "term": 3,
+  "week": "8–9",
+  "strand": "Number and Algebra",
+  "competency": "Add and subtract similar fractions using models.",
+  "ready": true,
+  "skill": "frac_as",
+  "settings": {
+   "type": "similar",
+   "maxd": 8
+  }
+ },
+ {
+  "id": "m3-3-148",
+  "grade": 3,
+  "term": 3,
+  "week": "9",
+  "strand": "Measurement and Geometry",
+  "competency": "Describe and draw the effect of a two-direction multi-step slide (or translation) in basic shapes and figures.",
+  "ready": false,
+  "skill": null,
+  "settings": {}
+ },
+ {
+  "id": "m3-3-149",
+  "grade": 3,
+  "term": 3,
+  "week": "10",
+  "strand": "Measurement and Geometry",
+  "competency": "Identify shapes or figures that show line symmetry by drawing the line of symmetry.",
+  "ready": false,
+  "skill": null,
+  "settings": {}
+ },
+ {
+  "id": "m3-3-150",
+  "grade": 3,
+  "term": 3,
+  "week": "10",
+  "strand": "Measurement and Geometry",
+  "competency": "Complete a figure that is symmetric with respect to a line.",
+  "ready": false,
+  "skill": null,
+  "settings": {}
+ },
+ {
+  "id": "m4-1-151",
+  "grade": 4,
+  "term": 1,
+  "week": "1",
+  "strand": "Measurement and Geometry",
+  "competency": "Illustrate different angles (right, acute, and obtuse) using models.",
+  "ready": true,
+  "skill": "angle_type",
+  "settings": {}
+ },
+ {
+  "id": "m4-1-152",
+  "grade": 4,
+  "term": 1,
+  "week": "1",
+  "strand": "Measurement and Geometry",
+  "competency": "Measure and draw angles using a protractor.",
+  "ready": false,
+  "skill": null,
+  "settings": {}
+ },
+ {
+  "id": "m4-1-153",
+  "grade": 4,
+  "term": 1,
+  "week": "2",
+  "strand": "Measurement and Geometry",
+  "competency": "Draw and state the properties of triangles and quadrilaterals.",
+  "ready": true,
+  "skill": "shape_facts",
+  "settings": {
+   "set": "g4"
+  }
+ },
+ {
+  "id": "m4-1-154",
+  "grade": 4,
+  "term": 1,
+  "week": "3",
+  "strand": "Measurement and Geometry",
+  "competency": "Classify triangles and quadrilaterals according to sides and angles.",
+  "ready": true,
+  "skill": "tri_class",
+  "settings": {}
+ },
+ {
+  "id": "m4-1-155",
+  "grade": 4,
+  "term": 1,
+  "week": "3",
+  "strand": "Measurement and Geometry",
+  "competency": "Differentiate different quadrilaterals.",
+  "ready": true,
+  "skill": "quad_class",
+  "settings": {}
+ },
+ {
+  "id": "m4-1-156",
+  "grade": 4,
+  "term": 1,
+  "week": "4",
+  "strand": "Measurement and Geometry",
+  "competency": "Find the perimeter of quadrilaterals that are not squares or rectangles.",
+  "ready": true,
+  "skill": "perim",
+  "settings": {
+   "shapes": [
+    "quad"
+   ]
+  }
+ },
+ {
+  "id": "m4-1-157",
+  "grade": 4,
+  "term": 1,
+  "week": "4",
+  "strand": "Measurement and Geometry",
+  "competency": "Find the perimeter of composite figures composed of triangles and quadrilaterals.",
+  "ready": true,
+  "skill": "perim",
+  "settings": {
+   "shapes": [
+    "comp"
+   ]
+  }
+ },
+ {
+  "id": "m4-1-158",
+  "grade": 4,
+  "term": 1,
+  "week": "5",
+  "strand": "Number and Algebra",
+  "competency": "Read and write numbers up to 1 000 000 in numerals and in words.",
+  "ready": true,
+  "skill": "numwords",
+  "settings": {
+   "max": 1000000
+  }
+ },
+ {
+  "id": "m4-1-159",
+  "grade": 4,
+  "term": 1,
+  "week": "5",
+  "strand": "Number and Algebra",
+  "competency": "Determine: a. the place value of a digit in a 6-digit number b. the value of a digit c. the digit of number, given its place value",
+  "ready": true,
+  "skill": "pv",
+  "settings": {
+   "digits": 6
+  }
+ },
+ {
+  "id": "m4-1-160",
+  "grade": 4,
+  "term": 1,
+  "week": "6",
+  "strand": "Number and Algebra",
+  "competency": "Compare numbers up to 1 000 000 using =, <, and >.",
+  "ready": true,
+  "skill": "cmp",
+  "settings": {
+   "max": 1000000
+  }
+ },
+ {
+  "id": "m4-1-161",
+  "grade": 4,
+  "term": 1,
+  "week": "6",
+  "strand": "Number and Algebra",
+  "competency": "Round numbers to the nearest hundred thousand.",
+  "ready": true,
+  "skill": "round",
+  "settings": {
+   "places": [
+    100000
+   ],
+   "max": 1000000
+  }
+ },
+ {
+  "id": "m4-1-162",
+  "grade": 4,
+  "term": 1,
+  "week": "6",
+  "strand": "Number and Algebra",
+  "competency": "Estimate the sum and difference of two 5- to 6-digit numbers by rounding the addends to the nearest large place value of the numbers.",
+  "ready": true,
+  "skill": "est",
+  "settings": {
+   "op": "+-",
+   "digits": 6
+  }
+ },
+ {
+  "id": "m4-1-163",
+  "grade": 4,
+  "term": 1,
+  "week": "7–8",
+  "strand": "Number and Algebra",
+  "competency": "Add numbers with sums up to 1 000 000 and subtracts numbers where both numbers are less than 1 000 000, with and without regrouping.",
+  "ready": true,
+  "skill": "addsub",
+  "settings": {
+   "max": 1000000
+  }
+ },
+ {
+  "id": "m4-1-164",
+  "grade": 4,
+  "term": 1,
+  "week": "7–8",
+  "strand": "Number and Algebra",
+  "competency": "Multiply two numbers with and without regrouping: a. 3- to 4-digit numbers by a 1-digit number b. 2- to 3-digit numbers by 2-digit numbers, with products up to 1 000 000.",
+  "ready": true,
+  "skill": "mult",
+  "settings": {
+   "mode": "g4"
+  }
+ },
+ {
+  "id": "m4-1-165",
+  "grade": 4,
+  "term": 1,
+  "week": "7–8",
+  "strand": "Number and Algebra",
+  "competency": "Estimate the result of multiplying two numbers where the product is less than 1 000 000.",
+  "ready": true,
+  "skill": "est",
+  "settings": {
+   "op": "×",
+   "big": true
+  }
+ },
+ {
+  "id": "m4-1-166",
+  "grade": 4,
+  "term": 1,
+  "week": "9–10",
+  "strand": "Number and Algebra",
+  "competency": "Solve multi-step problems involving one or more of the four operations with results of calculations up to 1 000 000, including problems involving money.",
+  "ready": true,
+  "skill": "multistep",
+  "settings": {
+   "max": 1000000
+  }
+ },
+ {
+  "id": "m4-1-167",
+  "grade": 4,
+  "term": 1,
+  "week": "9–10",
+  "strand": "Number and Algebra",
+  "competency": "Divide two numbers with and without regrouping: a. 3- to 4-digit numbers by 1-digit numbers b. 2- to 3-digit numbers by 2-digit numbers",
+  "ready": true,
+  "skill": "div",
+  "settings": {
+   "mode": "g4"
+  }
+ },
+ {
+  "id": "m4-1-168",
+  "grade": 4,
+  "term": 1,
+  "week": "9–10",
+  "strand": "Number and Algebra",
+  "competency": "Estimate the quotient when dividing 3- to 4-digit dividends by 1- to 2-digit divisors, by first estimating the dividends and divisors using multiples of 10.",
+  "ready": true,
+  "skill": "est",
+  "settings": {
+   "op": "÷",
+   "big": true
+  }
+ },
+ {
+  "id": "m4-2-169",
+  "grade": 4,
+  "term": 2,
+  "week": "1–2",
+  "strand": "Number and Algebra",
+  "competency": "Represent situations involving one or more of the four operations using a number sentence.",
+  "ready": true,
+  "skill": "multistep",
+  "settings": {
+   "max": 10000,
+   "sentence": true
+  }
+ },
+ {
+  "id": "m4-2-170",
+  "grade": 4,
+  "term": 2,
+  "week": "1–2",
+  "strand": "Number and Algebra",
+  "competency": "Perform two or more different operations by applying the MDAS rules.",
+  "ready": true,
+  "skill": "mdas",
+  "settings": {
+   "mode": "mdas"
+  }
+ },
+ {
+  "id": "m4-2-171",
+  "grade": 4,
+  "term": 2,
+  "week": "3",
+  "strand": "Measurement and Geometry",
+  "competency": "Convert common units of measure from larger to smaller units, and vice versa: a. meter and centimeter b. kilometer and meter c. kilogram and gram d. gram and milligram e. liter and milliliter",
+  "ready": true,
+  "skill": "unit_conv",
+  "settings": {
+   "pairs": [
+    "m-cm",
+    "km-m",
+    "kg-g",
+    "g-mg",
+    "L-mL"
+   ]
+  }
+ },
+ {
+  "id": "m4-2-172",
+  "grade": 4,
+  "term": 2,
+  "week": "3",
+  "strand": "Measurement and Geometry",
+  "competency": "Convert time measures from smaller to larger units, and vice versa: a. seconds to minutes b. minutes to hours c. hours to days d. days to weeks e. weeks to months f. months to years",
+  "ready": true,
+  "skill": "time_conv",
+  "settings": {
+   "pairs": [
+    "s-min",
+    "min-h",
+    "h-d",
+    "d-wk",
+    "mo-yr"
+   ]
+  }
+ },
+ {
+  "id": "m4-2-173",
+  "grade": 4,
+  "term": 2,
+  "week": "4",
+  "strand": "Measurement and Geometry",
+  "competency": "Solve problems involving conversion of units of length, mass, capacity, and time, including problems involving elapsed time in hours and minutes.",
+  "ready": true,
+  "skill": "unit_conv",
+  "settings": {
+   "pairs": [
+    "m-cm",
+    "km-m",
+    "kg-g",
+    "L-mL"
+   ],
+   "word": true
+  }
+ },
+ {
+  "id": "m4-2-174",
+  "grade": 4,
+  "term": 2,
+  "week": "5",
+  "strand": "Number and Algebra",
+  "competency": "Identify proper fractions, improper fractions, and mixed numbers.",
+  "ready": true,
+  "skill": "frac_kind",
+  "settings": {}
+ },
+ {
+  "id": "m4-2-175",
+  "grade": 4,
+  "term": 2,
+  "week": "5",
+  "strand": "Number and Algebra",
+  "competency": "Rewrite improper fractions into mixed numbers, and vice versa.",
+  "ready": true,
+  "skill": "frac_mixed",
+  "settings": {}
+ },
+ {
+  "id": "m4-2-176",
+  "grade": 4,
+  "term": 2,
+  "week": "5",
+  "strand": "Number and Algebra",
+  "competency": "Plot fraction (proper fractions, improper fractions, and mixed numbers) with denominators 2, 4, 5, and 10 on the number line.",
+  "ready": true,
+  "skill": "frac_between",
+  "settings": {}
+ },
+ {
+  "id": "m4-2-177",
+  "grade": 4,
+  "term": 2,
+  "week": "6",
+  "strand": "Number and Algebra",
+  "competency": "Add and subtract similar fractions: a. two proper fractions b. two mixed numbers c. a mixed number and a proper fraction d. a whole number and a proper fraction e. a whole number and a mixed number",
+  "ready": true,
+  "skill": "frac_as",
+  "settings": {
+   "type": "similar",
+   "mixed": true
+  }
+ },
+ {
+  "id": "m4-2-178",
+  "grade": 4,
+  "term": 2,
+  "week": "7",
+  "strand": "Number and Algebra",
+  "competency": "Represent dissimilar fractions, with denominators up to 10, using models.",
+  "ready": false,
+  "skill": null,
+  "settings": {}
+ },
+ {
+  "id": "m4-2-179",
+  "grade": 4,
+  "term": 2,
+  "week": "7",
+  "strand": "Number and Algebra",
+  "competency": "Compare dissimilar fractions using the symbols =, >, and <.",
+  "ready": true,
+  "skill": "frac_cmp",
+  "settings": {
+   "type": "dissimilar",
+   "maxd": 10
+  }
+ },
+ {
+  "id": "m4-2-180",
+  "grade": 4,
+  "term": 2,
+  "week": "8",
+  "strand": "Number and Algebra",
+  "competency": "Order dissimilar fractions from smallest to largest, and vice versa.",
+  "ready": true,
+  "skill": "frac_order",
+  "settings": {
+   "type": "dissimilar"
+  }
+ },
+ {
+  "id": "m4-2-181",
+  "grade": 4,
+  "term": 2,
+  "week": "8",
+  "strand": "Number and Algebra",
+  "competency": "Generate equivalent fractions using models.",
+  "ready": true,
+  "skill": "frac_equiv",
+  "settings": {}
+ },
+ {
+  "id": "m4-2-182",
+  "grade": 4,
+  "term": 2,
+  "week": "9–10",
+  "strand": "Number and Algebra",
+  "competency": "Determine equivalent fractions.",
+  "ready": true,
+  "skill": "frac_equiv",
+  "settings": {}
+ },
+ {
+  "id": "m4-2-183",
+  "grade": 4,
+  "term": 2,
+  "week": "9–10",
+  "strand": "Number and Algebra",
+  "competency": "Identify the multiples of given numbers up to 100.",
+  "ready": true,
+  "skill": "multiples",
+  "settings": {}
+ },
+ {
+  "id": "m4-2-184",
+  "grade": 4,
+  "term": 2,
+  "week": "9–10",
+  "strand": "Number and Algebra",
+  "competency": "Find all the factors of a given number up to 100.",
+  "ready": true,
+  "skill": "factors",
+  "settings": {}
+ },
+ {
+  "id": "m4-2-185",
+  "grade": 4,
+  "term": 2,
+  "week": "9–10",
+  "strand": "Number and Algebra",
+  "competency": "Reduce fractions to simplest form.",
+  "ready": true,
+  "skill": "frac_simplest",
+  "settings": {}
+ },
+ {
+  "id": "m4-3-186",
+  "grade": 4,
+  "term": 3,
+  "week": "1",
+  "strand": "Number and Algebra",
+  "competency": "Add and subtract dissimilar fractions using models.",
+  "ready": true,
+  "skill": "frac_as",
+  "settings": {
+   "type": "dissimilar",
+   "maxd": 10
+  }
+ },
+ {
+  "id": "m4-3-187",
+  "grade": 4,
+  "term": 3,
+  "week": "2",
+  "strand": "Number and Algebra",
+  "competency": "Add and subtract dissimilar fractions: a. two proper fractions b. two mixed numbers c. a mixed number and a proper fraction d. a whole number and a proper fraction e. a whole number and a mixed number",
+  "ready": true,
+  "skill": "frac_as",
+  "settings": {
+   "type": "dissimilar",
+   "mixed": true,
+   "maxd": 10
+  }
+ },
+ {
+  "id": "m4-3-188",
+  "grade": 4,
+  "term": 3,
+  "week": "3",
+  "strand": "Number and Algebra",
+  "competency": "Solve multi-step problems involving addition and/or subtraction of fractions.",
+  "ready": true,
+  "skill": "frac_word3",
+  "settings": {}
+ },
+ {
+  "id": "m4-3-189",
+  "grade": 4,
+  "term": 3,
+  "week": "4",
+  "strand": "Measurement and Geometry",
+  "competency": "Identify symmetry with respect to a line.",
+  "ready": false,
+  "skill": null,
+  "settings": {}
+ },
+ {
+  "id": "m4-3-190",
+  "grade": 4,
+  "term": 3,
+  "week": "4",
+  "strand": "Measurement and Geometry",
+  "competency": "Complete a figure that is symmetric with respect to a line.",
+  "ready": false,
+  "skill": null,
+  "settings": {}
+ },
+ {
+  "id": "m4-3-191",
+  "grade": 4,
+  "term": 3,
+  "week": "4",
+  "strand": "Measurement and Geometry",
+  "competency": "Draws the image of an object after applying reflection with respect to a line, including glide reflection.",
+  "ready": false,
+  "skill": null,
+  "settings": {}
+ },
+ {
+  "id": "m4-3-192",
+  "grade": 4,
+  "term": 3,
+  "week": "5",
+  "strand": "Data and Probability",
+  "competency": "Collect data with time element using appropriate sources.",
+  "ready": false,
+  "skill": null,
+  "settings": {}
+ },
+ {
+  "id": "m4-3-193",
+  "grade": 4,
+  "term": 3,
+  "week": "5",
+  "strand": "Data and Probability",
+  "competency": "Present data in a tabular form, or in a single line graph.",
+  "ready": false,
+  "skill": null,
+  "settings": {}
+ },
+ {
+  "id": "m4-3-194",
+  "grade": 4,
+  "term": 3,
+  "week": "6",
+  "strand": "Data and Probability",
+  "competency": "Interpret data presented in a tabular form, or in a single line graph.",
+  "ready": true,
+  "skill": "table_read",
+  "settings": {
+   "series": 1,
+   "time": true
+  }
+ },
+ {
+  "id": "m4-3-195",
+  "grade": 4,
+  "term": 3,
+  "week": "6",
+  "strand": "Data and Probability",
+  "competency": "Solve problems using data for at most two variables in a tabular form, or in a single line graph.",
+  "ready": true,
+  "skill": "table_read",
+  "settings": {
+   "series": 2,
+   "time": true
+  }
+ },
+ {
+  "id": "m4-3-196",
+  "grade": 4,
+  "term": 3,
+  "week": "7–8",
+  "strand": "Number and Algebra",
+  "competency": "Describe the rule used to generate a given simple pattern.",
+  "ready": true,
+  "skill": "pattern_rule",
+  "settings": {}
+ },
+ {
+  "id": "m4-3-197",
+  "grade": 4,
+  "term": 3,
+  "week": "7–8",
+  "strand": "Number and Algebra",
+  "competency": "Complete a number sentence: a. to represent a property of operations (e.g., 4 + 3 = 3 + __) b. to represent equivalent number facts (e.g., 4 + __ = 6 + 3)",
+  "ready": true,
+  "skill": "numsentence",
+  "settings": {
+   "max": 100,
+   "props": [
+    "comm",
+    "commx",
+    "equiv",
+    "assoc"
+   ]
+  }
+ },
+ {
+  "id": "m4-3-198",
+  "grade": 4,
+  "term": 3,
+  "week": "7–8",
+  "strand": "Number and Algebra",
+  "competency": "Represent decimal numbers using models and manipulatives to show the relationship to fractions.",
+  "ready": true,
+  "skill": "dec_frac",
+  "settings": {}
+ },
+ {
+  "id": "m4-3-199",
+  "grade": 4,
+  "term": 3,
+  "week": "7–8",
+  "strand": "Number and Algebra",
+  "competency": "Read and write decimal numbers with decimal parts to hundredths.",
+  "ready": true,
+  "skill": "dec_words",
+  "settings": {
+   "dp": 2
+  }
+ },
+ {
+  "id": "m4-3-200",
+  "grade": 4,
+  "term": 3,
+  "week": "9–10",
+  "strand": "Number and Algebra",
+  "competency": "Determine: a. the place value to hundredths of a digit in a given decimal number b. the value of a digit c. the digit of number, given its place value.",
+  "ready": true,
+  "skill": "dec_pv",
+  "settings": {
+   "dp": 2
+  }
+ },
+ {
+  "id": "m4-3-201",
+  "grade": 4,
+  "term": 3,
+  "week": "9–10",
+  "strand": "Number and Algebra",
+  "competency": "Convert decimal numbers to fractions, and fractions with denominators 10 or 100 to decimals.",
+  "ready": true,
+  "skill": "dec_frac",
+  "settings": {}
+ },
+ {
+  "id": "m4-3-202",
+  "grade": 4,
+  "term": 3,
+  "week": "9–10",
+  "strand": "Number and Algebra",
+  "competency": "Plot decimal numbers with tenth decimal part on the number line.",
+  "ready": true,
+  "skill": "dec_between",
+  "settings": {}
+ },
+ {
+  "id": "m4-3-203",
+  "grade": 4,
+  "term": 3,
+  "week": "9–10",
+  "strand": "Number and Algebra",
+  "competency": "Compare and order decimal numbers with decimal parts to hundredths.",
+  "ready": true,
+  "skill": "dec_cmp",
+  "settings": {
+   "dp": 2
+  }
+ },
+ {
+  "id": "m4-3-204",
+  "grade": 4,
+  "term": 3,
+  "week": "9–10",
+  "strand": "Number and Algebra",
+  "competency": "Round decimal numbers to the nearest whole number and to the nearest tenth.",
+  "ready": true,
+  "skill": "dec_round",
+  "settings": {
+   "to": [
+    0,
+    1
+   ],
+   "dp": 2
+  }
+ },
+ {
+  "id": "m5-1-205",
+  "grade": 5,
+  "term": 1,
+  "week": "1",
+  "strand": "Measurement and Geometry",
+  "competency": "Describe a 12- and 24-hour clock system.",
+  "ready": true,
+  "skill": "h24",
+  "settings": {}
+ },
+ {
+  "id": "m5-1-206",
+  "grade": 5,
+  "term": 1,
+  "week": "1",
+  "strand": "Measurement and Geometry",
+  "competency": "Convert 12-hour time to 24-hour time, and vice-versa.",
+  "ready": true,
+  "skill": "h24",
+  "settings": {}
+ },
+ {
+  "id": "m5-1-207",
+  "grade": 5,
+  "term": 1,
+  "week": "1",
+  "strand": "Measurement and Geometry",
+  "competency": "Solve problems involving 12- and 24-hour time.",
+  "ready": true,
+  "skill": "h24",
+  "settings": {
+   "word": true
+  }
+ },
+ {
+  "id": "m5-1-208",
+  "grade": 5,
+  "term": 1,
+  "week": "2",
+  "strand": "Measurement and Geometry",
+  "competency": "Compare the time in different world time zones to the time in the Philippines using a world time zone map.",
+  "ready": true,
+  "skill": "tz",
+  "settings": {}
+ },
+ {
+  "id": "m5-1-209",
+  "grade": 5,
+  "term": 1,
+  "week": "2",
+  "strand": "Measurement and Geometry",
+  "competency": "Solve problems on comparing the time in different world time zones to the time in the Philippines.",
+  "ready": true,
+  "skill": "tz",
+  "settings": {
+   "word": true
+  }
+ },
+ {
+  "id": "m5-1-210",
+  "grade": 5,
+  "term": 1,
+  "week": "3–4",
+  "strand": "Number and Algebra",
+  "competency": "Perform three or more different operations by applying the GMDAS rules.",
+  "ready": true,
+  "skill": "mdas",
+  "settings": {
+   "mode": "gmdas"
+  }
+ },
+ {
+  "id": "m5-1-211",
+  "grade": 5,
+  "term": 1,
+  "week": "3–4",
+  "strand": "Number and Algebra",
+  "competency": "Multiply fractions using models.",
+  "ready": true,
+  "skill": "frac_mul",
+  "settings": {
+   "mode": "model"
+  }
+ },
+ {
+  "id": "m5-1-212",
+  "grade": 5,
+  "term": 1,
+  "week": "3–4",
+  "strand": "Number and Algebra",
+  "competency": "Multiply a fraction by a fraction.",
+  "ready": true,
+  "skill": "frac_mul",
+  "settings": {}
+ },
+ {
+  "id": "m5-1-213",
+  "grade": 5,
+  "term": 1,
+  "week": "5",
+  "strand": "Number and Algebra",
+  "competency": "Solve multi-step problems involving multiplication of fractions that may or may not also involve addition or subtraction of fractions.",
+  "ready": true,
+  "skill": "frac_mul",
+  "settings": {
+   "word": true
+  }
+ },
+ {
+  "id": "m5-1-214",
+  "grade": 5,
+  "term": 1,
+  "week": "6–7",
+  "strand": "Measurement and Geometry",
+  "competency": "Identify the height of a parallelogram, triangle, and trapezoid, in different orientations.",
+  "ready": false,
+  "skill": null,
+  "settings": {}
+ },
+ {
+  "id": "m5-1-215",
+  "grade": 5,
+  "term": 1,
+  "week": "6–7",
+  "strand": "Measurement and Geometry",
+  "competency": "Find the area of a parallelogram, triangle, and trapezoid, in sq. cm or sq. m, using formulas.",
+  "ready": true,
+  "skill": "area_pgt",
+  "settings": {}
+ },
+ {
+  "id": "m5-1-216",
+  "grade": 5,
+  "term": 1,
+  "week": "6–7",
+  "strand": "Measurement and Geometry",
+  "competency": "Estimate the areas of triangles and quadrilaterals (parallelogram, rhombus, trapezoid) using grids.",
+  "ready": false,
+  "skill": null,
+  "settings": {}
+ },
+ {
+  "id": "m5-1-217",
+  "grade": 5,
+  "term": 1,
+  "week": "8",
+  "strand": "Number and Algebra",
+  "competency": "Divide fractions using models.",
+  "ready": true,
+  "skill": "frac_div",
+  "settings": {
+   "mode": "model"
+  }
+ },
+ {
+  "id": "m5-1-218",
+  "grade": 5,
+  "term": 1,
+  "week": "8",
+  "strand": "Number and Algebra",
+  "competency": "Divide a fraction by a fraction.",
+  "ready": true,
+  "skill": "frac_div",
+  "settings": {}
+ },
+ {
+  "id": "m5-1-219",
+  "grade": 5,
+  "term": 1,
+  "week": "9",
+  "strand": "Number and Algebra",
+  "competency": "Solve multi-step problems involving division of fractions that may or may not involve the other operations with fractions.",
+  "ready": true,
+  "skill": "frac_div",
+  "settings": {
+   "word": true
+  }
+ },
+ {
+  "id": "m5-1-220",
+  "grade": 5,
+  "term": 1,
+  "week": "10",
+  "strand": "Number and Algebra",
+  "competency": "Determine: a. the place value to thousandths of a digit in a given decimal number b. the value of a digit c. the digit of a number, given its place value",
+  "ready": true,
+  "skill": "dec_pv",
+  "settings": {
+   "dp": 3
+  }
+ },
+ {
+  "id": "m5-1-221",
+  "grade": 5,
+  "term": 1,
+  "week": "10",
+  "strand": "Number and Algebra",
+  "competency": "Read and write decimal numbers with decimal parts to thousandths.",
+  "ready": true,
+  "skill": "dec_words",
+  "settings": {
+   "dp": 3
+  }
+ },
+ {
+  "id": "m5-2-222",
+  "grade": 5,
+  "term": 2,
+  "week": "1",
+  "strand": "Number and Algebra",
+  "competency": "Convert terminating decimals to fractions, and vice versa.",
+  "ready": true,
+  "skill": "dec_frac",
+  "settings": {
+   "any": true
+  }
+ },
+ {
+  "id": "m5-2-223",
+  "grade": 5,
+  "term": 2,
+  "week": "1",
+  "strand": "Number and Algebra",
+  "competency": "Compare and order decimal numbers with decimal parts to thousandths.",
+  "ready": true,
+  "skill": "dec_cmp",
+  "settings": {
+   "dp": 3
+  }
+ },
+ {
+  "id": "m5-2-224",
+  "grade": 5,
+  "term": 2,
+  "week": "2",
+  "strand": "Number and Algebra",
+  "competency": "Round decimal numbers to the nearest thousandths.",
+  "ready": true,
+  "skill": "dec_round",
+  "settings": {
+   "to": [
+    3
+   ],
+   "dp": 4
+  }
+ },
+ {
+  "id": "m5-2-225",
+  "grade": 5,
+  "term": 2,
+  "week": "2",
+  "strand": "Number and Algebra",
+  "competency": "Add and subtract decimal numbers with decimal parts of up to 3 decimal places.",
+  "ready": true,
+  "skill": "dec_as",
+  "settings": {
+   "dp": 3
+  }
+ },
+ {
+  "id": "m5-2-226",
+  "grade": 5,
+  "term": 2,
+  "week": "3",
+  "strand": "Number and Algebra",
+  "competency": "Solve multi-step problems involving addition and/or subtraction of decimals, including problems involving money.",
+  "ready": true,
+  "skill": "dec_as",
+  "settings": {
+   "dp": 2,
+   "word": true,
+   "money": true
+  }
+ },
+ {
+  "id": "m5-2-227",
+  "grade": 5,
+  "term": 2,
+  "week": "4–5",
+  "strand": "Number and Algebra",
+  "competency": "Use divisibility rules to find common factors of numbers: a. divisibility rules for 2, 5, and 10 b. divisibility rules for 3, 6, and 9 c. divisibility rules for 4, 8, 11, and 12",
+  "ready": true,
+  "skill": "divis",
+  "settings": {}
+ },
+ {
+  "id": "m5-2-228",
+  "grade": 5,
+  "term": 2,
+  "week": "4–5",
+  "strand": "Number and Algebra",
+  "competency": "Distinguish prime numbers from composite numbers using the Sieve of Eratosthenes.",
+  "ready": true,
+  "skill": "prime",
+  "settings": {
+   "max": 100
+  }
+ },
+ {
+  "id": "m5-2-229",
+  "grade": 5,
+  "term": 2,
+  "week": "6",
+  "strand": "Data and Probability",
+  "competency": "Collects bivariate data from interview, questionnaire, and other appropriate sources.",
+  "ready": false,
+  "skill": null,
+  "settings": {}
+ },
+ {
+  "id": "m5-2-230",
+  "grade": 5,
+  "term": 2,
+  "week": "6",
+  "strand": "Data and Probability",
+  "competency": "Identify the appropriate graph (bar graph or line graph) to represent a given set of data.",
+  "ready": true,
+  "skill": "graph_choice",
+  "settings": {}
+ },
+ {
+  "id": "m5-2-231",
+  "grade": 5,
+  "term": 2,
+  "week": "7–8",
+  "strand": "Data and Probability",
+  "competency": "Construct double bar graphs and double line graphs.",
+  "ready": false,
+  "skill": null,
+  "settings": {}
+ },
+ {
+  "id": "m5-2-232",
+  "grade": 5,
+  "term": 2,
+  "week": "7–8",
+  "strand": "Data and Probability",
+  "competency": "Interpret data presented in a double bar graph or a double line graph.",
+  "ready": true,
+  "skill": "table_read",
+  "settings": {
+   "series": 2
+  }
+ },
+ {
+  "id": "m5-2-233",
+  "grade": 5,
+  "term": 2,
+  "week": "7–8",
+  "strand": "Data and Probability",
+  "competency": "Draw conclusions or make inferences based on data presented in a double bar graph or a double line graph.",
+  "ready": true,
+  "skill": "table_read",
+  "settings": {
+   "series": 2
+  }
+ },
+ {
+  "id": "m5-2-234",
+  "grade": 5,
+  "term": 2,
+  "week": "9",
+  "strand": "Data and Probability",
+  "competency": "Solve problems using data presented in a double bar graph or a double line graph.",
+  "ready": true,
+  "skill": "table_read",
+  "settings": {
+   "series": 2
+  }
+ },
+ {
+  "id": "m5-2-235",
+  "grade": 5,
+  "term": 2,
+  "week": "10",
+  "strand": "Data and Probability",
+  "competency": "Describe probability as a measure of the chance of an event occurring.",
+  "ready": true,
+  "skill": "likely",
+  "settings": {}
+ },
+ {
+  "id": "m5-2-236",
+  "grade": 5,
+  "term": 2,
+  "week": "10",
+  "strand": "Data and Probability",
+  "competency": "Calculate the theoretical probability of a simple event by listing all possible outcomes.",
+  "ready": true,
+  "skill": "prob",
+  "settings": {}
+ },
+ {
+  "id": "m5-3-237",
+  "grade": 5,
+  "term": 3,
+  "week": "1–2",
+  "strand": "Number and Algebra",
+  "competency": "Estimate each of two decimal numbers to the nearest whole number to estimate their product.",
+  "ready": true,
+  "skill": "dec_est",
+  "settings": {
+   "op": "×"
+  }
+ },
+ {
+  "id": "m5-3-238",
+  "grade": 5,
+  "term": 3,
+  "week": "1–2",
+  "strand": "Number and Algebra",
+  "competency": "Multiply decimal numbers with decimal parts of up to 2 decimal places.",
+  "ready": true,
+  "skill": "dec_mul",
+  "settings": {}
+ },
+ {
+  "id": "m5-3-239",
+  "grade": 5,
+  "term": 3,
+  "week": "1–2",
+  "strand": "Number and Algebra",
+  "competency": "Solve multi-step problems involving multiplication of decimals that may or may not also involve addition or subtraction of decimals, including problems involving money.",
+  "ready": true,
+  "skill": "dec_mul",
+  "settings": {
+   "word": true
+  }
+ },
+ {
+  "id": "m5-3-240",
+  "grade": 5,
+  "term": 3,
+  "week": "3–4",
+  "strand": "Number and Algebra",
+  "competency": "Estimate the quotient when dividing two decimal numbers by estimating the dividend and divisor to the nearest whole number.",
+  "ready": true,
+  "skill": "dec_est",
+  "settings": {
+   "op": "÷"
+  }
+ },
+ {
+  "id": "m5-3-241",
+  "grade": 5,
+  "term": 3,
+  "week": "3–4",
+  "strand": "Number and Algebra",
+  "competency": "Divide: a. 1- to 2-digit whole numbers resulting in a terminating decimal quotient (e.g., 4 ÷ 5 = 0.8) b. a decimal of up to 2 decimal places by a 1- to 2-digit whole number, resulting in a terminating decimal quotient of up to 3 decimal places.",
+  "ready": true,
+  "skill": "dec_div",
+  "settings": {
+   "mode": "g5"
+  }
+ },
+ {
+  "id": "m5-3-242",
+  "grade": 5,
+  "term": 3,
+  "week": "3–4",
+  "strand": "Number and Algebra",
+  "competency": "Solve multi-step problems involving division of decimals that may or may not also involve the other operations with decimals, including problems involving money.",
+  "ready": true,
+  "skill": "dec_div",
+  "settings": {
+   "mode": "g5",
+   "word": true
+  }
+ },
+ {
+  "id": "m5-3-243",
+  "grade": 5,
+  "term": 3,
+  "week": "5",
+  "strand": "Number and Algebra",
+  "competency": "Perform three or more different operations with fractions and decimals by applying the GMDAS rules.",
+  "ready": true,
+  "skill": "mdas",
+  "settings": {
+   "mode": "decimal"
+  }
+ },
+ {
+  "id": "m5-3-244",
+  "grade": 5,
+  "term": 3,
+  "week": "6",
+  "strand": "Measurement and Geometry",
+  "competency": "Illustrate different solid figures using concrete and pictorial models.",
+  "ready": false,
+  "skill": null,
+  "settings": {}
+ },
+ {
+  "id": "m5-3-245",
+  "grade": 5,
+  "term": 3,
+  "week": "6",
+  "strand": "Measurement and Geometry",
+  "competency": "Relate plane figures to solid figures using concrete and pictorial models.",
+  "ready": false,
+  "skill": null,
+  "settings": {}
+ },
+ {
+  "id": "m5-3-246",
+  "grade": 5,
+  "term": 3,
+  "week": "7",
+  "strand": "Measurement and Geometry",
+  "competency": "Describe and differentiate prisms and pyramids using their vertices, faces, and/or edges.",
+  "ready": true,
+  "skill": "solid_facts",
+  "settings": {}
+ },
+ {
+  "id": "m5-3-247",
+  "grade": 5,
+  "term": 3,
+  "week": "7",
+  "strand": "Measurement and Geometry",
+  "competency": "Illustrate and describe solid figures and their nets.",
+  "ready": false,
+  "skill": null,
+  "settings": {}
+ },
+ {
+  "id": "m5-3-248",
+  "grade": 5,
+  "term": 3,
+  "week": "8",
+  "strand": "Measurement and Geometry",
+  "competency": "Make models of solid figures.",
+  "ready": false,
+  "skill": null,
+  "settings": {}
+ },
+ {
+  "id": "m5-3-249",
+  "grade": 5,
+  "term": 3,
+  "week": "8",
+  "strand": "Measurement and Geometry",
+  "competency": "Illustrate and find the surface area of solid figures.",
+  "ready": true,
+  "skill": "surface",
+  "settings": {}
+ },
+ {
+  "id": "m5-3-250",
+  "grade": 5,
+  "term": 3,
+  "week": "9",
+  "strand": "Measurement and Geometry",
+  "competency": "Solve problems involving the surface area of solid figures.",
+  "ready": true,
+  "skill": "surface",
+  "settings": {
+   "word": true
+  }
+ },
+ {
+  "id": "m5-3-251",
+  "grade": 5,
+  "term": 3,
+  "week": "9",
+  "strand": "Measurement and Geometry",
+  "competency": "Describe and distinguish cubes and rectangular prisms.",
+  "ready": false,
+  "skill": null,
+  "settings": {}
+ },
+ {
+  "id": "m5-3-252",
+  "grade": 5,
+  "term": 3,
+  "week": "10",
+  "strand": "Measurement and Geometry",
+  "competency": "Estimate the volume of a cube and of a rectangular prism using non-standard units of measurement.",
+  "ready": true,
+  "skill": "volume",
+  "settings": {
+   "cubes": true
+  }
+ },
+ {
+  "id": "m5-3-253",
+  "grade": 5,
+  "term": 3,
+  "week": "10",
+  "strand": "Measurement and Geometry",
+  "competency": "Draw the image of an object after applying rotation about a point given an angle of rotation, clockwise or counterclockwise.",
+  "ready": false,
+  "skill": null,
+  "settings": {}
+ },
+ {
+  "id": "m6-1-254",
+  "grade": 6,
+  "term": 1,
+  "week": "1",
+  "strand": "Measurement and Geometry",
+  "competency": "Explore whether or not a shape tessellates.",
+  "ready": false,
+  "skill": null,
+  "settings": {}
+ },
+ {
+  "id": "m6-1-255",
+  "grade": 6,
+  "term": 1,
+  "week": "1",
+  "strand": "Measurement and Geometry",
+  "competency": "Tessellate a surface using different shapes, including triangles, squares, and rectangles.",
+  "ready": false,
+  "skill": null,
+  "settings": {}
+ },
+ {
+  "id": "m6-1-256",
+  "grade": 6,
+  "term": 1,
+  "week": "2",
+  "strand": "Measurement and Geometry",
+  "competency": "Draw resulting images of shapes that undergo translation, reflection, rotation.",
+  "ready": false,
+  "skill": null,
+  "settings": {}
+ },
+ {
+  "id": "m6-1-257",
+  "grade": 6,
+  "term": 1,
+  "week": "3",
+  "strand": "Number and Algebra",
+  "competency": "Add and subtract decimals with decimal parts of up to 4 decimal places.",
+  "ready": true,
+  "skill": "dec_as",
+  "settings": {
+   "dp": 4
+  }
+ },
+ {
+  "id": "m6-1-258",
+  "grade": 6,
+  "term": 1,
+  "week": "3",
+  "strand": "Number and Algebra",
+  "competency": "Solve multi-step problems involving addition and/or subtraction of decimals, including problems involving money.",
+  "ready": true,
+  "skill": "dec_as",
+  "settings": {
+   "dp": 2,
+   "word": true,
+   "money": true
+  }
+ },
+ {
+  "id": "m6-1-259",
+  "grade": 6,
+  "term": 1,
+  "week": "4",
+  "strand": "Number and Algebra",
+  "competency": "Mentally multiply decimals of up to 2 decimal places by 0.1, 0.01, 0.001, 10, 100, and 1000.",
+  "ready": true,
+  "skill": "dec_mental",
+  "settings": {
+   "op": "×"
+  }
+ },
+ {
+  "id": "m6-1-260",
+  "grade": 6,
+  "term": 1,
+  "week": "4",
+  "strand": "Number and Algebra",
+  "competency": "Solve multi-step problems involving multiplication of decimals that may or may not also involve addition or subtraction of decimals, including problems involving money.",
+  "ready": true,
+  "skill": "dec_mul",
+  "settings": {
+   "word": true
+  }
+ },
+ {
+  "id": "m6-1-261",
+  "grade": 6,
+  "term": 1,
+  "week": "5",
+  "strand": "Number and Algebra",
+  "competency": "Divide: a. 1- to 2-digit whole numbers resulting in a repeating (non-terminating) decimal quotient (e.g., 1/3 = 0.3333…) b. a whole number by a decimal of 1 decimal place",
+  "ready": true,
+  "skill": "dec_div",
+  "settings": {
+   "mode": "g6"
+  }
+ },
+ {
+  "id": "m6-1-262",
+  "grade": 6,
+  "term": 1,
+  "week": "5",
+  "strand": "Number and Algebra",
+  "competency": "Mentally divide: a. decimals of up to 4 decimal places by 0.1, 0.01, and 0.001 b. decimals of up to 2 decimal places by 10, 100, and 1000",
+  "ready": true,
+  "skill": "dec_mental",
+  "settings": {
+   "op": "÷"
+  }
+ },
+ {
+  "id": "m6-1-263",
+  "grade": 6,
+  "term": 1,
+  "week": "6–7",
+  "strand": "Number and Algebra",
+  "competency": "Solve problems involving division of decimals that may or may not involve the other operations with decimals and/or whole numbers.",
+  "ready": true,
+  "skill": "dec_div",
+  "settings": {
+   "mode": "g5",
+   "word": true
+  }
+ },
+ {
+  "id": "m6-1-264",
+  "grade": 6,
+  "term": 1,
+  "week": "6–7",
+  "strand": "Number and Algebra",
+  "competency": "Obtain products that result from multiplying different combinations of fractions, whole numbers, and mixed numbers.",
+  "ready": true,
+  "skill": "frac_mul",
+  "settings": {
+   "mixed": true
+  }
+ },
+ {
+  "id": "m6-1-265",
+  "grade": 6,
+  "term": 1,
+  "week": "6–7",
+  "strand": "Number and Algebra",
+  "competency": "Solve multi-step problems involving multiplication that may or may not involve addition or subtraction of different combinations of fractions, whole numbers, and mixed numbers.",
+  "ready": true,
+  "skill": "frac_mul",
+  "settings": {
+   "mixed": true,
+   "word": true
+  }
+ },
+ {
+  "id": "m6-1-266",
+  "grade": 6,
+  "term": 1,
+  "week": "8",
+  "strand": "Number and Algebra",
+  "competency": "Divide different combinations of fractions, whole numbers, and mixed numbers.",
+  "ready": true,
+  "skill": "frac_div",
+  "settings": {
+   "mixed": true
+  }
+ },
+ {
+  "id": "m6-1-267",
+  "grade": 6,
+  "term": 1,
+  "week": "8",
+  "strand": "Number and Algebra",
+  "competency": "Solve multi-step problems involving division of different combinations of fractions, whole numbers, and mixed numbers that may or may not involve any of the other operations of fractions.",
+  "ready": true,
+  "skill": "frac_div",
+  "settings": {
+   "mixed": true,
+   "word": true
+  }
+ },
+ {
+  "id": "m6-1-268",
+  "grade": 6,
+  "term": 1,
+  "week": "9–10",
+  "strand": "Number and Algebra",
+  "competency": "Describe the relationship between quantities using ratio for: a. part-whole relationships b. part-part relationships.",
+  "ready": true,
+  "skill": "ratio",
+  "settings": {}
+ },
+ {
+  "id": "m6-1-269",
+  "grade": 6,
+  "term": 1,
+  "week": "9–10",
+  "strand": "Number and Algebra",
+  "competency": "Express one number as a fraction of another given their ratio, and vice versa.",
+  "ready": true,
+  "skill": "ratio_frac",
+  "settings": {}
+ },
+ {
+  "id": "m6-1-270",
+  "grade": 6,
+  "term": 1,
+  "week": "9–10",
+  "strand": "Number and Algebra",
+  "competency": "Identify and write equivalent ratios.",
+  "ready": true,
+  "skill": "ratio_equiv",
+  "settings": {}
+ },
+ {
+  "id": "m6-1-271",
+  "grade": 6,
+  "term": 1,
+  "week": "9–10",
+  "strand": "Number and Algebra",
+  "competency": "Solve problems involving ratio.",
+  "ready": true,
+  "skill": "ratio",
+  "settings": {
+   "word": true
+  }
+ },
+ {
+  "id": "m6-2-272",
+  "grade": 6,
+  "term": 2,
+  "week": "1",
+  "strand": "Number and Algebra",
+  "competency": "Illustrate ratio and proportion in given situations using tables and/or the double number line model.",
+  "ready": true,
+  "skill": "proportion",
+  "settings": {}
+ },
+ {
+  "id": "m6-2-273",
+  "grade": 6,
+  "term": 2,
+  "week": "1",
+  "strand": "Number and Algebra",
+  "competency": "Find how many times one value is larger than another given their ratio, and vice versa.",
+  "ready": true,
+  "skill": "ratio_times",
+  "settings": {}
+ },
+ {
+  "id": "m6-2-274",
+  "grade": 6,
+  "term": 2,
+  "week": "2",
+  "strand": "Number and Algebra",
+  "competency": "Solve problems involving ratio and proportion.",
+  "ready": true,
+  "skill": "proportion",
+  "settings": {}
+ },
+ {
+  "id": "m6-2-275",
+  "grade": 6,
+  "term": 2,
+  "week": "3",
+  "strand": "Number and Algebra",
+  "competency": "Illustrate and explain the relationships between percentages, fractions, and decimals.",
+  "ready": true,
+  "skill": "percent",
+  "settings": {}
+ },
+ {
+  "id": "m6-2-276",
+  "grade": 6,
+  "term": 2,
+  "week": "3",
+  "strand": "Number and Algebra",
+  "competency": "Identify and explain the uses of percentages.",
+  "ready": false,
+  "skill": null,
+  "settings": {}
+ },
+ {
+  "id": "m6-2-277",
+  "grade": 6,
+  "term": 2,
+  "week": "4",
+  "strand": "Number and Algebra",
+  "competency": "Write numbers in exponential form e.g., 2 x 2 x 2 = 2³ and vice versa, e.g. 2³ = 2 x 2 x 2",
+  "ready": true,
+  "skill": "exp_form",
+  "settings": {}
+ },
+ {
+  "id": "m6-2-278",
+  "grade": 6,
+  "term": 2,
+  "week": "4",
+  "strand": "Number and Algebra",
+  "competency": "Give the value of numbers expressed in exponential form.",
+  "ready": true,
+  "skill": "exp_value",
+  "settings": {}
+ },
+ {
+  "id": "m6-2-279",
+  "grade": 6,
+  "term": 2,
+  "week": "5",
+  "strand": "Number and Algebra",
+  "competency": "Perform calculations involving numbers in exponential form by applying the GEMDAS rules.",
+  "ready": true,
+  "skill": "mdas",
+  "settings": {
+   "mode": "gemdas"
+  }
+ },
+ {
+  "id": "m6-2-280",
+  "grade": 6,
+  "term": 2,
+  "week": "6",
+  "strand": "Measurement and Geometry",
+  "competency": "Determine appropriate units for measuring volume and capacity.",
+  "ready": true,
+  "skill": "unit_choice",
+  "settings": {
+   "kind": "vol"
+  }
+ },
+ {
+  "id": "m6-2-281",
+  "grade": 6,
+  "term": 2,
+  "week": "6",
+  "strand": "Measurement and Geometry",
+  "competency": "Convert cu. cm to L, and vice versa.",
+  "ready": true,
+  "skill": "unit_conv",
+  "settings": {
+   "pairs": [
+    "L-cucm"
+   ]
+  }
+ },
+ {
+  "id": "m6-2-282",
+  "grade": 6,
+  "term": 2,
+  "week": "7–8",
+  "strand": "Measurement and Geometry",
+  "competency": "Find the volume of a cube and of a rectangular prism using standard units of measurement.",
+  "ready": true,
+  "skill": "volume",
+  "settings": {}
+ },
+ {
+  "id": "m6-2-283",
+  "grade": 6,
+  "term": 2,
+  "week": "7–8",
+  "strand": "Measurement and Geometry",
+  "competency": "Solve problems involving volumes of cubes and rectangular prisms.",
+  "ready": true,
+  "skill": "volume",
+  "settings": {
+   "word": true
+  }
+ },
+ {
+  "id": "m6-2-284",
+  "grade": 6,
+  "term": 2,
+  "week": "7–8",
+  "strand": "Measurement and Geometry",
+  "competency": "Solve problems involving capacity.",
+  "ready": true,
+  "skill": "volume",
+  "settings": {
+   "cap": true
+  }
+ },
+ {
+  "id": "m6-2-285",
+  "grade": 6,
+  "term": 2,
+  "week": "9",
+  "strand": "Measurement and Geometry",
+  "competency": "Convert sq. cm to sq. m, and vice versa.",
+  "ready": true,
+  "skill": "unit_conv",
+  "settings": {
+   "pairs": [
+    "sqm-sqcm"
+   ]
+  }
+ },
+ {
+  "id": "m6-2-286",
+  "grade": 6,
+  "term": 2,
+  "week": "9",
+  "strand": "Measurement and Geometry",
+  "competency": "Find the area, in sq. m or sq. cm, of composite figures composed of triangles, squares, and rectangles.",
+  "ready": true,
+  "skill": "area_comp",
+  "settings": {}
+ },
+ {
+  "id": "m6-2-287",
+  "grade": 6,
+  "term": 2,
+  "week": "10",
+  "strand": "Measurement and Geometry",
+  "competency": "Solve problems involving the perimeter and area of triangles, parallelograms, trapezoids, and composite figures composed of triangles, squares, and rectangles.",
+  "ready": true,
+  "skill": "area_pgt",
+  "settings": {
+   "word": true
+  }
+ },
+ {
+  "id": "m6-3-288",
+  "grade": 6,
+  "term": 3,
+  "week": "1",
+  "strand": "Measurement and Geometry",
+  "competency": "Draw circles with different radii using a pair of compasses.",
+  "ready": false,
+  "skill": null,
+  "settings": {}
+ },
+ {
+  "id": "m6-3-289",
+  "grade": 6,
+  "term": 3,
+  "week": "1",
+  "strand": "Measurement and Geometry",
+  "competency": "Identify and describes the parts of a circle.",
+  "ready": true,
+  "skill": "circle_parts",
+  "settings": {}
+ },
+ {
+  "id": "m6-3-290",
+  "grade": 6,
+  "term": 3,
+  "week": "2",
+  "strand": "Measurement and Geometry",
+  "competency": "Measure the circumference of circles using appropriate tools.",
+  "ready": false,
+  "skill": null,
+  "settings": {}
+ },
+ {
+  "id": "m6-3-291",
+  "grade": 6,
+  "term": 3,
+  "week": "2",
+  "strand": "Measurement and Geometry",
+  "competency": "Approximate the value of pi (π) (the ratio of the circumference to the diameter).",
+  "ready": true,
+  "skill": "pi_ratio",
+  "settings": {}
+ },
+ {
+  "id": "m6-3-292",
+  "grade": 6,
+  "term": 3,
+  "week": "3",
+  "strand": "Measurement and Geometry",
+  "competency": "Find the circumference of a circle using C = πd or C = 2πr.",
+  "ready": true,
+  "skill": "circle",
+  "settings": {
+   "find": "C"
+  }
+ },
+ {
+  "id": "m6-3-293",
+  "grade": 6,
+  "term": 3,
+  "week": "3",
+  "strand": "Measurement and Geometry",
+  "competency": "Explore inductively the area of a circle leading to the formula A = πr².",
+  "ready": false,
+  "skill": null,
+  "settings": {}
+ },
+ {
+  "id": "m6-3-294",
+  "grade": 6,
+  "term": 3,
+  "week": "4–5",
+  "strand": "Measurement and Geometry",
+  "competency": "Find the area of a circle using the formula.",
+  "ready": true,
+  "skill": "circle",
+  "settings": {
+   "find": "A"
+  }
+ },
+ {
+  "id": "m6-3-295",
+  "grade": 6,
+  "term": 3,
+  "week": "4–5",
+  "strand": "Measurement and Geometry",
+  "competency": "Find the area of composite figures composed of any two or more of the following: triangle, square, rectangle, circle, and semicircle.",
+  "ready": true,
+  "skill": "area_comp",
+  "settings": {
+   "circle": true
+  }
+ },
+ {
+  "id": "m6-3-296",
+  "grade": 6,
+  "term": 3,
+  "week": "4–5",
+  "strand": "Measurement and Geometry",
+  "competency": "Solve problems involving circumference and area of circles, and composite figures.",
+  "ready": true,
+  "skill": "circle",
+  "settings": {
+   "word": true
+  }
+ },
+ {
+  "id": "m6-3-297",
+  "grade": 6,
+  "term": 3,
+  "week": "6",
+  "strand": "Data and Probability",
+  "competency": "Find the angle measures and/or percentages based on the given data for a pie graph.",
+  "ready": true,
+  "skill": "pie",
+  "settings": {}
+ },
+ {
+  "id": "m6-3-298",
+  "grade": 6,
+  "term": 3,
+  "week": "6",
+  "strand": "Data and Probability",
+  "competency": "Construct a pie graph using appropriate tools.",
+  "ready": false,
+  "skill": null,
+  "settings": {}
+ },
+ {
+  "id": "m6-3-299",
+  "grade": 6,
+  "term": 3,
+  "week": "7",
+  "strand": "Data and Probability",
+  "competency": "Interpret data presented in a pie graph.",
+  "ready": true,
+  "skill": "pie",
+  "settings": {
+   "interp": true
+  }
+ },
+ {
+  "id": "m6-3-300",
+  "grade": 6,
+  "term": 3,
+  "week": "7",
+  "strand": "Data and Probability",
+  "competency": "Interpret data from digital media that are presented in tabular or graphical form.",
+  "ready": true,
+  "skill": "table_read",
+  "settings": {
+   "series": 1
+  }
+ },
+ {
+  "id": "m6-3-301",
+  "grade": 6,
+  "term": 3,
+  "week": "8",
+  "strand": "Data and Probability",
+  "competency": "Draw conclusions or make inferences based on data presented in a pie graph.",
+  "ready": true,
+  "skill": "pie",
+  "settings": {
+   "interp": true
+  }
+ },
+ {
+  "id": "m6-3-302",
+  "grade": 6,
+  "term": 3,
+  "week": "8",
+  "strand": "Data and Probability",
+  "competency": "Solve problems using data presented in a pie graph.",
+  "ready": true,
+  "skill": "pie",
+  "settings": {
+   "interp": true
+  }
+ },
+ {
+  "id": "m6-3-303",
+  "grade": 6,
+  "term": 3,
+  "week": "9–10",
+  "strand": "Number and Algebra",
+  "competency": "Determine the common factors and the greatest common factor (GCF) of two numbers using the following methods: listing, prime factorization, and continuous division.",
+  "ready": true,
+  "skill": "gcf",
+  "settings": {}
+ },
+ {
+  "id": "m6-3-304",
+  "grade": 6,
+  "term": 3,
+  "week": "9–10",
+  "strand": "Number and Algebra",
+  "competency": "Find the common multiples and least common multiple (LCM) of two numbers using the following methods: listing, prime factorization, and continuous division.",
+  "ready": true,
+  "skill": "lcm",
+  "settings": {}
+ },
+ {
+  "id": "m6-3-305",
+  "grade": 6,
+  "term": 3,
+  "week": "9–10",
+  "strand": "Number and Algebra",
+  "competency": "Solve problems involving GCF and LCM.",
+  "ready": true,
+  "skill": "gcflcm_word",
+  "settings": {}
+ }
+]
