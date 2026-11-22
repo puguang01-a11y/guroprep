@@ -217,7 +217,7 @@ const SCIB={
 };
 function sciItem(x){if(typeof x==='string'){const k=x.indexOf('|');return{q:x.slice(0,k),a:x.slice(k+1)}}return{q:x[0],ok:x[1],no:x.slice(2)}}
 SK.s_bank={instr:'Answer each question.',fam:'science',f:[],
-  pool:(L,c)=>{const B=SCIB[c.key];if(!B)return[];const lv={F:['F'],C:['C','F'],E:['E','C']}[L];return lv.flatMap(k=>B[k]||[]).map(sciItem)},
+  pool:(L,c)=>{const B=SCIB[c.key];if(!B)return[];const lv={F:['F'],C:['C','F'],E:['E','C']}[L];const P=lv.flatMap(k=>B[k]||[]).map(sciItem);if(B.gen&&typeof JSG!=='undefined')B.gen.forEach(g=>{for(let i=0;i<(L==='F'?4:5);i++)P.push(r=>JSG[g](r,L))});return P},
   g:(r,L,c)=>{const P=SK.s_bank.pool(L,c);return toItem(r,P[Math.floor(r()*P.length)])},t:p=>p.q,a:p=>W(p.a)};
 FAMINFO.science={key:'What did you observe, and what does it show?',materials:'Simple materials for the activity (see the activity card), science notebook, worksheet',
   motivation:['Ask a question about something learners see every day that relates to the lesson. Let them share their ideas before the activity.','Show an object or a short demonstration. Ask: "What do you think will happen? Why?"'],
