@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teacher originals · GuroPrep</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f4f7f5;color:#20362e;font:16px/1.55 system-ui,sans-serif}header{background:#173e33;padding:16px max(5%,calc((100% - 920px)/2));color:white}a{color:inherit}main{max-width:950px;margin:auto;padding:28px 16px}h1{font-size:clamp(2rem,5vw,3rem);margin:12px 0}h2{font-size:1.3rem;margin:0 0 12px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:16px}section,form{background:white;border:1px solid #cddbd4;border-radius:12px;padding:20px;margin:16px 0}label{display:block;margin:12px 0}input,select,textarea{display:block;width:100%;padding:9px;font:inherit;border:1px solid #83988f;border-radius:5px}output{display:block;font-weight:700}button{background:#165640;color:white;border:0;border-radius:6px;padding:12px 18px;font:inherit;cursor:pointer}small{display:block}p{margin:8px 0}
+</style><header><a href="./index.html">GuroPrep</a> · <a href="./classroom-tools.html#weeklyPrep">Weekly prep</a></header><main>
+<h1>Teacher originals</h1><p>Prepare an original worksheet, lesson or activity for the GuroPrep pilot. You can download a submission pack to share with your pilot coordinator. Public listings, purchases and payouts are not open yet.</p>
+<div class="grid"><section><h2>Share a free resource</h2><p>At 100 valid downloads, a work earns ₱10. Each additional valid download adds ₱0.10, up to ₱100 per work at 1,000 downloads. Only the first download by another teacher account counts.</p>
+<label>Estimated valid downloads<input id="downloads" type="number" value="140" min="0" step="1"></label><output id="reward" aria-live="polite"></output></section>
+<section><h2>Set a selling price</h2><p>You set the price. For each completed, unrefunded sale you receive 70% and GuroPrep receives 30%. The free-download cap applies only to free works.</p>
+<label>Price per copy in whole pesos<input id="price" type="number" value="10" min="1" step="1"></label><output id="split" aria-live="polite"></output></section></div>
+<section><h2>What happens to your rights?</h2><p>Saving a lesson or preparing this pack keeps it private in your browser. Sharing a pack for review does not transfer rights. If GuroPrep accepts your work, you will receive a separate written agreement naming the rights holder and the work before any transfer takes effect.</p>
+<p>Under the proposed agreement, GuroPrep acquires the transferable economic rights. You keep author credit and permission to use and adapt the work for your own classes. If a free work later becomes paid, its author receives the same 70% share of sales. Rejected works stay with their rights holders.</p>
+<p>Submit only work you have authority to transfer. Check school or government ownership and permissions for illustrations, passages and co-authored work. Remove learner names and photos.</p></section>
+<form id="pack"><h2>Prepare a submission pack</h2>
+<label>Author or byline<input name="author" required maxlength="120"></label><label>Resource title<input name="title" required maxlength="180"></label>
+<div class="grid"><label>Grade and subject<input name="gradeSubject" required placeholder="Grade 4 Mathematics"></label><label>Proposed listing<select name="listing"><option value="free">Free</option><option value="paid">Paid</option></select></label></div>
+<label>Learning competency and classroom instructions<textarea name="instructions" required rows="3"></textarea></label>
+<label>Source and ownership notes<textarea name="rights" required placeholder="Describe what you created and any permissions needed."></textarea></label>
+<label>Original resource (PDF, DOCX or PPTX, up to 20 MB)<input type="file" name="resource" required accept=".pdf,.docx,.pptx"></label>
+<label>Optional sample page (PDF or image, up to 5 MB)<input type="file" name="sample" accept=".pdf,.png,.jpg,.jpeg"></label>
+<p id="modeNote"></p><button>Download submission pack</button><p id="status" role="status"></p></form></main>
+<script src="./vendor/jszip.min.js"></script><script src="./teacher-originals.js"></script></html>
