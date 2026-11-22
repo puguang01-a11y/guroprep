@@ -1,0 +1,22 @@
+#weeklyPrep [hidden], #weeklyCapture[hidden] { display:none !important; }
+#weeklyPrep summary { cursor:pointer; }
+#weeklyForm { display:flex; flex-wrap:wrap; align-items:end; gap:.8rem; margin-top:.8rem; }
+#weeklyForm label, #weeklyOutput label { display:flex; flex-direction:column; gap:.2rem; min-width:0; }
+#weeklyForm input, #weeklyForm select, #weeklyOutput textarea { width:100%; }
+#weeklyForm > label { flex:1 1 10rem; }
+#weeklyDays { flex:1 0 100%; display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,15rem),1fr)); gap:.65rem; }
+#weeklyDays fieldset { min-width:0; border:1px solid #cbd5df; border-radius:.6rem; display:grid; gap:.5rem; }
+#weeklyDays legend { font-weight:700; }
+#weeklyOutput details { border-top:1px solid #cbd5df; padding:.7rem 0; }
+#weeklyOutput label { margin:.6rem 0; }
+.weekly-actions { display:flex; flex-wrap:wrap; gap:.5rem; margin:.75rem 0; }
+#weeklyPrint { display:none; }
+@media print {
+  body.weekly-printing > :not(#weeklyPrint) { display:none !important; }
+  body.weekly-printing { color:black; background:white; }
+  #weeklyPrint { display:block; }
+  #weeklyPrint section + section { break-before:page; }
+  #weeklyPrint section div { white-space:pre-wrap; overflow-wrap:anywhere; font:11pt/1.45 system-ui,sans-serif; }
+}
+#weeklyForm .weekly-meets { flex-direction:row; align-items:center; gap:.4rem; }
+#weeklyForm .weekly-meets input { width:auto; }
