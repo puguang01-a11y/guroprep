@@ -1,0 +1,5 @@
+.gp-file-picker{display:flex;position:relative;align-items:center;gap:.6rem;min-height:44px;margin:.3rem 0;flex-wrap:wrap}
+.gp-file-action{display:inline-block;border:1px solid currentColor;border-radius:.4rem;padding:.35rem .7rem;font:600 .95rem/1.4 system-ui,sans-serif}
+.gp-file-name{overflow-wrap:anywhere;font-weight:400}
+.gp-file-picker input[type=file]{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;margin:0!important;opacity:0!important;cursor:pointer}
+.gp-file-picker:focus-within{outline:2px solid currentColor;outline-offset:3px}
