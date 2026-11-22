@@ -399,7 +399,7 @@ SK.frac_between={instr:'Answer each item.',fam:'fractions',f:[['n','Numerator'],
   t:p=>`On a number line, ${p.n}/${p.d} is between which two whole numbers?`,
   a:p=>{if(!isInt(p.n)||!isInt(p.d)||p.d<=0)return BAD('Use whole numbers');if(p.n%p.d===0)return W(`It is exactly ${p.n/p.d}`);const w=Math.floor(p.n/p.d);return W(`${w} and ${w+1}`)}};
 SK.frac_equiv={instr:'Find the missing number.',fam:'fractions',noLine:p=>p.mode!=='two',f:[['n','Numerator'],['d','Denominator'],['k','Multiply by']],
-  g:(r,L,c)=>{const d=ri(r,2,9),n=ri(r,1,d-1),k=ri(r,2,6);return{n,d,k,mode:L==='E'?'two':pick(r,['num','den'])}},
+  g:(r,L,c)=>{const d=ri(r,2,9);let n;do{n=ri(r,1,d-1)}while(gcd(n,d)!==1);const k=ri(r,2,6);return{n,d,k,mode:L==='E'?'two':pick(r,['num','den'])}},
   t:p=>p.mode==='num'?`${p.n}/${p.d} = ____/${p.d*p.k}`:p.mode==='den'?`${p.n}/${p.d} = ${p.n*p.k}/____`:`Write two fractions equivalent to ${p.n}/${p.d} (multiply by 2 and by 3).`,
   a:p=>{if(![p.n,p.d,p.k].every(isInt)||p.d<=0||p.k<=0)return BAD('Use whole numbers');return W(p.mode==='num'?String(p.n*p.k):p.mode==='den'?String(p.d*p.k):`${p.n*2}/${p.d*2} and ${p.n*3}/${p.d*3}`)}};
 SK.frac_simplest={instr:'Write each fraction in simplest form.',fam:'fractions',noLine:false,f:[['n','Numerator'],['d','Denominator']],
@@ -581,7 +581,9 @@ SK.percent={instr:'Answer each item.',fam:'ratio',f:p=>p.mode==='f2p'?[['n','Num
 const OPTS={place:()=>PLACES.slice(0,6).map((p,j)=>[j,p]),dplace:()=>DPLACES.slice(0,3).map((p,j)=>[j,p]),op:()=>[['+','+ add'],['-','− subtract']],dir:()=>[[1,'up / increasing'],[-1,'down / decreasing']],ord:()=>[['asc','smallest to largest'],['desc','largest to smallest']],to:()=>[[10,'ten'],[100,'hundred'],[1000,'thousand'],[10000,'ten thousand'],[100000,'hundred thousand']],dto:()=>[[0,'whole number'],[1,'tenth'],[2,'hundredth'],[3,'thousandth']],denom:()=>DENOM.map(d=>[d,peso(d)]),rule:()=>[['add','add'],['sub','subtract'],['mul','multiply']]};
 
 /* ---- items ---- */
-function makeItems(comp,level,n,seed){const s=SK[comp.sk];const r=rng(seed);const out=[];for(let i=0;i<n;i++)out.push({p:s.g(r,level,comp.cfg||{})});return out}
+function makeItems(comp,level,n,seed){const s=SK[comp.sk];const r=rng(seed);const out=[];const c=comp.cfg||{};
+  if(s.pool){let P=s.pool(level,c)||[];if(!P.length)return[];if(!s.ordered)P=shuf(r,P);P=P.slice(0,n);for(const e of P)out.push({p:toItem(r,e)});return out}
+  const seen=new Set();for(let i=0;i<n;i++){let p,t;for(let k=0;k<25;k++){p=s.g(r,level,c);try{t=s.t(p,c)}catch(e){t=Math.random()}if(!seen.has(t))break}if(seen.has(t)&&out.length>=3)break;seen.add(t);out.push({p})}return out}
 function itemText(comp,it){return SK[comp.sk].t(it.p,comp.cfg||{})}
 function itemAns(comp,it){try{return SK[comp.sk].a(it.p,comp.cfg||{})}catch(e){return BAD('Check the numbers')}}
 function itemFields(comp,it){const f=SK[comp.sk].f;return typeof f==='function'?f(it.p):f}
