@@ -1,8 +1,51 @@
 const fs=require('fs');
-const load=g=>{const src=fs.readFileSync('dist/grade'+g+'-curriculum.js','utf8');return eval('('+src.slice(src.indexOf('=')+1).replace(/;\s*(window[\s\S]*)?$/,'')+')')};
+const load=g=>{const src=fs.readFileSync('/home/claude/guroprep/dist/grade'+g+'-curriculum.js','utf8');return eval('('+src.slice(src.indexOf('=')+1).replace(/;\s*(window[\s\S]*)?$/,'')+')')};
 const clean=s=>s.replace(/— \d{1,2}(?=[A-Za-z])/g,'— ').replace(/— [abc](prefixes|suffixes|number|kinds|subject|simple|progressive|perfect)/g,'— $1').replace(/^(\d)(?=[A-Z])/,'').replace(/\s+/g,' ').trim();
 const T=(kind)=>['e_task',{kind}];
-function map(g,lab,sec){const l=lab.toLowerCase();const info=/informational/.test(l);const story=!info;
+function map(g,lab,sec){const l0=lab.toLowerCase();const EE=k=>['ee_bank',{key:k}];
+ // Terms 1–2 additions (checked first)
+ if(/identify alphabet letter names/.test(l0))return EE('alpha');
+ if(/— cvc words/.test(l0))return['e_pattern',{pat:'CVC'}];
+ if(/vocabulary referring to:? — oneself and family/.test(l0))return EE('v_self');
+ if(/vocabulary referring to:? — school/.test(l0))return EE('v_school');
+ if(/vocabulary referring to:? — community/.test(l0))return EE('v_comm');
+ if(/vocabulary referring to:? — regional themes/.test(l0))return EE('v_region');
+ if(/context clues — synonyms/.test(l0))return EE('ctx_syn');
+ if(/context clues — antonyms/.test(l0))return EE('ctx_ant');
+ if(/context clues — definition/.test(l0))return EE('ctx_def');
+ if(/prefixes — un-, in-/.test(l0))return['e_prefix',{set:'neg'}];
+ if(/prefixes — non-, anti-/.test(l0))return['e_prefix',{set:'g4b'}];
+ if(/suffixes — -able, -en/.test(l0))return['e_suffix2',{set:'s4a'}];
+ if(/suffixes — -dom/.test(l0))return['e_suffix2',{set:'s4b'}];
+ if(/suffixes — noun-forming/.test(l0))return['e_suffix2',{set:'noun'}];
+ if(/suffixes — verb-forming/.test(l0))return['e_suffix2',{set:'verb'}];
+ if(/suffixes — adverb-forming/.test(l0))return['e_suffix2',{set:'adv'}];
+ if(/structural analysis — compound words/.test(l0))return EE('compound');
+ if(/number of nouns — regular/.test(l0))return EE('sva_reg');
+ if(/kinds of nouns — mass, count/.test(l0))return EE('sva_mc');
+ if(/subject pronouns — personal/.test(l0))return EE('sva_pers');
+ if(/subject pronouns — indefinite/.test(l0))return EE('sva_indef');
+ if(/subject pronouns — relative/.test(l0))return EE('sva_rel');
+ if(/kinds of nouns — possessive, compound/.test(l0))return EE('sva_posscomp');
+ if(/adjectives — descriptive/.test(l0))return EE('adj_desc');
+ if(/adjectives — quantitative/.test(l0))return EE('adj_quant');
+ if(/degrees of regular adjectives/.test(l0))return EE('adj_degreg');
+ if(/degrees of irregular adjectives/.test(l0))return EE('adj_degirr');
+ if(/order of adverbs/.test(l0))return EE('adv_order');
+ if(/using adverbs — manner/.test(l0))return EE('adv_manner');
+ if(/using adverbs — time/.test(l0))return EE('adv_time');
+ if(/using adverbs — place/.test(l0))return EE('adv_place');
+ if(/using adverbs — frequency/.test(l0))return EE('adv_freq');
+ if(/using adverbs — intensity/.test(l0))return EE('adv_intens');
+ if(/prepositional phrases as adjective/.test(l0))return EE('prep_adj');
+ if(/express ideas/.test(l0)&&/using text types — enumeration-description/.test(l0))return T('tt_description');
+ if(/express ideas/.test(l0)&&/using text types — time order: chronology/.test(l0))return T('tt_recount');
+ if(/express ideas/.test(l0)&&/using text types — time order: procedural/.test(l0))return T('tt_procedure');
+ if(/fill out forms/.test(l0)){const f=/personal/.test(l0)?'personal':/school/.test(l0)?'school':/bank/.test(l0)?'bank':'gov';return T('form_'+f)}
+ {const pt={'name calling':'p_name','glittering':'p_glitter','transfer':'p_transfer','testimon':'p_test','plain folks':'p_plain','bandwagon':'p_band'};if(/propaganda/.test(l0)&&!/viewers/.test(l0))for(const k in pt)if(l0.includes('— '+k))return EE(pt[k])}
+ if(/general references/.test(l0)){if(/dictionary/.test(l0))return EE('r_dict');if(/glossary/.test(l0))return EE('r_gloss');if(/almanac/.test(l0))return EE('r_alman');if(/directories/.test(l0))return EE('r_dir')}
+ return map3(g,lab,sec)}
+function map3(g,lab,sec){const l=lab.toLowerCase();const info=/informational/.test(l);const story=!info;
  const m=(re)=>re.test(l);
  // phonics / vocab
  if(m(/recognize rhymes/))return['e_rhyme',{}];
@@ -121,10 +164,10 @@ function map(g,lab,sec){const l=lab.toLowerCase();const info=/informational/.tes
  if(sec.toLowerCase().includes('viewing'))return T('viewing');
  return[null,{}]}
 const out=[];const un=[];
-for(let g=2;g<=6;g++){const E=load(g).English;E.terms[2].forEach((c,i)=>{const lab=clean(c.label);const [sk,cfg]=map(g,lab,c.section);if(!sk)un.push(g+': '+lab);
- out.push({id:`e${g}-3-${i}`,subj:'English',g,t:3,w:c.section.replace(/\(.*?\)/g,'').trim(),title:lab,sk,cfg})})}
+for(let g=2;g<=6;g++){const E=load(g).English;for(const t of [0,1,2])E.terms[t].forEach((c,i)=>{const lab=clean(c.label);const [sk,cfg]=t===2?map3(g,lab,c.section):map(g,lab,c.section);if(!sk)un.push(g+'-'+(t+1)+': '+lab);
+ out.push({id:`e${g}-${t+1}-${i}`,subj:'English',g,t:t+1,w:c.section.replace(/\(.*?\)/g,'').trim(),title:lab,sk,cfg})})}
 console.log('total',out.length,'unmapped',un.length);un.forEach(u=>console.log(' U',u));
 const cnt={};out.forEach(o=>{const k=o.sk==='e_task'?'task':o.sk?'ready':'template';cnt[k]=(cnt[k]||0)+1});console.log(cnt);
 const src=JSON.parse(JSON.stringify({BOW_ENG:{}}));
 const bow={};for(let g=2;g<=6;g++)bow[g]=load(g).English.source;
-fs.writeFileSync('eng_comps.js','/* Grades 2–6 English, Term 3 competencies (from the GuroPrep curriculum library, DepEd Three-Term Budget of Work) mapped to skills */\nconst BOW_ENG='+JSON.stringify(bow)+';\nconst ENG_COMPS='+JSON.stringify(out)+';\n');
+fs.writeFileSync('eng_comps.js','/* Grades 2–6 English, all terms, competencies (from the GuroPrep curriculum library, DepEd Three-Term Budget of Work) mapped to skills */\nconst BOW_ENG='+JSON.stringify(bow)+';\nconst ENG_COMPS='+JSON.stringify(out)+';\n');
