@@ -37,7 +37,8 @@ fieldset{border:1px solid #d7dfd3;border-radius:8px;margin:0 0 14px;padding:10px
 <div id="ownFields">
 <label>Grade<select id="grade"></select></label>
 <label>School year<input id="schoolYear" value="2026–2027" required></label>
-<label>Curriculum track<select id="track"><option value="k10">Revised K–10</option><option value="new">Strengthened SHS</option><option value="legacy">Existing SHS</option></select></label>
+<div id="fixedTrack"><strong>Curriculum track</strong><div id="trackName">Revised K–10</div><small>Selected automatically for this grade.</small></div>
+<label id="trackChoice" hidden>Curriculum track<select id="track"><option value="k10">Revised K–10</option><option value="new">Strengthened SHS</option><option value="legacy">Existing SHS</option></select></label>
 <div id="officialSources"></div>
 <small id="gradeTwelvePolicy" hidden></small>
 <label>Region and division<select id="region"><option value="national">DepEd national</option><option value="region7">Region VII · Central Visayas</option><option value="cebu">Region VII · Cebu City</option><option value="toledo">Region VII · Toledo City</option></select></label>
@@ -304,8 +305,16 @@ function updateSources(savedSubjectGroup) {
   const grade = grades.indexOf(value('grade'));
   const track = get('track');
   const choices = grade < 11 ? ['k10'] : grade === 11 ? ['new'] : ['new','legacy'];
-  for (const option of track.options) option.disabled = !choices.includes(option.value);
+  for (const option of track.options) {
+    option.hidden = !choices.includes(option.value);
+    option.disabled = option.hidden;
+  }
   if (!choices.includes(track.value)) track.value = choices[0];
+  const automatic = choices.length === 1;
+  get('fixedTrack').hidden = !automatic;
+  get('trackChoice').hidden = automatic;
+  get('trackName').textContent = track.selectedOptions[0].textContent;
+
   const senior=isSeniorCatalog();
   get('gradeOneTools').hidden = !hasPrimaryLibrary();
   get('subjectGroupField').hidden = !senior;
