@@ -3,7 +3,7 @@ const PHRASES={en:[],
   fil:[['Show your answer.','Ipakita ang inyong sagot.'],['Work with your group.','Magtulungan kayo sa grupo.'],['Explain how you got it.','Ipaliwanag kung paano mo nakuha.']],
   ceb:[['Show your answer.','Ipakita ang inyong tubag.'],['Work with your group.','Pagtinabangay mo sa inyong grupo.'],['Explain how you got it.','Ipasabot kung giunsa nimo pagkuha.']]};
 function curFor(g){g=+g;if(g<=9)return'MATATAG (Revised K to 10)';if(g===10)return'K to 12 (2016)';if(g===11)return'Strengthened SHS';return'Existing SHS'}
-function curNote(g){g=+g;if(g<=9)return'MATATAG (Revised K to 10). In use for Grades 1–9 this school year.';if(g===10)return'K to 12 (2016). MATATAG reaches Grade 10 in SY 2027–2028.';if(g===11)return'Strengthened SHS. In use nationwide for Grade 11 this school year.';return'Existing SHS. Only pilot schools use the Strengthened SHS for Grade 12. Change this under "More settings" if yours does.'}
+function curNote(g){g=+g;if(g<=9)return'MATATAG (Revised K to 10). In use for Grades 1–9 this school year.';if(g===10)return'K to 12 (2016) for most subjects; MATATAG reaches Grade 10 in SY 2027–2028. Mathematics follows DepEd\'s Grade 10 Three-Term Budget of Work (April 2026).';if(g===11)return'Strengthened SHS. In use nationwide for Grade 11 this school year.';return'Existing SHS. Only pilot schools use the Strengthened SHS for Grade 12. Change this under "More settings" if yours does.'}
 function subjectsFor(g){g=+g;
   if(g===1)return['Mathematics','Language','Reading and Literacy','Makabansa','GMRC'];
   if(g<=3)return['Mathematics','Filipino','English','Makabansa','GMRC'].concat(g===3?['Science']:[]);
