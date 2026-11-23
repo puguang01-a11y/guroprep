@@ -582,7 +582,7 @@ const OPTS={place:()=>PLACES.slice(0,6).map((p,j)=>[j,p]),dplace:()=>DPLACES.sli
 
 /* ---- items ---- */
 function makeItems(comp,level,n,seed){const s=SK[comp.sk];const r=rng(seed);const out=[];const c=comp.cfg||{};
-  if(s.pool){let P=s.pool(level,c)||[];if(!P.length)return[];if(!s.ordered)P=shuf(r,P);P=P.slice(0,n);for(const e of P)out.push({p:toItem(r,e)});return out}
+  if(s.pool){let P=s.pool(level,c)||[];if(!P.length)return[];if(!s.ordered)P=shuf(r,P);const seenP=new Set();for(const e of P){if(out.length>=n)break;let it;for(let k=0;k<12;k++){it=toItem(r,e);if(!seenP.has(it.q)||typeof e!=='function')break}if(seenP.has(it.q))continue;seenP.add(it.q);out.push({p:it})}return out}
   const seen=new Set();for(let i=0;i<n;i++){let p,t;for(let k=0;k<25;k++){p=s.g(r,level,c);try{t=s.t(p,c)}catch(e){t=Math.random()}if(!seen.has(t))break}if(seen.has(t)&&out.length>=3)break;seen.add(t);out.push({p})}return out}
 function itemText(comp,it){return SK[comp.sk].t(it.p,comp.cfg||{})}
 function itemAns(comp,it){try{return SK[comp.sk].a(it.p,comp.cfg||{})}catch(e){return BAD('Check the numbers')}}

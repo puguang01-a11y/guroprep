@@ -35,7 +35,8 @@
       return text.split('\n').map(function(line) {
         const trim=line.trim();
         const isHeading=/^(I\.|L\.|A\.|W\.)\s+[A-Z][A-Z ]+$/.test(trim) ||
-          /^(Objectives|Content|Learning resources|Assessment|Answer key|Worksheets?|Student worksheet|Teacher plan)$/i.test(trim);
+          /^(Objectives|Content|Learning resources|Assessment|Answer key|Worksheets?|Student worksheet|Teacher plan)$/i.test(trim) ||
+          /^■\s/.test(trim) || /^Procedures\b/.test(trim) || (/^[A-Z0-9][A-Z0-9 ·:'’\-–()]+$/.test(trim) && /[A-Z]{3}/.test(trim) && trim.length>3);
         const style=isHeading?'<w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="160" w:after="100"/></w:pPr>':'';
         return '<w:p>'+style+'<w:r><w:t xml:space="preserve">'+safe(line)+'</w:t></w:r></w:p>';
       }).join('');
