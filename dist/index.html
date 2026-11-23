@@ -118,7 +118,7 @@ fieldset{border:1px solid #d7dfd3;border-radius:8px;margin:0 0 14px;padding:10px
 <button type="button" id="key" role="tab" aria-selected="false" aria-controls="editor">Answer key</button>
 </nav>
 <textarea id="editor" aria-label="Edit current material"></textarea>
-<div class="actions"><button id="export" type="button">Download Word-compatible RTF</button><button id="printButton" type="button">Download PDF</button><button id="browserPrint" type="button">Print</button></div>
+<div class="actions"><button id="officeDocx" type="button">Download editable DOCX</button><button id="officePptx" type="button">Download editable PPTX</button><button id="export" type="button">Word-compatible RTF</button><button id="printButton" type="button">Download PDF</button><button id="browserPrint" type="button">Print</button></div><small>DOCX and PPTX export the selected Lesson plan, Worksheet or Answer key tab. Edit the text above before exporting.</small>
 <small id="status" role="status">Edits are saved in this browser when local storage is available. Review the answer key after editing questions.</small>
 </article>
 </div>
@@ -981,6 +981,33 @@ if(previous && tabs.every(tab=>typeof previous.draft?.[tab]==='string') && tabs.
   alignment();
   show('plan');
 }
+</script>
+<script src="./vendor/jszip.min.js"></script>
+<script src="./office-export.js"></script>
+<script>
+(function() {
+  async function exportOffice(format) {
+    const status=document.getElementById('status');
+    const editor=document.getElementById('editor');
+    const text=editor.value.trim();
+    if(!text) { status.textContent='Prepare a lesson or open a saved lesson before exporting.';return; }
+    const active=document.querySelector('nav[role="tablist"] button[aria-selected="true"]');
+    const kind=active?active.id:'plan';
+    const title=document.getElementById('title').value.trim()||'Lesson';
+    const prefix=GuroOffice.filename('GuroPrep-'+title+'-'+kind);
+    const btn=document.getElementById(format==='docx'?'officeDocx':'officePptx');
+    btn.disabled=true;
+    try {
+      const blob=format==='docx'?await GuroOffice.docx([text],'short'):await GuroOffice.pptx([text],title+' · '+kind);
+      GuroOffice.download(blob,prefix+'.'+format);
+      status.textContent='Editable '+format.toUpperCase()+' downloaded for the selected '+kind+' tab. You can open and change it in Word or PowerPoint.';
+    } catch(error) {
+      status.textContent='Office export failed: '+error.message;
+    } finally { btn.disabled=false; }
+  }
+  document.getElementById('officeDocx').addEventListener('click',function(){exportOffice('docx');});
+  document.getElementById('officePptx').addEventListener('click',function(){exportOffice('pptx');});
+})();
 </script>
 </body>
 </html>
