@@ -1,5 +1,18 @@
 (() => {
   const key = 'guroprep.weekly.v1';
+  let officeLoader;
+  function loadOffice() {
+    if (window.GuroOffice) return Promise.resolve();
+    if (!officeLoader) officeLoader = new Promise((resolve,reject)=>{
+      const script=document.createElement('script');
+      script.src='./office-export.js';
+      script.onload=()=>window.GuroOffice?resolve():reject(Error('Office exporter did not initialize.'));
+      script.onerror=()=>reject(Error('Office exporter could not load. Check that office-export.js was deployed.'));
+      document.head.appendChild(script);
+    });
+    return officeLoader;
+  }
+
   const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
   const phases = ['Introduce and model', 'Guided practice', 'Apply with support', 'Independent practice', 'Check and reteach'];
   const defaults = [
@@ -348,6 +361,18 @@
         const win=window.open('','_blank');
         if(!win){status('Allow the print window or download the offline pack.');return;}
         win.opener=null;win.document.write(weeklyPrintable(weeklyPages(entry,kind,options),label,options.paper));win.document.close();win.focus();win.print();
+      }));
+    }
+    for (const [kind,label] of [['teacher','Teacher plan'],['student','Student worksheet']]) {
+      actions.append(button('Editable '+label.toLowerCase()+' slides (.pptx)',async()=>{
+        try {
+          await loadOffice();
+          const pages=weeklyPages(entry,kind,options);
+          if(!pages.length) {status('Prepare the weekly pack before exporting slides.');return;}
+          const blob=await GuroOffice.pptx(pages,label+' · '+entry.date);
+          await saveFile(prefix+'-'+kind+'.pptx',blob);
+          status('Editable '+label.toLowerCase()+' presentation downloaded.');
+        } catch(error) { status('PPTX export failed. '+error.message); }
       }));
     }
     actions.append(button('Download offline week (.zip)',async()=>{
