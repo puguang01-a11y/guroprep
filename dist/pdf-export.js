@@ -26,35 +26,58 @@ function createLessonPdf(text) {
     pages.push(Uint8Array.from(data, character => character.charCodeAt(0)));
   }
 
-  function writeLine(line) {
+  function styleOf(paragraph, index) {
+    const t = paragraph.trim();
+    const base = {font:'31px Arial, sans-serif', color:'#182520', indent:0, before:0, rule:false};
+    if (index === 0) return {...base, font:'25px Arial, sans-serif', color:'#5a7a6c'};
+    if (index === 1) return {...base, font:'bold 40px Georgia, serif', color:'#153d32', before:6};
+    if (/^[ILAW]\.\s+[A-Z][A-Z ]+$/.test(t)) return {...base, font:'bold 34px Arial, sans-serif', color:'#20604c', before:22, rule:true};
+    if (/^■\s/.test(t)) return {...base, font:'bold 31px Arial, sans-serif', color:'#153d32', before:14};
+    if (/^(Objectives|Content|Learning resources|Procedures\b.*)$/.test(t)) return {...base, font:'bold 31px Arial, sans-serif', color:'#20604c', before:10};
+    if (/^[A-Z0-9][A-Z0-9 ·:'’\-–()|]+$/.test(t) && /[A-Z]{3}/.test(t) && index > 1) return {...base, font:'bold 31px Arial, sans-serif', color:'#20604c', before:16};
+    if (/^\s{2,}/.test(paragraph)) return {...base, indent:56};
+    if (/^[•–-]\s/.test(t)) return {...base, indent:24};
+    return base;
+  }
+
+  function writeLine(line, style) {
     if (y + lineHeight > height - margin) {
       finishPage();
       clearPage();
     }
-    ctx.fillText(line, margin, y);
+    ctx.font = style.font;
+    ctx.fillStyle = style.color;
+    ctx.fillText(line, margin + style.indent, y);
     y += lineHeight;
   }
 
   clearPage();
-  for (const paragraph of text.split(/\r?\n/)) {
+  text.split(/\r?\n/).forEach((paragraph, index) => {
+    const style = styleOf(paragraph, index);
+    if (style.before && y > margin) y += style.before;
+    if (style.rule && y + lineHeight * 2 < height - margin) { ctx.fillStyle = '#c9d8cf'; ctx.fillRect(margin, y - 6, width - 2 * margin, 2); }
+    ctx.font = style.font;
+    const room = width - 2 * margin - style.indent;
     let line = '';
     let lineWidth = 0;
-    for (const token of paragraph.match(/\s+|\S+/gu) || []) {
+    for (const token of paragraph.trimStart().match(/\s+|\S+/gu) || []) {
       const tokenWidth = ctx.measureText(token).width;
-      if (line && lineWidth + tokenWidth > width - 2 * margin) {
-        writeLine(line.trimEnd());
+      if (line && lineWidth + tokenWidth > room) {
+        writeLine(line.trimEnd(), style);
+        ctx.font = style.font;
         line = '';
         lineWidth = 0;
       }
-      if (tokenWidth <= width - 2 * margin) {
+      if (tokenWidth <= room) {
         line += token;
         lineWidth += tokenWidth;
         continue;
       }
       for (const character of token) {
         const characterWidth = ctx.measureText(character).width;
-        if (lineWidth + characterWidth > width - 2 * margin) {
-          writeLine(line);
+        if (lineWidth + characterWidth > room) {
+          writeLine(line, style);
+          ctx.font = style.font;
           line = '';
           lineWidth = 0;
         }
@@ -62,8 +85,8 @@ function createLessonPdf(text) {
         lineWidth += characterWidth;
       }
     }
-    writeLine(line.trimEnd());
-  }
+    writeLine(line.trimEnd(), style);
+  });
   finishPage();
 
   const chunks = [];

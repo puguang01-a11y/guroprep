@@ -8,14 +8,33 @@
 :root{font-family:system-ui,sans-serif;color:#20352e;background:#f4f5ed;line-height:1.55}
 *{box-sizing:border-box}[hidden]{display:none!important}body{margin:0}header{background:#153d32;color:white;padding:24px max(5vw,20px)}
 header strong{font-size:1.45rem}header span{margin-left:15px;color:#c1d7c9;font-size:.88rem}
-main{max-width:1130px;margin:auto;padding:34px 20px}h1{font-family:Georgia,serif;font-size:clamp(2.2rem,6vw,3.65rem);line-height:1.1;margin:0}
-.intro{color:#456154;margin:10px 0 26px}.grid{display:grid;grid-template-columns:minmax(250px,330px) 1fr;gap:20px;align-items:start}
+main{max-width:1280px;margin:auto;padding:34px 20px}h1{font-family:Georgia,serif;font-size:clamp(2.2rem,6vw,3.65rem);line-height:1.1;margin:0}
+.intro{color:#456154;margin:10px 0 26px}.grid{display:grid;grid-template-columns:minmax(280px,430px) 1fr;gap:20px;align-items:start}
 form,article{border:1px solid #d7dfd3;background:#fff;border-radius:17px;padding:22px;min-width:0}label{display:block;margin:0 0 13px;font-weight:650}
 input,select,textarea,button{font:inherit}input,select,textarea{display:block;width:100%;padding:8px;border:1px solid #aebfb4;border-radius:7px;background:white;color:inherit}
 #editor{min-height:410px}textarea{resize:vertical}form small{margin:0 0 12px}button{cursor:pointer;border:1px solid #b6c9bb;background:white;color:#153d32;border-radius:8px;padding:8px 12px;font-weight:650}
 .primary,button[aria-selected=true]{background:#20604c;color:white;border-color:#20604c}.primary{width:100%;margin-top:6px}
 nav,.actions{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:13px}.actions{margin:13px 0 0}a{color:#175f48}small{display:block;margin-top:12px;color:#456154}
 fieldset{border:1px solid #d7dfd3;border-radius:8px;margin:0 0 14px;padding:10px;min-width:0} legend,summary{font-weight:650}details{margin-bottom:13px}button:disabled{opacity:.48;cursor:default}.file{margin:0}#regionalSources a,#g1sources a{display:block;margin-bottom:8px}#print{display:none;white-space:pre-wrap}
+
+/* v4: formatted view and calmer form */
+header{background:linear-gradient(120deg,#123a2f,#1f6a52);box-shadow:0 2px 10px rgba(0,0,0,.12)}header a{opacity:.92}
+form{box-shadow:0 1px 3px rgba(21,61,50,.06)}article{box-shadow:0 1px 3px rgba(21,61,50,.06)}
+fieldset{background:#fbfcf8}legend{color:#20604c}#procedureFields label{font-weight:600;color:#20604c}#procedureFields textarea,#assessment,#next,#questions,#answers,#resourcesList{font-size:.9rem;line-height:1.45}
+input,select,textarea{font-weight:400}#refill{width:100%;margin:4px 0 6px}#modeNote{margin-top:-6px}
+.fv-bar{display:flex;gap:6px;margin:0 0 10px}.fv-bar button[aria-pressed=true]{background:#e3efe8;border-color:#20604c}
+.fv{border:1px solid #d7dfd3;border-radius:12px;padding:22px 26px;min-height:410px;max-height:none;background:#fff;color:#1d2b26;font-size:.95rem;line-height:1.55}
+.fv-eyebrow{font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:#5a7a6c}.fv-title{font-family:Georgia,serif;font-size:1.55rem;margin:.15em 0 .5em;color:#153d32}
+.fv-sec{display:flex;align-items:center;gap:10px;margin:22px 0 8px;padding:8px 12px;border-radius:8px;font-size:1rem;letter-spacing:.04em;background:#eef5f0;color:#153d32}
+.fv-sec span{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;background:#20604c;color:#fff;font-weight:700}
+.fv-L{background:#eef3fb}.fv-L span{background:#2c5aa0}.fv-A{background:#fbf3ea}.fv-A span{background:#b8651b}.fv-W{background:#f4eefa}.fv-W span{background:#6b3fa0}
+.fv-sub{margin:14px 0 4px;color:#20604c;font-size:.95rem}.fv-phase{display:flex;justify-content:space-between;align-items:center;margin:16px 0 4px;padding-bottom:3px;border-bottom:2px solid #e3ebe5;color:#153d32}
+.fv-phase em{font-style:normal;font-size:.78rem;background:#20604c;color:#fff;border-radius:99px;padding:1px 9px}
+.fv-act{margin:18px 0 6px;padding:6px 10px;background:#f6f8f3;border-left:4px solid #20604c;font-size:.92rem;letter-spacing:.03em}
+.fv ul{margin:4px 0 8px;padding-left:20px}.fv li{margin:2px 0}.fv li.fv-n{margin-left:18px;list-style:circle}.fv li.fv-num{list-style:none;margin-left:6px}
+.fv p{margin:4px 0}.fv-item{padding-left:4px}.fv-line{border-bottom:1px solid #b9c6bd;height:18px;margin:0 0 8px 24px}.fv-blank{color:#9aa}.fv-empty{color:#5a7a6c}
+#print.fv{white-space:normal;border:0;padding:0}
+@media print{#print.fv .fv-sec{background:none;border-bottom:1px solid #999}#print.fv .fv-phase em{background:none;color:#000;border:1px solid #999}}
 @media(max-width:740px){.grid{grid-template-columns:1fr}}
 @media print{header,main,#extra{display:none}#print{display:block;color:black;font:12pt/1.6 Arial,sans-serif}}
 </style>
@@ -24,16 +43,16 @@ fieldset{border:1px solid #d7dfd3;border-radius:8px;margin:0 0 14px;padding:10px
 <header><strong>GuroPrep</strong><span>by GuroWorks</span> <a href="./classroom-tools.html" style="color:inherit">Classroom tools</a> · <a href="./classroom-tools.html#weeklyPrep" style="color:inherit">Weekly prep pack</a> · <a style="color:inherit" href="./teacher-originals.html">Teacher originals</a></header>
 <main>
 <h1>Prepare your next lesson.</h1>
-<p class="intro">Organize your teaching notes and prepare printable classroom materials.</p>
+<p class="intro">Choose a grade, learning area and competency. GuroPrep fills in a complete ILAW lesson plan, a worksheet with three activities and the answer key. Every part stays editable.</p>
 <article style="margin-bottom:20px">
 <label>Saved lessons<select id="lessons"><option value="">Choose a lesson</option></select></label>
 <div class="actions"><button type="button" id="saveLesson">Save lesson as new</button><button type="button" id="updateLesson">Update selected lesson</button><button type="button" id="openLesson">Open selected lesson</button><button type="button" id="newLesson">Start a new lesson</button></div>
-<div class="actions"><button type="button" id="backupLesson">Download lesson backup</button><label class="file">Import lesson backup<input type="file" id="importLesson" accept=".json,application/json"></label></div>
+<div class="actions"><button type="button" id="backupLesson">Download lesson backup</button><label class="file">Import lesson backup (.json file)<input type="file" id="importLesson"></label></div>
 <small id="lessonStatus" role="status">Saved lessons stay in this browser.</small>
 </article>
 <div class="grid">
 <form id="settings">
-<label>Materials source<select id="mode"><option value="own">My curriculum and materials</option><option value="math">Built-in Grade 4 math practice</option></select></label>
+<label>Materials source<select id="mode"><option value="own">DepEd curriculum · GuroPrep ready lesson</option><option value="own:textbook">My school textbook or module</option><option value="own:exemplar">DepEd lesson exemplar or activity sheet</option><option value="own:slm">DepEd self-learning module (SLM/ADM)</option><option value="own:teacher">My own notes and materials</option><option value="math">Built-in Grade 4 math practice (sample)</option></select></label><small id="modeNote">GuroPrep fills in the whole lesson from the competency you choose. You can edit every part.</small>
 <div id="ownFields">
 <label>Grade<select id="grade"></select></label>
 <label>School year<input id="schoolYear" value="2026–2027" required></label>
@@ -59,24 +78,24 @@ fieldset{border:1px solid #d7dfd3;border-radius:8px;margin:0 0 14px;padding:10px
 
 
 <small id="g1coverage" role="status"></small>
-<h3>Practice activities</h3>
-<label>Activity<select id="primaryActivity"></select></label>
+<div hidden><label>Activity<select id="primaryActivity"></select></label>
 <label>Practice level<select id="g1level"><option>Core</option><option>Foundation</option><option>Extension</option></select></label>
 <button type="button" id="loadMathCompetency" hidden>Load practice for selected competency</button>
-<button type="button" id="loadGradeOne">Load activity</button>
+<button type="button" id="loadGradeOne">Load activity</button></div>
 <small id="g1status" role="status"></small>
 </section>
+<label>Lesson duration (minutes)<select id="ownDuration"><option>30</option><option>40</option><option selected>45</option><option>50</option><option>60</option></select></label>
 <div id="manualCurriculum"><label>Subject or learning area<input id="subject"></label>
 <label>Curriculum version<input id="version" placeholder="e.g. Revised K–10"></label>
 
 
 <label>Curriculum competency and source<input id="competency" placeholder="Competency and official guide or page"></label>
 </div>
-<label>Week or school pacing (optional)<input id="period"></label>
-<details><summary>Worksheet and answer key</summary>
+<input id="period" type="hidden">
+<details open><summary>Worksheet and answer key</summary><small>Lines starting with ## are activity titles, &gt; are directions; every other line is one item.</small>
 <label>Activity instructions (optional)<input id="instructions"></label>
-<label>Activity items (one per line)<textarea id="questions" rows="3"></textarea></label>
-<label>Answers or rubric (optional)<textarea id="answers" rows="3"></textarea></label>
+<label>Activities and items<textarea id="questions" rows="8"></textarea></label>
+<label>Answer key and rubric<textarea id="answers" rows="6"></textarea></label>
 </details>
 </div>
 <div id="mathFields">
@@ -101,12 +120,14 @@ fieldset{border:1px solid #d7dfd3;border-radius:8px;margin:0 0 14px;padding:10px
 <label>Affective / values (if applicable)<textarea id="affective" rows="2"></textarea></label></fieldset>
 <fieldset><legend>Learning resources</legend>
 <label>Materials<input id="materials"></label>
-<label>Textbook title / edition / chapter or pages<input id="reference" maxlength="160"></label></fieldset>
+<label>Textbook title / edition / chapter or pages<input id="reference" maxlength="160"></label>
+<label>Learning resources list (one per line)<textarea id="resourcesList" rows="5"></textarea></label></fieldset>
 <fieldset><legend>Procedures</legend>
 <div id="procedureFields"></div>
 <label id="activitiesField">Previous procedure notes<textarea id="activities" rows="3"></textarea></label>
-<label>Assessment / check for understanding<textarea id="assessment" rows="2"></textarea></label></fieldset>
-<label>Assignment, enrichment or reteaching (optional)<textarea id="next" rows="2"></textarea></label>
+<label>Assessment<textarea id="assessment" rows="8"></textarea></label></fieldset>
+<label>Ways forward: reteaching, enrichment, assignment<textarea id="next" rows="4"></textarea></label>
+<button type="button" id="refill">Refill suggestions from the competency</button>
 <button class="primary">Prepare materials</button>
 <small>Generating again replaces the current draft.</small>
 <small><a href="https://www.deped.gov.ph/2026/06/04/june-4-2026-do-016-s-2026-guidelines-on-lesson-planning-and-learning-design/" target="_blank" rel="noopener">DepEd lesson planning guidance · DO 016, s. 2026</a></small>
@@ -182,6 +203,8 @@ fieldset{border:1px solid #d7dfd3;border-radius:8px;margin:0 0 14px;padding:10px
 <script src="grade12-legacy.js"></script>
 <script src="grade12-techpro.js"></script>
 <script src="grade12.js"></script>
+<script src="lesson-engine.js"></script>
+<script src="lesson-builder.js"></script>
 <script>
 const get = id => document.getElementById(id);
 const format = n => n.toLocaleString('en-PH');
@@ -257,16 +280,10 @@ const curriculum = {
 };
 const grades = ['Kindergarten', ...Array.from({length:12}, (_,i)=>'Grade '+(i+1))];
 for (const grade of grades) get('grade').add(new Option(grade,grade));
-const procedures = {
-  primary: ['Warm-up / review','Teacher modeling','Guided practice','Independent practice'],
-  'Explicit Teaching': ['Review / introduction','Motivation','Lesson proper / teacher modeling','Guided practice','Independent practice'],
-  '4A’s': ['Activity','Analysis','Abstraction','Application'],
-  '5E’s': ['Engage','Explore','Explain','Elaborate','Evaluate'],
-  'Inquiry-Based Learning': ['Question / orientation','Investigate','Interpret evidence','Discuss findings','Apply / reflect']
-};
+const procedures = Object.fromEntries(Object.entries(GuroLesson.APPROACH).map(([key,approach])=>[key,approach.names]));
 const procedureNotes = Object.create(null);
 function procedureFormat() {
-  return value('mode')==='own' && grades.indexOf(value('grade'))<=3 ? 'primary' : value('method');
+  return value('mode')!=='math' && grades.indexOf(value('grade'))<=3 ? 'primary' : value('method');
 }
 function renderProcedures() {
   const format=procedureFormat();
@@ -287,7 +304,7 @@ function renderProcedures() {
   });
   get('procedureFields').replaceChildren(...fields);
 }
-const settings = ['topic','duration','level','quantity','reference','mode','grade','subject','version','period','competency','instructions','questions','answers','title','objective','activities','assessment','next','schoolYear','track','term','variant','language','needs','adaptedSheet','adaptedKey','aiTool','region','method','psychomotor','affective','materials','subjectGroup','electiveCompetency'];
+const settings = ['topic','duration','level','quantity','reference','mode','grade','subject','version','period','competency','instructions','questions','answers','title','objective','activities','assessment','next','schoolYear','track','term','variant','language','needs','adaptedSheet','adaptedKey','aiTool','region','method','psychomotor','affective','materials','subjectGroup','electiveCompetency','resourcesList','ownDuration'];
 function updateMode() {
   const math = get('mode').value === 'math';
   for (const [id, visible] of [['mathFields',math],['ownFields',!math]]) {
@@ -499,23 +516,32 @@ function generate() {
       if (item && !items.some(([question])=>question===item[0])) items.push(item);
     }
   }
+  const block=(heading,text)=>text?[heading,text,'']:[];
+  const resources=value('resourcesList').split(/\r?\n/).map(x=>x.trim()).filter(Boolean);
+  const minutesTotal=math ? value('duration') : value('ownDuration');
+  const sheetText=math ? items.map(([question],index)=>(index+1)+'. '+question+'\n    ______________________________').join('\n')
+    : GuroLesson.renderSheet(value('questions'),true);
+  const keyText=math ? items.map(([,answer],index)=>(index+1)+'. '+answer).join('\n') : GuroLesson.renderSheet(value('answers'),false);
   draft = {
-    plan: [label, title, placement, '', 'I. INTENTIONS', 'Objectives',
+    plan: [label, title, placement+(minutesTotal ? ' · '+minutesTotal+' minutes' : ''), 'Teacher: ____________________   Section: __________   Date: __________', '',
+      'I. INTENTIONS', 'Objectives',
       'Cognitive: '+value('objective'),
       ...(value('psychomotor') ? ['Psychomotor: '+value('psychomotor')] : []),
       ...(value('affective') ? ['Affective / values: '+value('affective')] : []),
       '', 'Content', 'Topic: '+title, 'Learning competency: '+competency, '',
-      'Learning resources', ...(value('materials') ? ['Materials: '+value('materials')] : []),
-      ...(value('reference') ? ['References: '+value('reference')] : []), '',
-      'L. LEARNING EXPERIENCE', 'Procedures · '+(format==='primary' ? 'Early grades' : format),
-      ...(math ? ['Duration: '+value('duration')+' minutes',topics[value('topic')].method] : []),
-      ...steps.map(([step,note])=>step+': '+note), value('activities'), '',
-      'A. ASSESSING LEARNING', 'Assessment / check for understanding: '+value('assessment'),
-      ...(value('next') ? ['', 'W. WAYS FORWARD', 'Assignment, enrichment or reteaching: '+value('next')] : [])].join('\n'),
-    sheet: [label+' | ACTIVITY SHEET', title, '', 'Name: ____________________   Date: __________', '',
-      math ? 'Show your work where needed.' : value('instructions'), '',
-      ...(math ? items.map(([question])=>question) : questions).map((question,index)=>(index+1)+'. '+question+'\n    ______________________________\n')].join('\n'),
-    key: [label+' | TEACHER COPY', title, '', ...(math ? items.map(([,answer],index)=>(index+1)+'. '+answer) : [value('answers')])].join('\n')
+      'Learning resources',
+      ...(value('materials') ? ['• Materials: '+value('materials')] : []),
+      ...(value('reference') ? ['• Textbook or module: '+value('reference')] : []),
+      ...resources.filter(line=>!/^(Materials|Textbook or module):/i.test(line)).map(line=>'• '+line), '',
+      'L. LEARNING EXPERIENCE', 'Procedures · '+(format==='primary' ? 'Early grades' : format)+(minutesTotal ? ' · '+minutesTotal+' minutes' : ''), '',
+      ...(math ? [topics[value('topic')].method, ''] : []),
+      ...steps.flatMap(([step,note])=>{const lines=note.split(/\r?\n/);const time=/^\(\d+ min\)$/.test(lines[0]) ? ' '+lines.shift() : '';return ['■ '+step+time,...lines,''];}),
+      ...(value('activities') ? [value('activities'),''] : []),
+      'A. ASSESSING LEARNING', value('assessment'), '',
+      ...block('W. WAYS FORWARD', value('next'))].join('\n').replace(/\n{3,}/g,'\n\n').trim(),
+    sheet: [label+' | WORKSHEET', title, '', 'Name: ____________________   Section: __________   Date: __________', '',
+      math ? 'Show your work where needed.' : value('instructions'), '', sheetText].join('\n').replace(/\n{3,}/g,'\n\n').trim(),
+    key: [label+' | ANSWER KEY (TEACHER COPY)', title, '', keyText].join('\n').replace(/\n{3,}/g,'\n\n').trim()
   };
   variants = {};
   original = null;
@@ -542,7 +568,7 @@ get('settings').onsubmit = e => {
     get('status').textContent = 'Fill in the highlighted lesson detail.';
     return;
   }
-  if(value('mode')==='own' && (!value('competency') || !value('subject') || !value('version'))) {
+  if(value('mode')!=='math' && (!value('competency') || !value('subject') || !value('version'))) {
     get('status').textContent='Choose a competency or load an activity before preparing materials.';
     (primaryCurriculum()?.[value('g1area')]?.manual ? get('electiveCompetency') : hasPrimaryLibrary() ? get('g1competency') : get('competency')).focus();
     return;
@@ -611,7 +637,7 @@ get('importLesson').onchange=async event=>{
     restore({...record,activeLesson:''});
     get('lessonStatus').textContent='Backup opened. Save lesson as new to add it to this browser.';
   } catch {
-    get('lessonStatus').textContent='Choose a valid GuroPrep lesson backup.';
+    get('lessonStatus').textContent='This file is not a GuroPrep lesson backup. Choose the .json file downloaded with “Download lesson backup”.';
   }
 };
 get('openLesson').onclick = () => {
@@ -866,7 +892,7 @@ function selectedCompetencyPractice() {
 }
 get('loadMathCompetency').onclick=()=>{
   const row=selectedGradeOne();
-  if (!row || value('mode')!=='own') return;
+  if (!row || value('mode')==='math') return;
   const term=getTermIndex(), index=Number(value('g1competency'));
   const practice=selectedCompetencyPractice();
   const level=['Foundation','Core','Extension'].indexOf(value('g1level'));
@@ -883,7 +909,7 @@ get('loadMathCompetency').onclick=()=>{
   save();
 };
 get('loadGradeOne').onclick=()=>{
-  if(!hasPrimaryLibrary() || value('mode')!=='own') return;
+  if(!hasPrimaryLibrary() || value('mode')==='math') return;
   if ((value('title') || value('questions')) && !window.confirm('Replace the lesson inputs? Existing saved lessons will remain available.')) return;
   const area=value('g1area');
   if (!value('primaryActivity')) return;
@@ -982,6 +1008,7 @@ if(previous && tabs.every(tab=>typeof previous.draft?.[tab]==='string') && tabs.
   show('plan');
 }
 </script>
+<script src="./workspace-auto.js"></script>
 <script src="./vendor/jszip.min.js"></script>
 <script src="./office-export.js"></script>
 <script>
