@@ -65,7 +65,7 @@ details.more summary{cursor:pointer;color:var(--brand);font-weight:600;font-size
 .live{background:var(--bg);border-radius:8px;padding:6px 10px;margin:6px 0;font-size:15px}
 .confirm{display:none;background:var(--warn-soft);border-top:1px solid #f0d9a8;padding:8px 12px;font-size:14px}
 .confirm.show{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
-.aibox{display:none;background:#f1f6ff;border-bottom:1px solid #d6e2f5;padding:10px 12px;font-size:14px}.aibox.show{display:block}.aibox textarea{display:block;width:100%;min-height:64px;margin:6px 0;font:inherit;padding:8px;border:1px solid #c9d6ea;border-radius:8px;box-sizing:border-box}.ai-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.ai-st{color:#3b4a63}
+.aibox{display:none;background:#f1f6ff;border-bottom:1px solid #d6e2f5;padding:10px 12px;font-size:14px}.aibox.show{display:block}.aibox textarea{display:block;width:100%;min-height:64px;margin:6px 0;font:inherit;padding:8px;border:1px solid #c9d6ea;border-radius:8px;box-sizing:border-box}.ai-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.ai-rev{margin-top:12px;padding-top:10px;border-top:1px dashed #c9d6ea}.ai-chips{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 8px}.ai-own{flex:1;min-width:220px;font:inherit;padding:7px 10px;border:1px solid #c9d6ea;border-radius:8px}.ai-st{color:#3b4a63}
 .lvls{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px}
 .item{border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin:8px 0;background:#fff}
 .item .q{font-weight:500}
@@ -119,7 +119,7 @@ footer{font-size:12px;color:var(--muted);margin-top:24px}
   <details class="card whatsnew">
     <summary>Pilot version 11: what's new</summary>
     <ul>
-      <li><b>New: ✨ Write with AI.</b> In the lesson plan, click <i>Write with AI</i> on the Learning experience part, add your own idea if you like, and GuroPrep drafts every step for you. You can edit it, or click <i>Undo AI</i> to go back.</li>
+      <li><b>New: ✨ Write with AI.</b> In the lesson plan, click <i>Write with AI</i> on the Learning experience part, add your own idea if you like, and GuroPrep drafts every step for you. Then change it with one click: <i>Shorter</i>, <i>More group work</i>, <i>Add an example</i>, <i>Simpler English</i> and more, or type your own change. Click <i>Undo AI</i> to go back.</li>
       <li><b>New: reading texts for English Grades 7–10.</b> Literary-text lessons now come with an original short story, poem or one-act scene printed on the worksheet, used in the lesson plan, with text-based questions, a Character–Value Organizer and a full answer key. Lesson objectives are now written as Cognitive, Psychomotor and Affective.</li>
       <li><b>New: English Grades 2–6, Terms 1 and 2.</b> All 593 competencies from the official Budget of Work are included, so elementary English now covers all three terms. 416 have ready worksheets (letters and word patterns, theme vocabulary, context clues, prefixes and suffixes, subject-verb agreement, adjectives and adverbs, propaganda techniques, references, reading comprehension). 177 are speaking, writing, viewing or form-filling tasks with task cards and a rubric.</li>
       <li><b>Science Grades 3–6, Terms 1 and 2.</b> All 89 competencies from the official Budget of Work now have ready worksheets (Foundation, Core, Extension) and a hands-on activity. Measuring, speed, lever and wave items are generated with computed answers. Science Grades 3–6 now covers all three terms.</li>
@@ -5459,7 +5459,10 @@ function renderPlan(){
   ['head','I','L','A','W'].forEach(s=>{
     const d=document.createElement('div');d.className='sec';
     const aiHead=s==='L'?`${L.prevL?'<button class="btn small ghost" data-undo>Undo AI</button> ':''}<button class="btn small" data-ai>✨ Write with AI</button> `:'';
-    const aiBox=s==='L'?`<div class="aibox"><label for="aiIdea"><b>Your idea for this lesson</b> (optional)</label><textarea id="aiIdea" maxlength="500" placeholder="e.g. Use a sari-sari store example. Lots of pair work. My class has 45 learners and no TV."></textarea><div class="ai-row"><button class="btn small" data-go>Write the steps</button><span class="ai-st"></span></div><p class="note">The competency, objectives and your idea are sent to OpenAI to make a draft. Do not type learners' names. Always check the draft before teaching.</p></div>`:'';
+    const aiBox=s==='L'?`<div class="aibox"><label for="aiIdea"><b>Your idea for this lesson</b> (optional)</label><textarea id="aiIdea" maxlength="500" placeholder="e.g. Use a sari-sari store example. Lots of pair work. My class has 45 learners and no TV."></textarea><div class="ai-row"><button class="btn small" data-go>Write new steps</button><span class="ai-st"></span></div>
+      <div class="ai-rev"><b>Or change the current steps</b><div class="ai-chips">${AI_CHANGES.map(([k,t])=>`<button type="button" class="btn small ghost" data-rev="${k}">${esc(t)}</button>`).join('')}</div>
+      <div class="ai-row"><input type="text" class="ai-own" maxlength="300" placeholder="Or type your change, e.g. Use a fiesta example in the motivation"><button type="button" class="btn small" data-rev-go>Change</button></div></div>
+      <p class="note">The competency, objectives, current steps and your request are sent to OpenAI to make a draft. Do not type learners' names. Always check the draft before teaching.</p></div>`:'';
     d.innerHTML=`<div class="sec-h"><b>${SECNAMES[s]}</b><span>${L.edited[s]?(s==='L'&&L.aiDraft?'<span class="badge b-edit">AI draft</span>':'<span class="badge b-edit">edited</span>'):''} ${aiHead}${s!=='head'?'<button class="btn small ghost" data-redo>Redo</button>':''}</span></div>
       ${aiBox}<div class="sec-b" contenteditable="true" spellcheck="true">${L.secs[s]}</div>
       <div class="confirm">This part has your edits. Replace it with a new draft?<button class="btn small danger" data-yes>Replace</button><button class="btn small ghost" data-no>Keep</button></div>`;
@@ -5476,6 +5479,19 @@ function renderPlan(){
   renderLive();
 }
 /* ---------- AI draft of the learning experience (server: /api/ai) ---------- */
+const AI_CHANGES=[
+  ['shorter','Shorter','Make every step shorter and simpler, about half the length. Keep one sample question with its answer in each step.'],
+  ['groups','More group work','Turn the guided and independent practice into small-group activities (groups of 5–6) with simple roles such as reader, writer and reporter.'],
+  ['example','Add an example','Add one more worked example with its answer in the modelling (I do) step.'],
+  ['simpler','Simpler English','Rewrite in simpler English with short sentences that learners and teachers can follow easily.'],
+  ['handson','Hands-on activity','Add a hands-on activity using cheap or free local materials (bottle caps, sticks, paper, leaves).'],
+  ['local','Filipino real-life context','Use real Filipino situations (sari-sari store, jeepney, fiesta, palengke, barangay) in the motivation and examples.'],
+  ['slow','Help slow learners','Add support for struggling learners: extra modelling, a simpler first task and peer help.'],
+  ['fast','Challenge fast learners','Add an extra challenge task for fast finishers in the practice steps.']];
+function currentSteps(L){const d=document.createElement('div');d.innerHTML=L.secs.L;
+  const steps=[...d.querySelectorAll('li')].map(li=>{const c=li.cloneNode(true);const b=c.querySelector('b');if(b&&/\(\d+ min\)/.test(b.textContent))b.remove();return c.textContent.replace(/\s+/g,' ').trim().slice(0,1200)});
+  let materials='',key_question='';d.querySelectorAll('p').forEach(p=>{const t=p.textContent.replace(/\s+/g,' ').trim();if(/^Materials:/i.test(t))materials=t.replace(/^Materials:\s*/i,'');if(/^Key question:/i.test(t))key_question=t.replace(/^Key question:\s*/i,'')});
+  return {materials:materials.slice(0,400),steps,key_question:key_question.slice(0,300)}}
 async function aiStatus(){try{const r=await fetch('/api/ai/status',{cache:'no-store'});if(!r.ok)throw 0;return await r.json()}catch(e){return {enabled:false,remaining:0}}}
 function htmlText(h){const d=document.createElement('div');d.innerHTML=String(h).replace(/<br\s*\/?>|<\/(p|li|div)>/gi,'$&\n');return (d.textContent||'').replace(/\n\s*\n+/g,'\n').trim()}
 function aiHtml(ph,j){return `<p><b>Materials:</b> ${esc(j.materials||'')}</p><ul>${ph.map(([n,m],i)=>`<li><b>${esc(n)} (${m} min):</b> ${esc(j.steps[i]||'')}</li>`).join('')}</ul>${j.key_question?`<p><b>Key question:</b> ${esc(j.key_question)}</p>`:''}<p class="note">AI draft. Check every step and adapt it to your class before teaching.</p>`}
@@ -5484,24 +5500,32 @@ function wireAI(d,L){
   const undo=d.querySelector('[data-undo]');
   if(undo)undo.onclick=()=>{L.secs.L=L.prevL;delete L.prevL;L.aiDraft=false;save();renderPlan();toast('AI draft removed')};
   btn.onclick=async()=>{pan.classList.toggle('show');if(!pan.classList.contains('show'))return;
-    st.textContent='Checking…';go.disabled=true;const a=await aiStatus();
+    st.textContent='Checking…';[go,...pan.querySelectorAll('[data-rev],[data-rev-go]')].forEach(x=>x.disabled=true);const a=await aiStatus();
     if(!a.enabled){st.textContent='AI drafting is not available right now.';return}
-    st.textContent=a.remaining>0?`AI drafts left today: ${a.remaining}`:'You have used all AI drafts for today. Try again tomorrow.';go.disabled=a.remaining<=0;idea.focus()};
-  go.onclick=async()=>{
+    st.textContent=a.remaining>0?`AI drafts left today: ${a.remaining}`:'You have used all AI drafts for today. Try again tomorrow.';[go,...pan.querySelectorAll('[data-rev],[data-rev-go]')].forEach(x=>x.disabled=a.remaining<=0);idea.focus()};
+  const revBtns=[...pan.querySelectorAll('[data-rev]')],own=pan.querySelector('.ai-own'),revGo=pan.querySelector('[data-rev-go]');
+  const busy=on=>{[go,revGo,...revBtns].forEach(x=>x.disabled=on)};
+  const run=async(url,extra,label)=>{
     if(!L.comp){toast('Choose a competency first');return}
-    go.disabled=true;st.textContent='Writing the steps… (about 10–30 seconds)';
     const ph=phaseSplit(L.approach,+L.duration),LT=litText(L);
     const ex=isReadyLesson(L)&&L.items&&L.items.C&&L.items.C[0];
-    const body={grade:L.grade,subject:L.subject,term:L.term,competency:L.title,objectives:htmlText(L.secs.I).slice(0,600),approach:L.approach,
-      phases:ph.map(([n,m])=>({name:n,min:m})),local:place(),text:LT?LT.title:'',sample:ex?String(qOf(L.comp,ex)).slice(0,400):'',idea:idea.value.trim()};
+    const body=Object.assign({grade:L.grade,subject:L.subject,term:L.term,competency:L.title,objectives:htmlText(L.secs.I).slice(0,600),approach:L.approach,
+      phases:ph.map(([n,m])=>({name:n,min:m})),local:place(),text:LT?LT.title:'',sample:ex?String(qOf(L.comp,ex)).slice(0,400):'',idea:idea.value.trim()},extra(ph));
+    if(body.current&&body.current.steps.length!==ph.length){st.textContent='The step list was changed by hand, so it cannot be revised. Click "Write new steps" or Redo first.';return}
+    busy(true);st.textContent=label;
     try{
-      const r=await fetch('/api/ai/lesson-steps',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});
+      const r=await fetch(url,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});
       const j=await r.json().catch(()=>({}));
       if(!r.ok||!Array.isArray(j.steps))throw new Error(j.error||'The AI draft could not be made right now. Please try again.');
       if(!L.prevL)L.prevL=L.secs.L;L.secs.L=aiHtml(ph,j);L.edited.L=true;L.aiDraft=true;P.ai=(P.ai||0)+1;
-      save();renderPlan();toast('AI draft ready. Please check it.');window.gpTrack&&gpTrack('ai_draft');
-    }catch(e){st.textContent=e.message||'The AI draft could not be made right now.';go.disabled=false}
+      save();renderPlan();toast(body.current?'Steps changed. Please check them.':'AI draft ready. Please check it.');window.gpTrack&&gpTrack('ai_draft');
+    }catch(e){st.textContent=e.message||'The AI draft could not be made right now.';busy(false)}
   };
+  go.onclick=()=>run('/api/ai/lesson-steps',()=>({}),'Writing the steps… (about 10–30 seconds)');
+  const revise=instr=>run('/api/ai/revise-steps',()=>({current:currentSteps(L),instruction:instr}),'Changing the steps… (about 10–30 seconds)');
+  revBtns.forEach(b=>b.onclick=()=>{const c=AI_CHANGES.find(x=>x[0]===b.dataset.rev);revise(c[2])});
+  revGo.onclick=()=>{const t=own.value.trim();if(!t){st.textContent='Type what you want to change first.';own.focus();return}revise(t)};
+  own.onkeydown=e=>{if(e.key==='Enter'){e.preventDefault();revGo.click()}};
 }
 function stripLive(h){return h.replace(/(<div class="live"[^>]*>)[\s\S]*?(<\/div>)/,'$1$2')}
 function exitLines(){const L=S.lesson;if(isReadyLesson(L))return L.items.X.map((it,i)=>`${i+1}. ${qOf(L.comp,it)}`);return parseManual(L.manual.C).slice(0,3).map((it,i)=>`${i+1}. ${it.q}`).concat(L.manual.C?[]:['[Exit ticket items: add them in Worksheets → Core; the first 3 are used]'])}
