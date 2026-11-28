@@ -187,6 +187,7 @@
   }
   function generate(event) {
     event.preventDefault();
+    if (window.gpTrack) gpTrack('weekly_pack');
     const rows = readRows();
     const scheduled = rows.filter(row => row.scheduled);
     if (!scheduled.length || scheduled.some(row => !row.id || (row.id === 'custom' && !row.custom))) {

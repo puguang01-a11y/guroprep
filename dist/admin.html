@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en" data-page="admin">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>GuroPrep admin · Usage and applications</title>
+<link rel="icon" href="./favicon.svg" type="image/svg+xml">
+<style>
+:root{font-family:system-ui,sans-serif;color:#20352e;background:#f4f5ed;line-height:1.45}
+*{box-sizing:border-box}body{margin:0}
+header{background:#153d32;color:#fff;padding:16px max(4vw,18px);display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+header strong{font-size:1.2rem}
+main{max-width:1150px;margin:auto;padding:22px 18px 60px}
+.card{background:#fff;border:1px solid #d7dfd3;border-radius:14px;padding:16px 18px;margin-top:18px}
+h2{font-size:1.1rem;margin:0 0 10px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-top:18px}
+.kpi{background:#fff;border:1px solid #d7dfd3;border-radius:14px;padding:14px 16px}
+.kpi b{display:block;font-size:1.9rem;font-variant-numeric:tabular-nums}.kpi span{color:#5b6f66;font-size:.9rem}
+.kpi .goal{font-size:.8rem;color:#5b6f66;margin-top:4px}
+table{width:100%;border-collapse:collapse;font-size:.92rem;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:7px 8px;border-bottom:1px solid #e6ebe5;vertical-align:top}th{color:#5b6f66;font-weight:600;white-space:nowrap}
+td.n,th.n{text-align:right}
+.wrap{overflow-x:auto}
+input{font:inherit;padding:9px 11px;border:1px solid #c5d1c8;border-radius:10px;min-width:260px}
+button{font:inherit;font-weight:600;background:#1d745c;color:#fff;border:0;border-radius:10px;padding:9px 16px;cursor:pointer}
+button.ghost{background:#fff;color:#1d745c;border:1px solid #b9d9c6}
+.err{color:#b3261e;margin-top:8px}.muted{color:#5b6f66;font-size:.88rem}
+#app{display:none}
+.bar{height:8px;background:#1d745c;border-radius:4px;min-width:2px}
+</style>
+</head>
+<body>
+<header><strong>GuroPrep admin</strong><span><button class="ghost" id="refresh" style="display:none">Refresh</button> <button class="ghost" id="logout" style="display:none">Sign out</button></span></header>
+<main>
+<section class="card" id="login">
+  <h2>Sign in</h2>
+  <p class="muted">Enter the admin key from the server (the setup script printed it; it is also in <code>/etc/guroprep/ai.env</code>).</p>
+  <form id="loginForm"><input id="key" type="password" autocomplete="current-password" placeholder="Admin key"> <button>Open</button></form>
+  <div class="err" id="loginErr"></div>
+</section>
+
+<div id="app">
+  <div class="kpis" id="kpis"></div>
+
+  <section class="card"><h2>Weekly (Monday–Sunday)</h2><div class="wrap"><table id="weekly"></table></div>
+    <p class="muted">Active teachers = different visitors who prepared a lesson, used AI or downloaded something that week. Counted without cookies; one teacher on two devices counts twice.</p></section>
+
+  <section class="card"><h2>Daily (last 30 days)</h2><div class="wrap"><table id="daily"></table></div></section>
+
+  <section class="card"><h2>Most-prepared grades and subjects (last 30 days)</h2><div class="wrap"><table id="subjects"></table></div></section>
+
+  <section class="card"><h2>Move Up Academy teacher applications</h2>
+    <p><button id="csv">Download all as Excel (CSV)</button> <span class="muted" id="appCount"></span></p>
+    <div class="wrap"><table id="apps"></table></div></section>
+</div>
+</main>
+<script>
+(function(){
+  var KEY = sessionStorage.getItem('gpAdmin') || '';
+  var $ = function(id){ return document.getElementById(id); };
+  function esc(t){ return String(t == null ? '' : t).replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+  async function api(path){
+    var r = await fetch('/api/admin/' + path, {headers: {'X-Admin-Key': KEY}, cache: 'no-store'});
+    if (r.status === 401) throw new Error('Wrong admin key.');
+    if (!r.ok) throw new Error('Server error (' + r.status + '). Is the GuroPrep helper running?');
+    return r;
+  }
+  function table(el, cols, rows){
+    $(el).innerHTML = '<thead><tr>' + cols.map(function(c){ return '<th class="' + (c[2] ? 'n' : '') + '">' + esc(c[1]) + '</th>'; }).join('') + '</tr></thead><tbody>' +
+      (rows.length ? rows.map(function(r){ return '<tr>' + cols.map(function(c){ return '<td class="' + (c[2] ? 'n' : '') + '">' + (c[3] ? c[3](r) : esc(r[c[0]])) + '</td>'; }).join('') + '</tr>'; }).join('') : '<tr><td colspan="' + cols.length + '" class="muted">No data yet.</td></tr>') + '</tbody>';
+  }
+  function kpi(label, value, goal){ return '<div class="kpi"><b>' + esc(value) + '</b><span>' + esc(label) + '</span>' + (goal ? '<div class="goal">' + esc(goal) + '</div>' : '') + '</div>'; }
+  async function load(){
+    var s = await (await api('summary')).json();
+    var a = await (await api('applications')).json();
+    var w = s.weekly[0] || {}, today = s.days[0] || {};
+    var month = s.days.reduce(function(t, d){ t.l += d.lessons; t.ai += d.aiDrafts; t.ap += d.applications; return t; }, {l: 0, ai: 0, ap: 0});
+    $('kpis').innerHTML =
+      kpi('Active teachers this week', w.activeTeachers || 0, '3-month goal: 300+ per week') +
+      kpi('Visitors this week', w.visitors || 0) +
+      kpi('Lessons prepared (30 days)', month.l) +
+      kpi('AI drafts (30 days)', month.ai) +
+      kpi('Applications (30 days)', month.ap, 'Goal: 20+ per month') +
+      kpi('Applications (all time)', s.applicationsTotal);
+    table('weekly', [['week','Week'],['activeTeachers','Active teachers',1],['visitors','Visitors',1],['lessons','Lessons prepared',1],['applications','Applications',1]], s.weekly);
+    table('daily', [['day','Day'],['visitors','Visitors',1],['views','Page views',1],['activeTeachers','Active teachers',1],['lessons','Lessons',1],['aiDrafts','AI drafts',1],['downloads','Downloads',1],['weeklyPacks','Weekly packs',1],['applyClicks','"Teach online" clicks',1],['applications','Applications',1]], s.days);
+    var max = Math.max.apply(null, s.topSubjects.map(function(x){ return x.lessons; }).concat([1]));
+    table('subjects', [['name','Grade · subject'],['lessons','Lessons',1],['bar','',0,function(r){ return '<div class="bar" style="width:' + Math.round(240 * r.lessons / max) + 'px"></div>'; }]], s.topSubjects);
+    $('appCount').textContent = a.applications.length + ' application(s)';
+    table('apps', [['submitted','Date',0,function(r){ return esc(String(r.submitted).slice(0, 10)); }],['name','Name'],['email','Email'],['mobile','Mobile'],['location','Location'],['currentWork','Current work'],['onlineExperience','Online exp.'],['availability','Availability'],['equipment','Equipment'],['internet','Internet']], a.applications);
+  }
+  async function open(){
+    $('loginErr').textContent = '';
+    try { await load(); $('login').style.display = 'none'; $('app').style.display = 'block'; $('refresh').style.display = $('logout').style.display = 'inline-block'; }
+    catch (e) { $('loginErr').textContent = e.message; $('login').style.display = 'block'; $('app').style.display = 'none'; }
+  }
+  $('loginForm').onsubmit = function(e){ e.preventDefault(); KEY = $('key').value.trim(); sessionStorage.setItem('gpAdmin', KEY); open(); };
+  $('refresh').onclick = open;
+  $('logout').onclick = function(){ sessionStorage.removeItem('gpAdmin'); location.reload(); };
+  $('csv').onclick = async function(){
+    try {
+      var blob = await (await api('applications.csv')).blob();
+      var url = URL.createObjectURL(blob), link = document.createElement('a');
+      link.href = url; link.download = 'move-up-teacher-applications.csv'; document.body.appendChild(link); link.click(); link.remove();
+      setTimeout(function(){ URL.revokeObjectURL(url); }, 20000);
+    } catch (e) { alert(e.message); }
+  };
+  if (KEY) open();
+})();
+</script>
+</body>
+</html>

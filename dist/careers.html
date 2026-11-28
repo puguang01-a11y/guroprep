@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teach English online with Move Up Academy · GuroPrep</title>
+<meta name="description" content="Filipino teachers: teach one-on-one English classes online with Move Up Academy, outside your school hours.">
+<link rel="icon" href="./favicon.svg" type="image/svg+xml">
+<style>
+:root{font-family:system-ui,sans-serif;color:#20352e;background:#f4f5ed;line-height:1.55}
+*{box-sizing:border-box}body{margin:0}
+header{background:#153d32;color:#fff;padding:18px max(5vw,20px)}header a{color:inherit}header strong{font-size:1.3rem}
+main{max-width:820px;margin:auto;padding:30px 20px 60px}
+h1{font-family:Georgia,serif;font-size:clamp(1.9rem,5vw,2.8rem);line-height:1.15;margin:0 0 10px}
+h2{font-size:1.2rem;margin:0 0 8px}
+section{background:#fff;border:1px solid #d7dfd3;border-radius:16px;padding:18px 22px;margin-top:20px}
+ul{padding-left:20px}li{margin-bottom:5px}
+label{display:block;font-weight:600;margin:14px 0 4px}
+.hint{font-weight:400;color:#5b6f66;font-size:.9rem}
+input,select,textarea{width:100%;font:inherit;padding:10px 12px;border:1px solid #c5d1c8;border-radius:10px;background:#fff}
+textarea{min-height:110px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:0 16px}
+@media(max-width:620px){.row{grid-template-columns:1fr}}
+.check{display:flex;gap:10px;align-items:flex-start;font-weight:400;margin-top:18px}.check input{width:auto;margin-top:4px}
+button{margin-top:20px;background:#1d745c;color:#fff;border:0;border-radius:12px;padding:13px 22px;font:inherit;font-weight:700;cursor:pointer}
+button:disabled{opacity:.6;cursor:wait}
+.msg{margin-top:14px;padding:12px 14px;border-radius:10px;display:none}.msg.ok{display:block;background:#e3f3ea;border:1px solid #a9d6bb}.msg.err{display:block;background:#fdecea;border:1px solid #f1b8b2}
+.trap{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+footer{text-align:center;color:#456154;font-size:.9rem;padding:20px}a{color:#175f48}
+</style>
+<script defer src="./track.js"></script>
+</head>
+<body>
+<header><strong><a href="./index.html" style="text-decoration:none">GuroPrep</a></strong> · <a href="./classroom-tools.html">Classroom tools</a> · <a href="./about.html">About</a></header>
+<main>
+<h1>Teach English online with Move Up Academy</h1>
+<p>GuroPrep is made by the team behind <strong>Move Up Academy</strong>, an English school with a campus in Cebu and online learners in China. We are looking for Filipino teachers who enjoy teaching and want extra income from home.</p>
+
+<section>
+<h2>What the work is like</h2>
+<ul>
+<li><strong>One-on-one English classes</strong> online (25 or 40 minutes), using Tencent Meeting.</li>
+<li><strong>Learners are students in China.</strong> China is in the same time zone as the Philippines, and many classes are after school: often in the <strong>evening and on weekends</strong>.</li>
+<li>You keep <strong>regular learners at fixed times</strong>, so your schedule is stable.</li>
+<li>Lesson materials and an AI homework system are provided. You focus on teaching.</li>
+<li>Classes are scheduled <strong>outside your school hours</strong>. If you work in a public school, please follow your school's rules on outside work.</li>
+</ul>
+</section>
+
+<section>
+<h2>Who we are looking for</h2>
+<ul>
+<li>Clear, friendly spoken English and patience with learners</li>
+<li>Teaching experience (school or online) is a plus, but not required</li>
+<li>A computer or laptop, headset, and stable internet at home</li>
+</ul>
+</section>
+
+<section>
+<h2>Apply in 3 minutes</h2>
+<p class="hint">We will contact you by email or mobile for a short interview and demo class.</p>
+<form id="apply" novalidate>
+  <div class="trap" aria-hidden="true"><label for="website">Website</label><input id="website" name="website" tabindex="-1" autocomplete="off"></div>
+  <div class="row">
+    <div><label for="name">Full name *</label><input id="name" name="name" required maxlength="100" autocomplete="name"></div>
+    <div><label for="location">City / province *</label><input id="location" name="location" required maxlength="100" placeholder="e.g. Cebu City"></div>
+  </div>
+  <div class="row">
+    <div><label for="email">Email *</label><input id="email" name="email" type="email" required maxlength="120" autocomplete="email"></div>
+    <div><label for="mobile">Mobile number *</label><input id="mobile" name="mobile" required maxlength="20" inputmode="tel" placeholder="09XX XXX XXXX" autocomplete="tel"></div>
+  </div>
+  <div class="row">
+    <div><label for="currentWork">Current work</label>
+      <select id="currentWork" name="currentWork"><option value="">Choose one</option><option>Public school teacher</option><option>Private school teacher</option><option>Online English teacher</option><option>Tutor</option><option>Student / fresh graduate</option><option>Other</option></select></div>
+    <div><label for="yearsTeaching">Years of teaching</label><input id="yearsTeaching" name="yearsTeaching" maxlength="10" inputmode="numeric" placeholder="e.g. 5"></div>
+  </div>
+  <div class="row">
+    <div><label for="school">School or company <span class="hint">(optional)</span></label><input id="school" name="school" maxlength="120"></div>
+    <div><label for="subjects">Grades and subjects you teach</label><input id="subjects" name="subjects" maxlength="120" placeholder="e.g. Grade 5 English"></div>
+  </div>
+  <div class="row">
+    <div><label for="onlineExperience">Have you taught English online?</label>
+      <select id="onlineExperience" name="onlineExperience"><option value="">Choose one</option><option>Yes</option><option>No</option></select></div>
+    <div><label for="onlineYears">If yes, how many years?</label><input id="onlineYears" name="onlineYears" maxlength="10"></div>
+  </div>
+  <label for="availability">When can you teach? <span class="hint">(Philippine time, e.g. "Mon–Fri 6–9 pm, Sat 9 am–12 nn")</span></label>
+  <input id="availability" name="availability" maxlength="200">
+  <div class="row">
+    <div><label for="internet">Internet at home</label>
+      <select id="internet" name="internet"><option value="">Choose one</option><option>Fiber (PLDT, Converge, Globe…)</option><option>DSL / cable</option><option>Mobile data / pocket WiFi</option><option>Starlink / satellite</option><option>None yet</option></select></div>
+    <div><label for="equipment">Equipment you have</label>
+      <select id="equipment" name="equipment"><option value="">Choose one</option><option>Laptop or computer and headset</option><option>Laptop or computer only</option><option>No laptop or computer yet</option></select></div>
+  </div>
+  <label for="facebook">Facebook or Messenger name <span class="hint">(optional)</span></label>
+  <input id="facebook" name="facebook" maxlength="120">
+  <label for="about">Tell us briefly about yourself and why you enjoy teaching</label>
+  <textarea id="about" name="about" maxlength="1200"></textarea>
+  <label class="check"><input type="checkbox" id="consent" name="consent" required> <span>I agree that Move Up Academy may keep and use the information above to contact me about teaching jobs, following the Data Privacy Act of 2012. I can ask for my information to be deleted at any time. *</span></label>
+  <button type="submit">Send my application</button>
+  <div class="msg" id="msg" role="status"></div>
+</form>
+</section>
+<p class="hint" style="margin-top:20px">Applying does not affect your use of GuroPrep. GuroPrep stays free for all teachers.</p>
+</main>
+<footer>GuroPrep by GuroWorks · <a href="./about.html#privacy">Privacy</a> · Independent project, not an official DepEd product</footer>
+<script>
+document.getElementById('apply').addEventListener('submit', async function (e) {
+  e.preventDefault();
+  var f = e.target, msg = document.getElementById('msg'), btn = f.querySelector('button');
+  var data = {}; Array.prototype.forEach.call(f.elements, function (el) { if (el.name) data[el.name] = el.type === 'checkbox' ? el.checked : el.value.trim(); });
+  msg.className = 'msg';
+  if (!data.name || !data.email || !data.mobile || !data.location || !data.consent) {
+    msg.textContent = 'Please fill in your name, email, mobile number and location, and tick the consent box.'; msg.className = 'msg err'; return;
+  }
+  btn.disabled = true; btn.textContent = 'Sending…';
+  try {
+    var r = await fetch('/api/apply', {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(data)});
+    var j = await r.json().catch(function () { return {}; });
+    if (!r.ok) throw new Error(j.error || 'Sorry, we could not send your application. Please try again later.');
+    f.reset();
+    msg.textContent = 'Thank you! Your application was sent. We will contact you within a few days.'; msg.className = 'msg ok';
+    msg.scrollIntoView({behavior: 'smooth', block: 'center'});
+  } catch (err) {
+    msg.textContent = err.message; msg.className = 'msg err';
+  } finally { btn.disabled = false; btn.textContent = 'Send my application'; }
+});
+</script>
+</body>
+</html>
