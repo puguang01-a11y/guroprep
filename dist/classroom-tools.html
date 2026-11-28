@@ -64,6 +64,7 @@ details.more summary{cursor:pointer;color:var(--brand);font-weight:600;font-size
 .live{background:var(--bg);border-radius:8px;padding:6px 10px;margin:6px 0;font-size:15px}
 .confirm{display:none;background:var(--warn-soft);border-top:1px solid #f0d9a8;padding:8px 12px;font-size:14px}
 .confirm.show{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.aibox{display:none;background:#f1f6ff;border-bottom:1px solid #d6e2f5;padding:10px 12px;font-size:14px}.aibox.show{display:block}.aibox textarea{display:block;width:100%;min-height:64px;margin:6px 0;font:inherit;padding:8px;border:1px solid #c9d6ea;border-radius:8px;box-sizing:border-box}.ai-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.ai-st{color:#3b4a63}
 .lvls{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px}
 .item{border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin:8px 0;background:#fff}
 .item .q{font-weight:500}
@@ -117,6 +118,7 @@ footer{font-size:12px;color:var(--muted);margin-top:24px}
   <details class="card whatsnew">
     <summary>Pilot version 11: what's new</summary>
     <ul>
+      <li><b>New: ✨ Write with AI.</b> In the lesson plan, click <i>Write with AI</i> on the Learning experience part, add your own idea if you like, and GuroPrep drafts every step for you. You can edit it, or click <i>Undo AI</i> to go back.</li>
       <li><b>New: reading texts for English Grades 7–10.</b> Literary-text lessons now come with an original short story, poem or one-act scene printed on the worksheet, used in the lesson plan, with text-based questions, a Character–Value Organizer and a full answer key. Lesson objectives are now written as Cognitive, Psychomotor and Affective.</li>
       <li><b>New: English Grades 2–6, Terms 1 and 2.</b> All 593 competencies from the official Budget of Work are included, so elementary English now covers all three terms. 416 have ready worksheets (letters and word patterns, theme vocabulary, context clues, prefixes and suffixes, subject-verb agreement, adjectives and adverbs, propaganda techniques, references, reading comprehension). 177 are speaking, writing, viewing or form-filling tasks with task cards and a rubric.</li>
       <li><b>Science Grades 3–6, Terms 1 and 2.</b> All 89 competencies from the official Budget of Work now have ready worksheets (Foundation, Core, Extension) and a hands-on activity. Measuring, speed, lever and wave items are generated with computed answers. Science Grades 3–6 now covers all three terms.</li>
@@ -5455,19 +5457,50 @@ function renderPlan(){
   const L=S.lesson;const box=$('#planSecs');box.innerHTML='';
   ['head','I','L','A','W'].forEach(s=>{
     const d=document.createElement('div');d.className='sec';
-    d.innerHTML=`<div class="sec-h"><b>${SECNAMES[s]}</b><span>${L.edited[s]?'<span class="badge b-edit">edited</span>':''} ${s!=='head'?'<button class="btn small ghost" data-redo>Redo</button>':''}</span></div>
-      <div class="sec-b" contenteditable="true" spellcheck="true">${L.secs[s]}</div>
+    const aiHead=s==='L'?`${L.prevL?'<button class="btn small ghost" data-undo>Undo AI</button> ':''}<button class="btn small" data-ai>✨ Write with AI</button> `:'';
+    const aiBox=s==='L'?`<div class="aibox"><label for="aiIdea"><b>Your idea for this lesson</b> (optional)</label><textarea id="aiIdea" maxlength="500" placeholder="e.g. Use a sari-sari store example. Lots of pair work. My class has 45 learners and no TV."></textarea><div class="ai-row"><button class="btn small" data-go>Write the steps</button><span class="ai-st"></span></div><p class="note">The competency, objectives and your idea are sent to OpenAI to make a draft. Do not type learners' names. Always check the draft before teaching.</p></div>`:'';
+    d.innerHTML=`<div class="sec-h"><b>${SECNAMES[s]}</b><span>${L.edited[s]?(s==='L'&&L.aiDraft?'<span class="badge b-edit">AI draft</span>':'<span class="badge b-edit">edited</span>'):''} ${aiHead}${s!=='head'?'<button class="btn small ghost" data-redo>Redo</button>':''}</span></div>
+      ${aiBox}<div class="sec-b" contenteditable="true" spellcheck="true">${L.secs[s]}</div>
       <div class="confirm">This part has your edits. Replace it with a new draft?<button class="btn small danger" data-yes>Replace</button><button class="btn small ghost" data-no>Keep</button></div>`;
     const b=d.querySelector('.sec-b');
     b.addEventListener('input',()=>{L.secs[s]=stripLive(b.innerHTML);if(!L.edited[s]){L.edited[s]=true;P.edits[s]=1;d.querySelector('.sec-h span').insertAdjacentHTML('afterbegin','<span class="badge b-edit">edited</span>');pilotUI()}save()});
     const redo=d.querySelector('[data-redo]');
     if(redo){const cf=d.querySelector('.confirm');
-      const doRedo=()=>{L.variant[s]=(L.variant[s]||0)+1;if(s==='L'&&isReadyLesson(L))L.example=makeItems(L.comp,'C',1,(Date.now()%1e9)|0)[0];L.secs[s]=genSec(L,s);L.edited[s]=false;P.redos++;renderPlan();pilotUI();save();toast(SECNAMES[s]+' redrafted')};
+      const doRedo=()=>{L.variant[s]=(L.variant[s]||0)+1;if(s==='L'&&isReadyLesson(L))L.example=makeItems(L.comp,'C',1,(Date.now()%1e9)|0)[0];L.secs[s]=genSec(L,s);L.edited[s]=false;if(s==='L'){L.aiDraft=false;delete L.prevL}P.redos++;renderPlan();pilotUI();save();toast(SECNAMES[s]+' redrafted')};
       redo.onclick=()=>{if(L.edited[s])cf.classList.add('show');else doRedo()};
       d.querySelector('[data-yes]').onclick=doRedo;d.querySelector('[data-no]').onclick=()=>cf.classList.remove('show');}
+    if(s==='L')wireAI(d,L);
     box.appendChild(d);
   });
   renderLive();
+}
+/* ---------- AI draft of the learning experience (server: /api/ai) ---------- */
+async function aiStatus(){try{const r=await fetch('/api/ai/status',{cache:'no-store'});if(!r.ok)throw 0;return await r.json()}catch(e){return {enabled:false,remaining:0}}}
+function htmlText(h){const d=document.createElement('div');d.innerHTML=String(h).replace(/<br\s*\/?>|<\/(p|li|div)>/gi,'$&\n');return (d.textContent||'').replace(/\n\s*\n+/g,'\n').trim()}
+function aiHtml(ph,j){return `<p><b>Materials:</b> ${esc(j.materials||'')}</p><ul>${ph.map(([n,m],i)=>`<li><b>${esc(n)} (${m} min):</b> ${esc(j.steps[i]||'')}</li>`).join('')}</ul>${j.key_question?`<p><b>Key question:</b> ${esc(j.key_question)}</p>`:''}<p class="note">AI draft. Check every step and adapt it to your class before teaching.</p>`}
+function wireAI(d,L){
+  const btn=d.querySelector('[data-ai]'),pan=d.querySelector('.aibox'),go=pan.querySelector('[data-go]'),st=pan.querySelector('.ai-st'),idea=pan.querySelector('textarea');
+  const undo=d.querySelector('[data-undo]');
+  if(undo)undo.onclick=()=>{L.secs.L=L.prevL;delete L.prevL;L.aiDraft=false;save();renderPlan();toast('AI draft removed')};
+  btn.onclick=async()=>{pan.classList.toggle('show');if(!pan.classList.contains('show'))return;
+    st.textContent='Checking…';go.disabled=true;const a=await aiStatus();
+    if(!a.enabled){st.textContent='AI drafting is not available right now.';return}
+    st.textContent=a.remaining>0?`AI drafts left today: ${a.remaining}`:'You have used all AI drafts for today. Try again tomorrow.';go.disabled=a.remaining<=0;idea.focus()};
+  go.onclick=async()=>{
+    if(!L.comp){toast('Choose a competency first');return}
+    go.disabled=true;st.textContent='Writing the steps… (about 10–30 seconds)';
+    const ph=phaseSplit(L.approach,+L.duration),LT=litText(L);
+    const ex=isReadyLesson(L)&&L.items&&L.items.C&&L.items.C[0];
+    const body={grade:L.grade,subject:L.subject,term:L.term,competency:L.title,objectives:htmlText(L.secs.I).slice(0,600),approach:L.approach,
+      phases:ph.map(([n,m])=>({name:n,min:m})),local:place(),text:LT?LT.title:'',sample:ex?String(qOf(L.comp,ex)).slice(0,400):'',idea:idea.value.trim()};
+    try{
+      const r=await fetch('/api/ai/lesson-steps',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});
+      const j=await r.json().catch(()=>({}));
+      if(!r.ok||!Array.isArray(j.steps))throw new Error(j.error||'The AI draft could not be made right now. Please try again.');
+      if(!L.prevL)L.prevL=L.secs.L;L.secs.L=aiHtml(ph,j);L.edited.L=true;L.aiDraft=true;P.ai=(P.ai||0)+1;
+      save();renderPlan();toast('AI draft ready. Please check it.');
+    }catch(e){st.textContent=e.message||'The AI draft could not be made right now.';go.disabled=false}
+  };
 }
 function stripLive(h){return h.replace(/(<div class="live"[^>]*>)[\s\S]*?(<\/div>)/,'$1$2')}
 function exitLines(){const L=S.lesson;if(isReadyLesson(L))return L.items.X.map((it,i)=>`${i+1}. ${qOf(L.comp,it)}`);return parseManual(L.manual.C).slice(0,3).map((it,i)=>`${i+1}. ${it.q}`).concat(L.manual.C?[]:['[Exit ticket items: add them in Worksheets → Core; the first 3 are used]'])}
