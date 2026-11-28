@@ -46,7 +46,7 @@ location /api/ {
     proxy_set_header X-Real-IP $remote_addr;
     proxy_set_header Host $host;
     proxy_read_timeout 75s;
-    client_max_body_size 16k;
+    client_max_body_size 32k;
 }
 EOF
 

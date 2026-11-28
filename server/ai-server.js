@@ -52,7 +52,10 @@ function buildPrompt(b) {
     '- Keep it consistent with the worksheet: the guided and independent practice should prepare learners for it.',
     '- Do not use real learners\' names. Do not mention AI.',
     'Reply with JSON only: {"materials": string, "steps": [string, ...], "key_question": string}. "steps" must have exactly as many items as there are phases.'
-  ].join('\n');
+  ].concat(b.current ? [
+    'REVISION MODE: You are given the current steps. Change them ONLY as the teacher asks. Keep everything else (phases, order, timing, the reading text, good questions) unless the request needs it to change.',
+    'If the teacher asks for shorter steps, the 60–140 word rule does not apply. Still return every phase.'
+  ] : []).join('\n');
   const user = [
     `Grade: ${b.grade}`, `Subject: ${b.subject}`, b.term ? `Term/Quarter: ${b.term}` : '',
     `Learning competency: ${b.competency}`,
@@ -61,7 +64,11 @@ function buildPrompt(b) {
     b.local ? `Local context: ${b.local}` : '',
     b.text ? `Reading text on the worksheet: ${b.text}` : '',
     b.sample ? `Sample worksheet item: ${b.sample}` : '',
-    b.idea ? `The teacher's own idea or request (follow it if it fits the competency): ${b.idea}` : ''
+    b.idea ? `The teacher's own idea or request (follow it if it fits the competency): ${b.idea}` : '',
+    b.current ? `Current materials: ${b.current.materials || '(none)'}` : '',
+    b.current ? `Current steps:\n${b.current.steps.map((t, i) => `${i + 1}. ${t}`).join('\n')}` : '',
+    b.current && b.current.key_question ? `Current key question: ${b.current.key_question}` : '',
+    b.current ? `The teacher's change request: ${b.instruction}` : ''
   ].filter(Boolean).join('\n');
   return {system, user};
 }
@@ -242,11 +249,12 @@ const server = http.createServer(async (req, res) => {
       }
       return send(res, 404, {error: 'Not found'});
     }
-    if (req.method !== 'POST' || url !== '/api/ai/lesson-steps') return send(res, 404, {error: 'Not found'});
+    const revise = url === '/api/ai/revise-steps';
+    if (req.method !== 'POST' || (url !== '/api/ai/lesson-steps' && !revise)) return send(res, 404, {error: 'Not found'});
     if (!KEY) return send(res, 503, {error: 'AI is not set up on this server yet.'});
     if (left(ip) <= 0) return send(res, 429, {error: used >= TOTAL ? 'GuroPrep has reached today\'s AI limit. Please try again tomorrow.' : `You have used today's ${PER_IP} AI drafts. Please try again tomorrow.`, remaining: 0});
     let b;
-    try { b = JSON.parse(await readBody(req, 16000)); } catch (e) { return send(res, e.code === 413 ? 413 : 400, {error: 'Bad request'}); }
+    try { b = JSON.parse(await readBody(req, 32000)); } catch (e) { return send(res, e.code === 413 ? 413 : 400, {error: 'Bad request'}); }
     const phases = Array.isArray(b.phases) ? b.phases.slice(0, 8).map(p => ({name: str(p && p.name, 60), min: Math.max(1, Math.min(120, +(p && p.min) || 5))})).filter(p => p.name) : [];
     const clean = {
       grade: str(b.grade, 20), subject: str(b.subject, 60), term: str(b.term, 20), competency: str(b.competency, 600),
@@ -254,9 +262,16 @@ const server = http.createServer(async (req, res) => {
       text: str(b.text, 120), sample: str(b.sample, 400), idea: str(b.idea, 500)
     };
     if (!clean.grade || !clean.subject || !clean.competency || !phases.length) return send(res, 400, {error: 'Choose a competency first.'});
+    if (revise) {
+      const cur = b.current || {};
+      const steps = Array.isArray(cur.steps) ? cur.steps.slice(0, 8).map(t => str(t, 1500)) : [];
+      clean.instruction = str(b.instruction, 300);
+      if (!clean.instruction || steps.length !== phases.length) return send(res, 400, {error: 'Write what you want to change first.'});
+      clean.current = {materials: str(cur.materials, 400), steps, key_question: str(cur.key_question, 300)};
+    }
     roll(); used++; byIp.set(ip, (byIp.get(ip) || 0) + 1); counted = true;
     const out = await draft(clean);
-    console.log(`${new Date().toISOString()} ok ${clean.grade}/${clean.subject} used=${used}`);
+    console.log(`${new Date().toISOString()} ok${revise ? ' revise' : ''} ${clean.grade}/${clean.subject} used=${used}`);
     send(res, 200, Object.assign(out, {remaining: left(ip)}));
   } catch (e) {
     if (counted) { used = Math.max(0, used - 1); byIp.set(ip, Math.max(0, (byIp.get(ip) || 1) - 1)); } // failed drafts don't count
