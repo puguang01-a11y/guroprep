@@ -118,8 +118,8 @@ document.getElementById('apply').addEventListener('submit', async function (e) {
     var j = await r.json().catch(function () { return {}; });
     if (!r.ok) throw new Error(j.error || 'Sorry, we could not send your application. Please try again later.');
     f.reset();
-    msg.textContent = 'Thank you! Your application was sent. We will contact you within a few days.'; msg.className = 'msg ok';
-    msg.scrollIntoView({behavior: 'smooth', block: 'center'});
+    location.replace('./careers-thanks.html');
+    return;
   } catch (err) {
     msg.textContent = err.message; msg.className = 'msg err';
   } finally { btn.disabled = false; btn.textContent = 'Send my application'; }
