@@ -97,7 +97,7 @@ table.key td,table.key th{border-bottom:1px solid var(--line);padding:6px 8px;te
 .editbox textarea{min-height:60px}
 .editbox label{display:grid;gap:3px;font-size:13px;color:var(--muted)}
 .passage{background:#fffdf5;border:1px solid #efe3bd;border-radius:10px;padding:10px 14px;margin:8px 0;font-size:15px}
-.passage p{margin:6px 0 0}
+.passage p{margin:6px 0 0;white-space:pre-line}.item .q{white-space:pre-line}
 .wk{font-size:12px;font-weight:700;color:var(--muted);margin:12px 0 2px;text-transform:uppercase;letter-spacing:.03em}
 .wk.now{color:var(--brand)}
 #compList{max-height:520px;overflow:auto;padding-right:4px;position:relative}
@@ -115,8 +115,9 @@ footer{font-size:12px;color:var(--muted);margin-top:24px}
   </header>
 
   <details class="card whatsnew">
-    <summary>Pilot version 10: what's new</summary>
+    <summary>Pilot version 11: what's new</summary>
     <ul>
+      <li><b>New: reading texts for English Grades 7–10.</b> Literary-text lessons now come with an original short story, poem or one-act scene printed on the worksheet, used in the lesson plan, with text-based questions, a Character–Value Organizer and a full answer key. Lesson objectives are now written as Cognitive, Psychomotor and Affective.</li>
       <li><b>New: English Grades 2–6, Terms 1 and 2.</b> All 593 competencies from the official Budget of Work are included, so elementary English now covers all three terms. 416 have ready worksheets (letters and word patterns, theme vocabulary, context clues, prefixes and suffixes, subject-verb agreement, adjectives and adverbs, propaganda techniques, references, reading comprehension). 177 are speaking, writing, viewing or form-filling tasks with task cards and a rubric.</li>
       <li><b>Science Grades 3–6, Terms 1 and 2.</b> All 89 competencies from the official Budget of Work now have ready worksheets (Foundation, Core, Extension) and a hands-on activity. Measuring, speed, lever and wave items are generated with computed answers. Science Grades 3–6 now covers all three terms.</li>
       <li><b>Science Grades 7–10, all three terms.</b> All 180 competencies from the official Budget of Work have ready worksheets (Foundation, Core, Extension) and a hands-on activity printed on the worksheet and used in the lesson plan. Physics, chemistry and genetics calculations (speed, force, work, energy, momentum, circuits, Punnett squares, atomic structure, concentration) have computed answers.</li>
@@ -5316,6 +5317,7 @@ const JHS_COMPS=[{"id":"m7-1-0","g":7,"t":1,"w":"1","strand":"Measurement and Ge
 </script>
 
 <script src="./math-practical.js"></script>
+<script src="./jhs-literature.js"></script>
 <script>
 /* ===================== App ===================== */
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
@@ -5400,12 +5402,31 @@ function exampleLine(L){const pid=passageOf(L);if(pid)return` Text: "${PASS.find
 function passageOf(L){if(!isReadyLesson(L))return null;for(const lv of ['C','F','E'])for(const it of (L.items[lv]||[]))if(it.p&&it.p.pid)return it.p.pid;return null}
 function boxOf(L){const pid=passageOf(L);if(pid){const P=PASS.find(x=>x.id===pid);return{title:P.title,text:P.text}}if(isReadyLesson(L)&&L.comp.subj==='Science'){const B=SCIB[L.comp.cfg.key];if(B&&B.act)return{title:'Activity (do this first, then answer the questions)',text:B.act}}return null}
 function rubricOf(L){if(!isTaskComp(L.comp))return null;return SK.e_task.rubric(L.comp.cfg)}
+function litText(L){const pid=passageOf(L);const P=pid&&PASS.find(x=>x.id===pid);return P&&P.jhs?P:null}
+function objectivesOf(L){
+  const famKey=L.comp.fam||(SK[L.comp.sk]||{}).fam||'';const T=litText(L);const pl=place();
+  const cog=lcFirst(L.title.replace(/\.$/,'').replace(/^[^—]*—\s*/,'').replace(/\s*—\s*/g,': ').replace(/:\s*:/g,':'));
+  const PA={
+    je_lit:[`complete a Character–Value Organizer and cite evidence from ${T?'"'+T.title+'"':'the text'}`,`appreciate the values shown in the text and relate them to life in ${pl}`],
+    je_info:['annotate or sort parts of a short text to show its structure and evidence','value accurate and honest use of information'],
+    je_letter:['write or revise a short formal letter or email','show courtesy and honesty when communicating with others'],
+    je_write:['revise and edit a short paragraph using a checklist','take pride in clear, careful writing and accept feedback'],
+    science:['carry out the activity safely and record observations',`show curiosity, safety and care for the environment in ${pl}`],
+    e_task:['perform or produce the task using the rubric as a guide',"show confidence and respect for classmates' work"]};
+  const eng=['read, write or say their answers clearly and complete the worksheet','show confidence and respect when sharing ideas with classmates'];
+  const math=['solve problems and show their solutions on paper or a slate','show patience and accuracy, and explain their thinking to a classmate'];
+  const segs=L.title.split('—').map(x=>x.trim().replace(/:$/,'')).filter(Boolean);
+  const cogF=(famKey==='je_lit'&&T&&/individual or communal values/.test(L.title))?`analyze "${T.title}" as an expression of individual or communal values, focusing on ${segs[segs.length-1].replace(/^\d+\s*|^[a-z]\s(?=[a-z])/,'')}`:cog;
+  const sci=L.comp.subj==='Science'?PA.science:null;
+  const pa=isTaskComp(L.comp)?PA.e_task:PA[famKey]||sci||(/^e_/.test(famKey)||L.comp.subj==='English'?eng:math);
+  return [['Cognitive',cogF],['Psychomotor',pa[0]],['Affective',pa[1]]];
+}
 function genSec(L,s){
   const F=famOf(L);const T=F||STRAND_TPL;const v=(L.variant[s]||0);const pick2=a=>Array.isArray(a)?a[v%a.length]:a;
   if(s==='head')return `<p><b>Grade ${esc(L.grade)} · ${esc(L.subject)} · Term ${esc(L.term)}${L.week?' · '+esc(L.week):''} · ${esc(L.duration)} minutes</b></p><p>Curriculum: ${esc(L.cur)}</p><p>Teacher: ____________________ &nbsp; Section: __________ &nbsp; Date: __________</p>`;
   if(s==='I'){
-    const obj=L.comp?[lcFirst(L.title.replace(/\.$/,'')),'explain how they got their answers to a classmate',`use the skill in a real-life situation in ${place()}`]:['[What learners will be able to do: 1]','[2]','[3]'];
-    return `<p><b>Learning competency:</b> ${esc(L.title)}</p><p>By the end of the lesson, learners will be able to:</p><ul>${obj.map(o=>`<li>${esc(o)}</li>`).join('')}</ul>`;
+    const obj=L.comp?objectivesOf(L):[['Cognitive','[What learners will know or be able to do]'],['Psychomotor','[What learners will make, perform or show]'],['Affective','[The value or attitude learners will show]']];
+    return `<p><b>Learning competency:</b> ${esc(L.title)}</p><p>By the end of the lesson, learners will be able to:</p><ul>${obj.map(([k,o])=>`<li><b>${esc(k)}:</b> ${esc(o)}</li>`).join('')}</ul>`;
   }
   if(s==='L'){
     const ph=phaseSplit(L.approach,+L.duration);
@@ -5419,7 +5440,9 @@ function genSec(L,s){
     const keyQ=`<p><b>Key question:</b> ${esc(T.key)}</p>`;
     const langHtml=lang.length?`<p><b>Classroom language:</b> ${lang.map(([e,t])=>`${esc(e)} / <i>${esc(t)}</i>`).join(' · ')}</p>`:'';
     const tplNote=L.comp&&!isReadyLesson(L)?'<p class="note">This competency needs drawings, measuring or hands-on work, so GuroPrep gives a template. Add your own activity and items.</p>':'';
-    return `${tplNote}<p><b>Materials:</b> ${esc(fill(T.materials))}</p><ul>${ph.map(([n,m],i)=>`<li><b>${esc(n)} (${m} min):</b> ${esc(body[i]||'')}</li>`).join('')}</ul>${keyQ}${langHtml}<p class="note">Local context: examples use "${esc(place())}". Change any example to fit your class.</p>`;
+    const LT=litText(L);if(LT){const tt=`"${LT.title}"`;for(const k in body)if(typeof body[k]==='string')body[k]=body[k].replace('Read a short excerpt and think aloud',`Read aloud the first part of ${tt} and think aloud`).replace('analyze one excerpt using a chart: element → textual evidence → meaning → value shown',`reread ${tt} and complete the Character–Value Organizer (character → action or decision → value → individual or communal → evidence)`).replace('Pairs answer two questions on the worksheet',`Pairs answer two questions about ${tt} on the worksheet`)}
+    const mats=LT?`${'"'+LT.title+'"'} (an original ${LT.type==='drama'?'one-act scene':LT.type} printed on the worksheet), Character–Value Organizer (on the worksheet), chart paper, worksheet`:fill(T.materials);
+    return `${tplNote}<p><b>Materials:</b> ${esc(mats)}</p><ul>${ph.map(([n,m],i)=>`<li><b>${esc(n)} (${m} min):</b> ${esc(body[i]||'')}</li>`).join('')}</ul>${keyQ}${langHtml}<p class="note">Local context: examples use "${esc(place())}". Change any example to fit your class.</p>`;
   }
   if(s==='A'&&rubricOf(L)){const R=rubricOf(L);return `<p>Score the task with this rubric (${esc(R.title)}). ${esc(RUBNOTE)}</p><ul>${R.rows.map(x=>`<li>${esc(x)}</li>`).join('')}</ul><p><b>Success:</b> at least 7 in 10 learners score 3 or 4 on most criteria.</p>`}
   if(s==='A')return `<ul><li>After modelling, learners show answers to 2 quick items on slates or fingers.</li><li>During group work, walk around, listen, and correct mistakes right away.</li><li>Exit ticket (3 items, last 5 minutes):</li></ul><div class="live" contenteditable="false" data-live="X"></div><p><b>Success:</b> at least 7 in 10 learners get 2 of 3 correct.</p>`;
@@ -5631,8 +5654,8 @@ async function buildDocx(){
   if(!window.JSZip){toast('Word tool did not load. Check your internet connection and reload.');return null}
   const body=[];
   planBlocks().forEach(b=>body.push(b.t==='title'?para(b.x,{b:1,sz:30}):b.t==='h'?para(b.x,{b:1,sz:26,before:200}):b.t==='li'?para('•  '+b.x,{ind:1}):para(b.x)));
-  ['F','C','E'].filter(l=>S.include[l]).forEach(l=>{const w=wsData(l);if(!w.items.length)return;body.push(PB,para('Name: ____________________   Grade & Section: __________   Date: ________'),para(w.title,{b:1,sz:28,before:120}),para(w.instr,{i:1}));if(w.key)body.push(para('Key question: '+w.key));if(w.passage){body.push(para(w.passage.title,{b:1,sz:24,before:160}));body.push(para(w.passage.text))}
-    w.items.forEach((it,i)=>{body.push(para(`${i+1}. ${it.q}`,{before:120}));if(it.nl)body.push(para(`     ${fmt(it.nl.lo)} ———————— ${fmt((it.nl.lo+it.nl.hi)/2)} ———————— ${fmt(it.nl.hi)}`));if(it.work)body.push(para(' '));if(!it.noLine)body.push(para('     Answer: ______________________'))})});
+  ['F','C','E'].filter(l=>S.include[l]).forEach(l=>{const w=wsData(l);if(!w.items.length)return;body.push(PB,para('Name: ____________________   Grade & Section: __________   Date: ________'),para(w.title,{b:1,sz:28,before:120}),para(w.instr,{i:1}));if(w.key)body.push(para('Key question: '+w.key));if(w.passage){body.push(para(w.passage.title,{b:1,sz:24,before:160}));String(w.passage.text).split('\n').forEach(t=>body.push(para(t)))}
+    w.items.forEach((it,i)=>{String(`${i+1}. ${it.q}`).split('\n').forEach((t,j)=>body.push(para(t,{before:j?0:120})));if(it.nl)body.push(para(`     ${fmt(it.nl.lo)} ———————— ${fmt((it.nl.lo+it.nl.hi)/2)} ———————— ${fmt(it.nl.hi)}`));if(it.work)body.push(para(' '));if(!it.noLine)body.push(para('     Answer: ______________________'))})});
   body.push(PB);keyBlocks().forEach(b=>body.push(b.t==='title'?para(b.x,{b:1,sz:28}):b.t==='h'?para(b.x,{b:1,sz:24,before:160}):para(b.x)));
   const pg={short:[12240,15840],long:[12240,18720],a4:[11906,16838]}[S.paper];
   const doc=`<?xml version="1.0" encoding="UTF-8" standalone="yes"?><w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"><w:body>${body.join('')}<w:sectPr><w:pgSz w:w="${pg[0]}" w:h="${pg[1]}"/><w:pgMar w:top="1080" w:right="1080" w:bottom="1080" w:left="1080" w:header="720" w:footer="720" w:gutter="0"/></w:sectPr></w:body></w:document>`;

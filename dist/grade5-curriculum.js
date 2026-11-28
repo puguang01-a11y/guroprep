@@ -294,67 +294,67 @@ const gradeFiveCurriculum = {
           "exemplars": []
         },
         {
-          "label": "Comprehend literary texts. — 3sequencing events — at least 7 events",
+          "label": "Comprehend literary texts. — sequencing events — at least 7 events",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-c18147570f",
           "exemplars": []
         },
         {
-          "label": "Comprehend literary texts. — 4identifying type of plot — sequential",
+          "label": "Comprehend literary texts. — identifying type of plot — sequential",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-f2431fcd0c",
           "exemplars": []
         },
         {
-          "label": "Comprehend literary texts. — 5analyzing sound devices — onomatopoeia",
+          "label": "Comprehend literary texts. — analyzing sound devices — onomatopoeia",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-72ee0889cb",
           "exemplars": []
         },
         {
-          "label": "Comprehend literary texts. — 5analyzing sound devices — alliteration",
+          "label": "Comprehend literary texts. — analyzing sound devices — alliteration",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-320900b577",
           "exemplars": []
         },
         {
-          "label": "Comprehend literary texts. — 5analyzing sound devices — assonance",
+          "label": "Comprehend literary texts. — analyzing sound devices — assonance",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-7e145a5b7f",
           "exemplars": []
         },
         {
-          "label": "Comprehend literary texts. — 5analyzing sound devices — consonance",
+          "label": "Comprehend literary texts. — analyzing sound devices — consonance",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-31b77c417c",
           "exemplars": []
         },
         {
-          "label": "Comprehend literary texts. — 6analyzing figures of speech to get and clarify meaning — simile",
+          "label": "Comprehend literary texts. — analyzing figures of speech to get and clarify meaning — simile",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-f02290069f",
           "exemplars": []
         },
         {
-          "label": "Comprehend literary texts. — 6analyzing figures of speech to get and clarify meaning — metaphor",
+          "label": "Comprehend literary texts. — analyzing figures of speech to get and clarify meaning — metaphor",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-99a87d20d9",
           "exemplars": []
         },
         {
-          "label": "Comprehend literary texts. — 6analyzing figures of speech to get and clarify meaning — personification",
+          "label": "Comprehend literary texts. — analyzing figures of speech to get and clarify meaning — personification",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-2b0f8525b9",
           "exemplars": []
         },
         {
-          "label": "Comprehend literary texts. — 7inferring — character's feelings and traits",
+          "label": "Comprehend literary texts. — inferring — character's feelings and traits",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-8b8b3e5c99",
           "exemplars": []
         },
         {
-          "label": "Comprehend literary texts. — 8making predictions — character's possible decision/action",
+          "label": "Comprehend literary texts. — making predictions — character's possible decision/action",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-fd013d9927",
           "exemplars": []
@@ -381,37 +381,37 @@ const gradeFiveCurriculum = {
           "exemplars": []
         },
         {
-          "label": "Comprehend literary texts. — 13applying the important story elements to one’s schema — evaluating possibility of an event happening in real life",
+          "label": "Comprehend literary texts. — applying the important story elements to one’s schema — evaluating possibility of an event happening in real life",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-9c5c5c22b3",
           "exemplars": []
         },
         {
-          "label": "Comprehend informational texts. — 1noting important information through outlining (topic, main idea, supporting details) — deductive organization (inverted pyramid)",
+          "label": "Comprehend informational texts. — noting important information through outlining (topic, main idea, supporting details) — deductive organization (inverted pyramid)",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-9bd854835e",
           "exemplars": []
         },
         {
-          "label": "Comprehend informational texts. — 2identifying text types — explanation",
+          "label": "Comprehend informational texts. — identifying text types — explanation",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-93a61b3cee",
           "exemplars": []
         },
         {
-          "label": "Comprehend informational texts. — 2identifying text types — news report",
+          "label": "Comprehend informational texts. — identifying text types — news report",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-c0c6d2e892",
           "exemplars": []
         },
         {
-          "label": "Comprehend informational texts. — 3identifying author’s purpose — entertain",
+          "label": "Comprehend informational texts. — identifying author’s purpose — entertain",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-d8a1f96be3",
           "exemplars": []
         },
         {
-          "label": "Comprehend informational texts. — 3identifying author’s purpose — inform, explain, describe",
+          "label": "Comprehend informational texts. — identifying author’s purpose — inform, explain, describe",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-c3d884892f",
           "exemplars": []
@@ -441,19 +441,19 @@ const gradeFiveCurriculum = {
           "exemplars": []
         },
         {
-          "label": "Use words with literal (denotative) and implied (connotative) meanings in sentences. — 1using context clues — analogy",
+          "label": "Use words with literal (denotative) and implied (connotative) meanings in sentences. — using context clues — analogy",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-50e7e00d16",
           "exemplars": []
         },
         {
-          "label": "Use words with literal (denotative) and implied (connotative) meanings in sentences. — 2using structural analysis — csuffixes — verb-forming suffixes",
+          "label": "Use words with literal (denotative) and implied (connotative) meanings in sentences. — using structural analysis — suffixes — verb-forming suffixes",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-0f33655d65",
           "exemplars": []
         },
         {
-          "label": "Use words with literal (denotative) and implied (connotative) meanings in sentences. — 3using general references (print and online) — dictionary",
+          "label": "Use words with literal (denotative) and implied (connotative) meanings in sentences. — using general references (print and online) — dictionary",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-22ae808616",
           "exemplars": []
@@ -470,79 +470,79 @@ const gradeFiveCurriculum = {
           ]
         },
         {
-          "label": "Compose appropriate sentences for clarity and coherence. — 1using subject-verb agreement — bkinds of nouns — collective, concrete, abstract",
+          "label": "Compose appropriate sentences for clarity and coherence. — using subject-verb agreement — kinds of nouns — collective, concrete, abstract",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-51e4dffbdc",
           "exemplars": []
         },
         {
-          "label": "Compose appropriate sentences for clarity and coherence. — 1using subject-verb agreement — csubject pronouns — demonstrative",
+          "label": "Compose appropriate sentences for clarity and coherence. — using subject-verb agreement — subject pronouns — demonstrative",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-708ad202cf",
           "exemplars": []
         },
         {
-          "label": "Compose appropriate sentences for clarity and coherence. — 1using subject-verb agreement — csubject pronouns — relative",
+          "label": "Compose appropriate sentences for clarity and coherence. — using subject-verb agreement — subject pronouns — relative",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-a3a269b1f3",
           "exemplars": []
         },
         {
-          "label": "Compose appropriate sentences for clarity and coherence. — 2using kinds of verbs — helping",
+          "label": "Compose appropriate sentences for clarity and coherence. — using kinds of verbs — helping",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-24accbde1e",
           "exemplars": []
         },
         {
-          "label": "Compose appropriate sentences for clarity and coherence. — 2using kinds of verbs — linking (and sense)",
+          "label": "Compose appropriate sentences for clarity and coherence. — using kinds of verbs — linking (and sense)",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-8c57bbec11",
           "exemplars": []
         },
         {
-          "label": "Compose appropriate sentences for clarity and coherence. — 2using kinds of verbs — transitive",
+          "label": "Compose appropriate sentences for clarity and coherence. — using kinds of verbs — transitive",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-7058a41fe9",
           "exemplars": []
         },
         {
-          "label": "Compose appropriate sentences for clarity and coherence. — 3using tenses of verbs — bprogressive — present",
+          "label": "Compose appropriate sentences for clarity and coherence. — using tenses of verbs — progressive — present",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-3f288be3b8",
           "exemplars": []
         },
         {
-          "label": "Compose appropriate sentences for clarity and coherence. — 3using tenses of verbs — bprogressive — past",
+          "label": "Compose appropriate sentences for clarity and coherence. — using tenses of verbs — progressive — past",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-e3f7878fa6",
           "exemplars": []
         },
         {
-          "label": "Compose appropriate sentences for clarity and coherence. — 3using tenses of verbs — bprogressive — future",
+          "label": "Compose appropriate sentences for clarity and coherence. — using tenses of verbs — progressive — future",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-03025b0bde",
           "exemplars": []
         },
         {
-          "label": "Compose appropriate sentences for clarity and coherence. — 5using adjectives — series (determiner, quantity, quality, size, shape, color)",
+          "label": "Compose appropriate sentences for clarity and coherence. — using adjectives — series (determiner, quantity, quality, size, shape, color)",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-99b3028898",
           "exemplars": []
         },
         {
-          "label": "Compose appropriate sentences for clarity and coherence. — 7using adverbs — manner",
+          "label": "Compose appropriate sentences for clarity and coherence. — using adverbs — manner",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-7f5bec34a3",
           "exemplars": []
         },
         {
-          "label": "Compose appropriate sentences for clarity and coherence. — 7using adverbs — time",
+          "label": "Compose appropriate sentences for clarity and coherence. — using adverbs — time",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-007594c989",
           "exemplars": []
         },
         {
-          "label": "Compose appropriate sentences for clarity and coherence. — 9using complement — noun",
+          "label": "Compose appropriate sentences for clarity and coherence. — using complement — noun",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-36d927edc6",
           "exemplars": []
@@ -562,19 +562,19 @@ const gradeFiveCurriculum = {
           "exemplars": []
         },
         {
-          "label": "Express ideas appropriately (age-appropriate, gender-responsive, culture sensitive) for one’s purpose, context, and target audience. — 1using text types — narrative",
+          "label": "Express ideas appropriately (age-appropriate, gender-responsive, culture sensitive) for one’s purpose, context, and target audience. — using text types — narrative",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-7f986e04d3",
           "exemplars": []
         },
         {
-          "label": "Express ideas appropriately (age-appropriate, gender-responsive, culture sensitive) for one’s purpose, context, and target audience. — 1using text types — explanation",
+          "label": "Express ideas appropriately (age-appropriate, gender-responsive, culture sensitive) for one’s purpose, context, and target audience. — using text types — explanation",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-1a95092c8a",
           "exemplars": []
         },
         {
-          "label": "Express ideas appropriately (age-appropriate, gender-responsive, culture sensitive) for one’s purpose, context, and target audience. — 1using text types — news report",
+          "label": "Express ideas appropriately (age-appropriate, gender-responsive, culture sensitive) for one’s purpose, context, and target audience. — using text types — news report",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-ea632cd1f0",
           "exemplars": []
@@ -668,13 +668,13 @@ const gradeFiveCurriculum = {
           ]
         },
         {
-          "label": "Derive meaning based on the visual elements. — 6interpreting images/ideas that are explicitly used to influence viewers — stereotypes on age and gender",
+          "label": "Derive meaning based on the visual elements. — interpreting images/ideas that are explicitly used to influence viewers — stereotypes on age and gender",
           "section": "Viewing and Representing",
           "index": "c-966cf0906c",
           "exemplars": []
         },
         {
-          "label": "Derive meaning based on the visual elements. — 6interpreting images/ideas that are explicitly used to influence viewers — stereotypes on socio-economic status",
+          "label": "Derive meaning based on the visual elements. — interpreting images/ideas that are explicitly used to influence viewers — stereotypes on socio-economic status",
           "section": "Viewing and Representing",
           "index": "c-6e392c5e94",
           "exemplars": []
@@ -730,43 +730,43 @@ const gradeFiveCurriculum = {
           "exemplars": []
         },
         {
-          "label": "Comprehend literary texts. — 3sequencing events — at least 7 events",
+          "label": "Comprehend literary texts. — sequencing events — at least 7 events",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-68192d9d50",
           "exemplars": []
         },
         {
-          "label": "Comprehend literary texts. — 4identifying type of plot — flashback",
+          "label": "Comprehend literary texts. — identifying type of plot — flashback",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-8ac2731d37",
           "exemplars": []
         },
         {
-          "label": "Comprehend literary texts. — 6analyzing figures of speech to get and clarify meaning — metaphor",
+          "label": "Comprehend literary texts. — analyzing figures of speech to get and clarify meaning — metaphor",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-716aa5d663",
           "exemplars": []
         },
         {
-          "label": "Comprehend literary texts. — 6analyzing figures of speech to get and clarify meaning — personification",
+          "label": "Comprehend literary texts. — analyzing figures of speech to get and clarify meaning — personification",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-b4669fd794",
           "exemplars": []
         },
         {
-          "label": "Comprehend literary texts. — 6analyzing figures of speech to get and clarify meaning — hyperbole",
+          "label": "Comprehend literary texts. — analyzing figures of speech to get and clarify meaning — hyperbole",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-9be3c2897f",
           "exemplars": []
         },
         {
-          "label": "Comprehend literary texts. — 7inferring — character's feelings and traits",
+          "label": "Comprehend literary texts. — inferring — character's feelings and traits",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-6205d018b6",
           "exemplars": []
         },
         {
-          "label": "Comprehend literary texts. — 8making predictions — character's possible decision/action",
+          "label": "Comprehend literary texts. — making predictions — character's possible decision/action",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-21e4f5254e",
           "exemplars": []
@@ -793,37 +793,37 @@ const gradeFiveCurriculum = {
           "exemplars": []
         },
         {
-          "label": "Comprehend literary texts. — 13applying the important story elements to one’s schema — evaluating possibility of an event happening in real life",
+          "label": "Comprehend literary texts. — applying the important story elements to one’s schema — evaluating possibility of an event happening in real life",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-ec80de38d8",
           "exemplars": []
         },
         {
-          "label": "Comprehend informational texts. — 1noting important information through outlining (topic, main idea, supporting details) — deductive organization (inverted pyramid)",
+          "label": "Comprehend informational texts. — noting important information through outlining (topic, main idea, supporting details) — deductive organization (inverted pyramid)",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-841c29dbdd",
           "exemplars": []
         },
         {
-          "label": "Comprehend informational texts. — 2identifying text types — explanation",
+          "label": "Comprehend informational texts. — identifying text types — explanation",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-66035fcb28",
           "exemplars": []
         },
         {
-          "label": "Comprehend informational texts. — 2identifying text types — news report",
+          "label": "Comprehend informational texts. — identifying text types — news report",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-5c3044eb64",
           "exemplars": []
         },
         {
-          "label": "Comprehend informational texts. — 3identifying author’s purpose — entertain",
+          "label": "Comprehend informational texts. — identifying author’s purpose — entertain",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-8601d14554",
           "exemplars": []
         },
         {
-          "label": "Comprehend informational texts. — 3identifying author’s purpose — inform, explain, describe",
+          "label": "Comprehend informational texts. — identifying author’s purpose — inform, explain, describe",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-2a98f01edc",
           "exemplars": []
@@ -853,19 +853,19 @@ const gradeFiveCurriculum = {
           "exemplars": []
         },
         {
-          "label": "Use words with literal (denotative) and implied (connotative) meanings in sentences. — 1using context clues — analogy",
+          "label": "Use words with literal (denotative) and implied (connotative) meanings in sentences. — using context clues — analogy",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-0299318c76",
           "exemplars": []
         },
         {
-          "label": "Use words with literal (denotative) and implied (connotative) meanings in sentences. — 1using context clues — appositive",
+          "label": "Use words with literal (denotative) and implied (connotative) meanings in sentences. — using context clues — appositive",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-352cf41201",
           "exemplars": []
         },
         {
-          "label": "Use words with literal (denotative) and implied (connotative) meanings in sentences. — 2using structural analysis — csuffixes — adverb-forming suffixes",
+          "label": "Use words with literal (denotative) and implied (connotative) meanings in sentences. — using structural analysis — suffixes — adverb-forming suffixes",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-024f83ae54",
           "exemplars": [
@@ -873,7 +873,7 @@ const gradeFiveCurriculum = {
           ]
         },
         {
-          "label": "Use words with literal (denotative) and implied (connotative) meanings in sentences. — 3using general references (print and online) — glossary",
+          "label": "Use words with literal (denotative) and implied (connotative) meanings in sentences. — using general references (print and online) — glossary",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-2e2e6f7089",
           "exemplars": []
@@ -890,73 +890,73 @@ const gradeFiveCurriculum = {
           ]
         },
         {
-          "label": "Compose appropriate sentences for clarity and coherence. — 1using subject-verb agreement — bkinds of nouns — possessive, compound",
+          "label": "Compose appropriate sentences for clarity and coherence. — using subject-verb agreement — kinds of nouns — possessive, compound",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-ac223bb4a0",
           "exemplars": []
         },
         {
-          "label": "Compose appropriate sentences for clarity and coherence. — 1using subject-verb agreement — csubject pronouns — relative",
+          "label": "Compose appropriate sentences for clarity and coherence. — using subject-verb agreement — subject pronouns — relative",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-567b66a711",
           "exemplars": []
         },
         {
-          "label": "Compose appropriate sentences for clarity and coherence. — 2using kinds of verbs — linking (and sense)",
+          "label": "Compose appropriate sentences for clarity and coherence. — using kinds of verbs — linking (and sense)",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-b2ffefd1cf",
           "exemplars": []
         },
         {
-          "label": "Compose appropriate sentences for clarity and coherence. — 2using kinds of verbs — transitive",
+          "label": "Compose appropriate sentences for clarity and coherence. — using kinds of verbs — transitive",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-7cc9e3c57b",
           "exemplars": []
         },
         {
-          "label": "Compose appropriate sentences for clarity and coherence. — 3using tenses of verbs — bprogressive — present",
+          "label": "Compose appropriate sentences for clarity and coherence. — using tenses of verbs — progressive — present",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-2a3be56840",
           "exemplars": []
         },
         {
-          "label": "Compose appropriate sentences for clarity and coherence. — 3using tenses of verbs — bprogressive — past",
+          "label": "Compose appropriate sentences for clarity and coherence. — using tenses of verbs — progressive — past",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-5a9dcba7d3",
           "exemplars": []
         },
         {
-          "label": "Compose appropriate sentences for clarity and coherence. — 3using tenses of verbs — bprogressive — future",
+          "label": "Compose appropriate sentences for clarity and coherence. — using tenses of verbs — progressive — future",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-f30313c9bc",
           "exemplars": []
         },
         {
-          "label": "Compose appropriate sentences for clarity and coherence. — 7using adverbs — place",
+          "label": "Compose appropriate sentences for clarity and coherence. — using adverbs — place",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-e5ee1d5587",
           "exemplars": []
         },
         {
-          "label": "Compose appropriate sentences for clarity and coherence. — 7using adverbs — frequency",
+          "label": "Compose appropriate sentences for clarity and coherence. — using adverbs — frequency",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-0137b3d2eb",
           "exemplars": []
         },
         {
-          "label": "Compose appropriate sentences for clarity and coherence. — 7using adverbs — intensity",
+          "label": "Compose appropriate sentences for clarity and coherence. — using adverbs — intensity",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-9a4c745175",
           "exemplars": []
         },
         {
-          "label": "Compose appropriate sentences for clarity and coherence. — 9using complement — noun",
+          "label": "Compose appropriate sentences for clarity and coherence. — using complement — noun",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-b62f622d2b",
           "exemplars": []
         },
         {
-          "label": "Compose appropriate sentences for clarity and coherence. — 9using complement — pronoun",
+          "label": "Compose appropriate sentences for clarity and coherence. — using complement — pronoun",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-04f72d7778",
           "exemplars": []
@@ -976,19 +976,19 @@ const gradeFiveCurriculum = {
           "exemplars": []
         },
         {
-          "label": "Express ideas appropriately (age-appropriate, gender-responsive, culture sensitive) for one’s purpose, context, and target audience. — 1using text types — narrative",
+          "label": "Express ideas appropriately (age-appropriate, gender-responsive, culture sensitive) for one’s purpose, context, and target audience. — using text types — narrative",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-4a2ecc15e5",
           "exemplars": []
         },
         {
-          "label": "Express ideas appropriately (age-appropriate, gender-responsive, culture sensitive) for one’s purpose, context, and target audience. — 1using text types — explanation",
+          "label": "Express ideas appropriately (age-appropriate, gender-responsive, culture sensitive) for one’s purpose, context, and target audience. — using text types — explanation",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-857c57bdc9",
           "exemplars": []
         },
         {
-          "label": "Express ideas appropriately (age-appropriate, gender-responsive, culture sensitive) for one’s purpose, context, and target audience. — 1using text types — news report",
+          "label": "Express ideas appropriately (age-appropriate, gender-responsive, culture sensitive) for one’s purpose, context, and target audience. — using text types — news report",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-30474313c4",
           "exemplars": []
@@ -1078,13 +1078,13 @@ const gradeFiveCurriculum = {
           ]
         },
         {
-          "label": "Derive meaning based on the visual elements. — 6interpreting images/ideas that are explicitly used to influence viewers — stereotypes on age and gender",
+          "label": "Derive meaning based on the visual elements. — interpreting images/ideas that are explicitly used to influence viewers — stereotypes on age and gender",
           "section": "Viewing and Representing",
           "index": "c-d9eb3a09b7",
           "exemplars": []
         },
         {
-          "label": "Derive meaning based on the visual elements. — 6interpreting images/ideas that are explicitly used to influence viewers — stereotypes on socio-economic status",
+          "label": "Derive meaning based on the visual elements. — interpreting images/ideas that are explicitly used to influence viewers — stereotypes on socio-economic status",
           "section": "Viewing and Representing",
           "index": "c-ce3c65660f",
           "exemplars": []
@@ -1140,37 +1140,37 @@ const gradeFiveCurriculum = {
           "exemplars": []
         },
         {
-          "label": "Comprehend literary texts. — 3sequencing events — at least 7 events",
+          "label": "Comprehend literary texts. — sequencing events — at least 7 events",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-1c1e4babdc",
           "exemplars": []
         },
         {
-          "label": "Comprehend literary texts. — 4identifying type of plot — flashback",
+          "label": "Comprehend literary texts. — identifying type of plot — flashback",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-24f5d40de2",
           "exemplars": []
         },
         {
-          "label": "Comprehend literary texts. — 6analyzing figures of speech to get and clarify meaning — personification",
+          "label": "Comprehend literary texts. — analyzing figures of speech to get and clarify meaning — personification",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-ce70024edc",
           "exemplars": []
         },
         {
-          "label": "Comprehend literary texts. — 6analyzing figures of speech to get and clarify meaning — hyperbole",
+          "label": "Comprehend literary texts. — analyzing figures of speech to get and clarify meaning — hyperbole",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-2fbbaa9959",
           "exemplars": []
         },
         {
-          "label": "Comprehend literary texts. — 7inferring — character's feelings and traits",
+          "label": "Comprehend literary texts. — inferring — character's feelings and traits",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-1be4d9010b",
           "exemplars": []
         },
         {
-          "label": "Comprehend literary texts. — 8making predictions — character's possible decision/action",
+          "label": "Comprehend literary texts. — making predictions — character's possible decision/action",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-3e3cfef59e",
           "exemplars": []
@@ -1197,37 +1197,37 @@ const gradeFiveCurriculum = {
           "exemplars": []
         },
         {
-          "label": "Comprehend literary texts. — 13applying the important story elements to one’s schema — evaluating possibility of an event happening in real life",
+          "label": "Comprehend literary texts. — applying the important story elements to one’s schema — evaluating possibility of an event happening in real life",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-e125aff8bc",
           "exemplars": []
         },
         {
-          "label": "Comprehend informational texts. — 1noting important information through outlining (topic, main idea, supporting details) — deductive organization (inverted pyramid)",
+          "label": "Comprehend informational texts. — noting important information through outlining (topic, main idea, supporting details) — deductive organization (inverted pyramid)",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-6158e4ea87",
           "exemplars": []
         },
         {
-          "label": "Comprehend informational texts. — 2identifying text types — explanation",
+          "label": "Comprehend informational texts. — identifying text types — explanation",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-fa8620f193",
           "exemplars": []
         },
         {
-          "label": "Comprehend informational texts. — 2identifying text types — news report",
+          "label": "Comprehend informational texts. — identifying text types — news report",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-1e737466ef",
           "exemplars": []
         },
         {
-          "label": "Comprehend informational texts. — 3identifying author’s purpose — entertain",
+          "label": "Comprehend informational texts. — identifying author’s purpose — entertain",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-79ca24f41f",
           "exemplars": []
         },
         {
-          "label": "Comprehend informational texts. — 3identifying author’s purpose — inform, explain, describe",
+          "label": "Comprehend informational texts. — identifying author’s purpose — inform, explain, describe",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-6bcaa9c108",
           "exemplars": []
@@ -1257,31 +1257,31 @@ const gradeFiveCurriculum = {
           "exemplars": []
         },
         {
-          "label": "Use words with literal (denotative) and implied (connotative) meanings in sentences. — 1using context clues — analogy",
+          "label": "Use words with literal (denotative) and implied (connotative) meanings in sentences. — using context clues — analogy",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-df163cc6d1",
           "exemplars": []
         },
         {
-          "label": "Use words with literal (denotative) and implied (connotative) meanings in sentences. — 1using context clues — appositive",
+          "label": "Use words with literal (denotative) and implied (connotative) meanings in sentences. — using context clues — appositive",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-ea538df599",
           "exemplars": []
         },
         {
-          "label": "Use words with literal (denotative) and implied (connotative) meanings in sentences. — 1using context clues — general gist/sense",
+          "label": "Use words with literal (denotative) and implied (connotative) meanings in sentences. — using context clues — general gist/sense",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-1268df4b55",
           "exemplars": []
         },
         {
-          "label": "Use words with literal (denotative) and implied (connotative) meanings in sentences. — 1using context clues — punctuation",
+          "label": "Use words with literal (denotative) and implied (connotative) meanings in sentences. — using context clues — punctuation",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-f8a4fcfc78",
           "exemplars": []
         },
         {
-          "label": "Use words with literal (denotative) and implied (connotative) meanings in sentences. — 3using general references (print and online) — encyclopedia",
+          "label": "Use words with literal (denotative) and implied (connotative) meanings in sentences. — using general references (print and online) — encyclopedia",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-47552d97e1",
           "exemplars": []
@@ -1298,61 +1298,61 @@ const gradeFiveCurriculum = {
           ]
         },
         {
-          "label": "Compose appropriate sentences for clarity and coherence. — 1using subject-verb agreement — csubject pronouns — reflexive",
+          "label": "Compose appropriate sentences for clarity and coherence. — using subject-verb agreement — subject pronouns — reflexive",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-5a12575f40",
           "exemplars": []
         },
         {
-          "label": "Compose appropriate sentences for clarity and coherence. — 2using kinds of verbs — transitive",
+          "label": "Compose appropriate sentences for clarity and coherence. — using kinds of verbs — transitive",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-74523910ed",
           "exemplars": []
         },
         {
-          "label": "Compose appropriate sentences for clarity and coherence. — 3using tenses of verbs — bprogressive — present",
+          "label": "Compose appropriate sentences for clarity and coherence. — using tenses of verbs — progressive — present",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-396782dd50",
           "exemplars": []
         },
         {
-          "label": "Compose appropriate sentences for clarity and coherence. — 3using tenses of verbs — bprogressive — past",
+          "label": "Compose appropriate sentences for clarity and coherence. — using tenses of verbs — progressive — past",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-58d5248b82",
           "exemplars": []
         },
         {
-          "label": "Compose appropriate sentences for clarity and coherence. — 3using tenses of verbs — bprogressive — future",
+          "label": "Compose appropriate sentences for clarity and coherence. — using tenses of verbs — progressive — future",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-e663d50bce",
           "exemplars": []
         },
         {
-          "label": "Compose appropriate sentences for clarity and coherence. — 7using adverbs — degrees of regular adverbs",
+          "label": "Compose appropriate sentences for clarity and coherence. — using adverbs — degrees of regular adverbs",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-699cfad60b",
           "exemplars": []
         },
         {
-          "label": "Compose appropriate sentences for clarity and coherence. — 7using adverbs — degrees of irregular adverbs",
+          "label": "Compose appropriate sentences for clarity and coherence. — using adverbs — degrees of irregular adverbs",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-ae04551f86",
           "exemplars": []
         },
         {
-          "label": "Compose appropriate sentences for clarity and coherence. — 9using complement — noun",
+          "label": "Compose appropriate sentences for clarity and coherence. — using complement — noun",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-89111d0942",
           "exemplars": []
         },
         {
-          "label": "Compose appropriate sentences for clarity and coherence. — 9using complement — pronoun",
+          "label": "Compose appropriate sentences for clarity and coherence. — using complement — pronoun",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-f7f0c09349",
           "exemplars": []
         },
         {
-          "label": "Compose appropriate sentences for clarity and coherence. — 9using complement — adjective",
+          "label": "Compose appropriate sentences for clarity and coherence. — using complement — adjective",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-7d0e6c33ca",
           "exemplars": []
@@ -1372,19 +1372,19 @@ const gradeFiveCurriculum = {
           "exemplars": []
         },
         {
-          "label": "Express ideas appropriately (age-appropriate, gender-responsive, culture sensitive) for one’s purpose, context, and target audience. — 1using text types — narrative",
+          "label": "Express ideas appropriately (age-appropriate, gender-responsive, culture sensitive) for one’s purpose, context, and target audience. — using text types — narrative",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-727300d49f",
           "exemplars": []
         },
         {
-          "label": "Express ideas appropriately (age-appropriate, gender-responsive, culture sensitive) for one’s purpose, context, and target audience. — 1using text types — explanation",
+          "label": "Express ideas appropriately (age-appropriate, gender-responsive, culture sensitive) for one’s purpose, context, and target audience. — using text types — explanation",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-dc956151c9",
           "exemplars": []
         },
         {
-          "label": "Express ideas appropriately (age-appropriate, gender-responsive, culture sensitive) for one’s purpose, context, and target audience. — 1using text types — news report",
+          "label": "Express ideas appropriately (age-appropriate, gender-responsive, culture sensitive) for one’s purpose, context, and target audience. — using text types — news report",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-53745be82e",
           "exemplars": []
@@ -1454,13 +1454,13 @@ const gradeFiveCurriculum = {
           ]
         },
         {
-          "label": "Derive meaning based on the visual elements. — 6interpreting images/ideas that are explicitly used to influence viewers — stereotypes on age and gender",
+          "label": "Derive meaning based on the visual elements. — interpreting images/ideas that are explicitly used to influence viewers — stereotypes on age and gender",
           "section": "Viewing and Representing",
           "index": "c-816b5f72f1",
           "exemplars": []
         },
         {
-          "label": "Derive meaning based on the visual elements. — 6interpreting images/ideas that are explicitly used to influence viewers — stereotypes on socio-economic status",
+          "label": "Derive meaning based on the visual elements. — interpreting images/ideas that are explicitly used to influence viewers — stereotypes on socio-economic status",
           "section": "Viewing and Representing",
           "index": "c-1518213c70",
           "exemplars": []

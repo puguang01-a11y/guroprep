@@ -363,7 +363,7 @@ const gradeNineCurriculum = {
     "terms": [
       [
         {
-          "label": "Evaluating literary texts — Analyze literary texts as expressions of individual or communal values within: — 1structural context — aconflict — character vs. character",
+          "label": "Evaluating literary texts — Analyze literary texts as expressions of individual or communal values within: — structural context — conflict — character vs. character",
           "section": "",
           "index": "c-eca0809090",
           "exemplars": [
@@ -377,7 +377,7 @@ const gradeNineCurriculum = {
           ]
         },
         {
-          "label": "Evaluating literary texts — Analyze literary texts as expressions of individual or communal values within: — 1structural context — aconflict — character vs. society",
+          "label": "Evaluating literary texts — Analyze literary texts as expressions of individual or communal values within: — structural context — conflict — character vs. society",
           "section": "",
           "index": "c-3a4dafbcc8",
           "exemplars": [
@@ -391,7 +391,7 @@ const gradeNineCurriculum = {
           ]
         },
         {
-          "label": "Evaluating literary texts — Analyze literary texts as expressions of individual or communal values within: — 1structural context — aconflict — character vs. nature/environment",
+          "label": "Evaluating literary texts — Analyze literary texts as expressions of individual or communal values within: — structural context — conflict — character vs. nature/environment",
           "section": "",
           "index": "c-0e0576f908",
           "exemplars": [
@@ -405,7 +405,7 @@ const gradeNineCurriculum = {
           ]
         },
         {
-          "label": "Evaluating literary texts — Analyze literary texts as expressions of individual or communal values within: — 1structural context — aconflict — character vs. self",
+          "label": "Evaluating literary texts — Analyze literary texts as expressions of individual or communal values within: — structural context — conflict — character vs. self",
           "section": "",
           "index": "c-659ab0f8ba",
           "exemplars": [
@@ -419,7 +419,7 @@ const gradeNineCurriculum = {
           ]
         },
         {
-          "label": "Evaluating literary texts — Analyze literary texts as expressions of individual or communal values within: — 1structural context — character",
+          "label": "Evaluating literary texts — Analyze literary texts as expressions of individual or communal values within: — structural context — character",
           "section": "",
           "index": "c-01d0a52969",
           "exemplars": [
@@ -433,7 +433,7 @@ const gradeNineCurriculum = {
           ]
         },
         {
-          "label": "Evaluating literary texts — Analyze literary texts as expressions of individual or communal values within: — 1structural context — characterization",
+          "label": "Evaluating literary texts — Analyze literary texts as expressions of individual or communal values within: — structural context — characterization",
           "section": "",
           "index": "c-562fb7b599",
           "exemplars": [
@@ -447,7 +447,7 @@ const gradeNineCurriculum = {
           ]
         },
         {
-          "label": "Evaluating literary texts — Analyze literary texts as expressions of individual or communal values within: — 1structural context — dplot — parallel",
+          "label": "Evaluating literary texts — Analyze literary texts as expressions of individual or communal values within: — structural context — plot — parallel",
           "section": "",
           "index": "c-1d45691219",
           "exemplars": [
@@ -461,7 +461,7 @@ const gradeNineCurriculum = {
           ]
         },
         {
-          "label": "Evaluating literary texts — Analyze literary texts as expressions of individual or communal values within: — 1structural context — dplot — episodic",
+          "label": "Evaluating literary texts — Analyze literary texts as expressions of individual or communal values within: — structural context — plot — episodic",
           "section": "",
           "index": "c-35b3ce6de0",
           "exemplars": [
@@ -475,13 +475,13 @@ const gradeNineCurriculum = {
           ]
         },
         {
-          "label": "Evaluating literary texts — Analyze literary texts as expressions of individual or communal values within: — 1structural context — spectacle, dialogue, and music",
+          "label": "Evaluating literary texts — Analyze literary texts as expressions of individual or communal values within: — structural context — spectacle, dialogue, and music",
           "section": "",
           "index": "c-be2a9e1728",
           "exemplars": []
         },
         {
-          "label": "Evaluating literary texts — Analyze literary texts as expressions of individual or communal values within: — 1structural context — rhyme and meter",
+          "label": "Evaluating literary texts — Analyze literary texts as expressions of individual or communal values within: — structural context — rhyme and meter",
           "section": "",
           "index": "c-38f0f5835d",
           "exemplars": [
@@ -495,7 +495,7 @@ const gradeNineCurriculum = {
           ]
         },
         {
-          "label": "Evaluating literary texts — Analyze literary texts as expressions of individual or communal values within: — 1structural context — diction",
+          "label": "Evaluating literary texts — Analyze literary texts as expressions of individual or communal values within: — structural context — diction",
           "section": "",
           "index": "c-848df1ed44",
           "exemplars": [
@@ -509,7 +509,7 @@ const gradeNineCurriculum = {
           ]
         },
         {
-          "label": "Evaluating literary texts — Analyze literary texts as expressions of individual or communal values within: — 1structural context — tone and mood",
+          "label": "Evaluating literary texts — Analyze literary texts as expressions of individual or communal values within: — structural context — tone and mood",
           "section": "",
           "index": "c-2364b4646e",
           "exemplars": [
@@ -523,7 +523,7 @@ const gradeNineCurriculum = {
           ]
         },
         {
-          "label": "Evaluating literary texts — Analyze literary texts as expressions of individual or communal values within: — 1structural context — style",
+          "label": "Evaluating literary texts — Analyze literary texts as expressions of individual or communal values within: — structural context — style",
           "section": "",
           "index": "c-72f4ab7072",
           "exemplars": [
@@ -537,7 +537,7 @@ const gradeNineCurriculum = {
           ]
         },
         {
-          "label": "Evaluating literary texts — Analyze literary texts as expressions of individual or communal values within: — 1structural context — patterns and motifs",
+          "label": "Evaluating literary texts — Analyze literary texts as expressions of individual or communal values within: — structural context — patterns and motifs",
           "section": "",
           "index": "c-6412d0cd57",
           "exemplars": [
@@ -551,7 +551,7 @@ const gradeNineCurriculum = {
           ]
         },
         {
-          "label": "Evaluating literary texts — Analyze literary texts as expressions of individual or communal values within: — 1structural context — figures of speech and sound devices",
+          "label": "Evaluating literary texts — Analyze literary texts as expressions of individual or communal values within: — structural context — figures of speech and sound devices",
           "section": "",
           "index": "c-ce70186713",
           "exemplars": [
@@ -565,7 +565,7 @@ const gradeNineCurriculum = {
           ]
         },
         {
-          "label": "Evaluating literary texts — Analyze literary texts as expressions of individual or communal values within: — 1structural context — point of view and narrative techniques",
+          "label": "Evaluating literary texts — Analyze literary texts as expressions of individual or communal values within: — structural context — point of view and narrative techniques",
           "section": "",
           "index": "c-fa2b53a4dc",
           "exemplars": [
@@ -579,7 +579,7 @@ const gradeNineCurriculum = {
           ]
         },
         {
-          "label": "Evaluating literary texts — Analyze literary texts as expressions of individual or communal values within: — 1structural context — organic unity",
+          "label": "Evaluating literary texts — Analyze literary texts as expressions of individual or communal values within: — structural context — organic unity",
           "section": "",
           "index": "c-bfc6120cfd",
           "exemplars": [
@@ -593,7 +593,7 @@ const gradeNineCurriculum = {
           ]
         },
         {
-          "label": "Evaluating literary texts — Analyze literary texts as expressions of individual or communal values within: — 1structural context — sign and referent",
+          "label": "Evaluating literary texts — Analyze literary texts as expressions of individual or communal values within: — structural context — sign and referent",
           "section": "",
           "index": "c-111c2a8b00",
           "exemplars": [
@@ -607,7 +607,7 @@ const gradeNineCurriculum = {
           ]
         },
         {
-          "label": "Evaluating literary texts — Analyze literary texts as expressions of individual or communal values within: — 1structural context — binary opposition 2",
+          "label": "Evaluating literary texts — Analyze literary texts as expressions of individual or communal values within: — structural context — binary opposition 2",
           "section": "",
           "index": "c-74b4ea8833",
           "exemplars": [
@@ -663,7 +663,7 @@ const gradeNineCurriculum = {
           ]
         },
         {
-          "label": "Evaluating literary texts — Analyze literary texts as expressions of individual or communal values within: — 5linguistic context — co-text",
+          "label": "Evaluating literary texts — Analyze literary texts as expressions of individual or communal values within: — linguistic context — co-text",
           "section": "",
           "index": "c-a8baa81a45",
           "exemplars": [
@@ -677,7 +677,7 @@ const gradeNineCurriculum = {
           ]
         },
         {
-          "label": "Evaluating literary texts — Analyze literary texts as expressions of individual or communal values within: — 5linguistic context — collocation",
+          "label": "Evaluating literary texts — Analyze literary texts as expressions of individual or communal values within: — linguistic context — collocation",
           "section": "",
           "index": "c-eab2c90446",
           "exemplars": [
@@ -757,7 +757,7 @@ const gradeNineCurriculum = {
       ],
       [
         {
-          "label": "Evaluating informational text in a range of media (spoken, written, visual, and multimedia) for clarity of meaning, purpose, form, and function — Examine text structures for clarity of meaning and purpose: — 1non-journalistic texts — argumentative text",
+          "label": "Evaluating informational text in a range of media (spoken, written, visual, and multimedia) for clarity of meaning, purpose, form, and function — Examine text structures for clarity of meaning and purpose: — non-journalistic texts — argumentative text",
           "section": "INFORMATIONAL TEXT",
           "index": "c-7554ac03aa",
           "exemplars": [
@@ -770,7 +770,7 @@ const gradeNineCurriculum = {
           ]
         },
         {
-          "label": "Evaluating informational text in a range of media (spoken, written, visual, and multimedia) for clarity of meaning, purpose, form, and function — Examine text structures for clarity of meaning and purpose: — 3academic texts — research report",
+          "label": "Evaluating informational text in a range of media (spoken, written, visual, and multimedia) for clarity of meaning, purpose, form, and function — Examine text structures for clarity of meaning and purpose: — academic texts — research report",
           "section": "INFORMATIONAL TEXT",
           "index": "c-351bfea6b8",
           "exemplars": []
@@ -1209,7 +1209,7 @@ const gradeNineCurriculum = {
       ],
       [
         {
-          "label": "Evaluating informational text in a range of media (spoken, written, visual, and multimedia) for clarity of meaning, purpose, form, and function — Examine text structures for clarity of meaning and purpose: — 3academic texts — literature review",
+          "label": "Evaluating informational text in a range of media (spoken, written, visual, and multimedia) for clarity of meaning, purpose, form, and function — Examine text structures for clarity of meaning and purpose: — academic texts — literature review",
           "section": "INFORMATIONAL TEXT",
           "index": "c-de563c94ec",
           "exemplars": [
@@ -1221,7 +1221,7 @@ const gradeNineCurriculum = {
           ]
         },
         {
-          "label": "Evaluating informational text in a range of media (spoken, written, visual, and multimedia) for clarity of meaning, purpose, form, and function — Examine text structures for clarity of meaning and purpose: — 3academic texts — research report",
+          "label": "Evaluating informational text in a range of media (spoken, written, visual, and multimedia) for clarity of meaning, purpose, form, and function — Examine text structures for clarity of meaning and purpose: — academic texts — research report",
           "section": "INFORMATIONAL TEXT",
           "index": "c-c43be942d8",
           "exemplars": []

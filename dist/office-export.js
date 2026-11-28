@@ -91,16 +91,36 @@
     return out;
   }
   function contentSlides(parts,title) {
-    const slides=[];
+    // One idea per slide: start a new slide at each section heading or labelled step,
+    // and never split a paragraph across slides unless it is longer than one slide.
+    const MAX=12, slides=[];
+    const LABEL=/^(Objectives|Content|Procedures[^:]*|Review[^:]*|Motivation[^:]*|Lesson proper[^:]*|I do[^:]*|We do[^:]*|You do[^:]*|Guided practice[^:]*|Independent practice[^:]*|Assessment[^:]*|Exit ticket[^:]*|Assignment[^:]*|Ways forward[^:]*|Remediation[^:]*|Enrichment[^:]*|Explore|Explain|Elaborate|Evaluate|Engage|Activity|Analysis|Abstraction|Application)\s*:/i;
+    const MAJOR=/^([IVX]+|[ILAW])\.\s+\S|^[A-Z][A-Z \u2014-]{5,}$/;
+    const tidy=function(t){return t.replace(/^([IVX]+|[ILAW])\.\s+/,'').toLowerCase().replace(/(^|\s)\S/g,function(m){return m.toUpperCase();});};
     sectionLines(parts).forEach(function(part) {
-      const lines=part.split('\n').flatMap(function(line){return wrapLine(line,66);});
-      const cleaned=lines.filter(function(x){return x.trim();});
-      const heading=(cleaned[0]||title||'Lesson').slice(0,74);
-      if(!cleaned.length){slides.push({title:heading,lines:['Add your lesson content here.']});return;}
-      const size=8;
-      for(let start=0;start<lines.length;start+=size) {
-        slides.push({title:heading+(start?' (continued)':''),lines:lines.slice(start,start+size)});
-      }
+      const raw=part.split('\n');
+      const firstIdx=raw.findIndex(function(x){return x.trim();});
+      const deck=(firstIdx>=0?raw[firstIdx].trim():(title||'Lesson')).slice(0,74);
+      let section=deck, cur=null;
+      const flush=function(){ if(cur){ while(cur.lines.length&&!cur.lines[cur.lines.length-1].trim()) cur.lines.pop(); if(cur.lines.length) slides.push(cur);} cur=null; };
+      const open=function(name,cont){ flush(); cur={title:(name||deck).slice(0,74)+(cont?' (continued)':''),lines:[]}; };
+      open(deck);
+      raw.forEach(function(line,idx) {
+        if(idx===firstIdx) return;
+        const t=line.trim();
+        if(!t){ if(cur.lines.length&&cur.lines[cur.lines.length-1].trim()) cur.lines.push(''); return; }
+        if(MAJOR.test(t)&&t.length<60){ section=tidy(t); open(section); return; }
+        const m=t.match(LABEL);
+        if(m&&cur.lines.filter(function(x){return x.trim();}).length>1){ open(section+' \u00b7 '+m[1].replace(/\s*\/.*$/,'').trim()); }
+        const wrapped=wrapLine(t,66);
+        if(cur.lines.length&&cur.lines.length+wrapped.length>MAX) open(cur.title.replace(/ \(continued\)$/,''),true);
+        for(let i=0;i<wrapped.length;i+=MAX){
+          if(i) open(cur.title.replace(/ \(continued\)$/,''),true);
+          cur.lines.push.apply(cur.lines,wrapped.slice(i,i+MAX));
+        }
+      });
+      flush();
+      if(!slides.length) slides.push({title:deck,lines:['Add your lesson content here.']});
     });
     return slides.length?slides:[{title:title||'Lesson',lines:['']}];
   }
