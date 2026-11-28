@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>GuroPrep — Prepare your next lesson</title>
 <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+<script defer src="./track.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <script src="./vendor/jszip.min.js"></script>
 <style>
@@ -112,7 +113,7 @@ footer{font-size:12px;color:var(--muted);margin-top:24px}
 <div class="wrap">
   <header class="top">
     <h1>GuroPrep</h1><span class="by">by GuroWorks · Prepare your next lesson</span>
-    <a class="btn small ghost" href="#weeklyPrep">Weekly prep pack</a> · <a style="color:inherit" href="./teacher-originals.html">Teacher originals</a>
+    <a class="btn small ghost" href="#weeklyPrep">Weekly prep pack</a> · <a style="color:inherit" href="./teacher-originals.html">Teacher originals</a> · <a style="color:inherit" href="./careers.html">Teach online</a>
   </header>
 
   <details class="card whatsnew">
@@ -281,7 +282,7 @@ footer{font-size:12px;color:var(--muted);margin-top:24px}
     </div>
   </details>
 
-  <footer>GuroPrep drafts. You decide. Objectives and learning experiences must be reviewed and adapted by the teacher (DepEd Order No. 016, s. 2026). Check competency wording and codes against your school's Curriculum Guide. Pilot prototype. Settings and the current draft stay on this device only. GuroPrep is an independent project and not an official DepEd product. <a href="./about.html">About</a> · <a href="./about.html#privacy">Privacy</a> · <a href="./index.html">Lesson workspace</a></footer>
+  <footer>GuroPrep drafts. You decide. Objectives and learning experiences must be reviewed and adapted by the teacher (DepEd Order No. 016, s. 2026). Check competency wording and codes against your school's Curriculum Guide. Pilot prototype. Settings and the current draft stay on this device only. GuroPrep is an independent project and not an official DepEd product. <a href="./about.html">About</a> · <a href="./about.html#privacy">Privacy</a> · <a href="./index.html">Lesson workspace</a> · <a href="./careers.html">Teach English online with Move Up Academy</a></footer>
 </div>
 <div class="toast" id="toast"></div>
 
@@ -5498,7 +5499,7 @@ function wireAI(d,L){
       const j=await r.json().catch(()=>({}));
       if(!r.ok||!Array.isArray(j.steps))throw new Error(j.error||'The AI draft could not be made right now. Please try again.');
       if(!L.prevL)L.prevL=L.secs.L;L.secs.L=aiHtml(ph,j);L.edited.L=true;L.aiDraft=true;P.ai=(P.ai||0)+1;
-      save();renderPlan();toast('AI draft ready. Please check it.');
+      save();renderPlan();toast('AI draft ready. Please check it.');window.gpTrack&&gpTrack('ai_draft');
     }catch(e){st.textContent=e.message||'The AI draft could not be made right now.';go.disabled=false}
   };
 }
@@ -5710,7 +5711,7 @@ async function saveFile(name,data){
   setTimeout(()=>URL.revokeObjectURL(url),30000);
   P.downloads++;P.frozen=true;pilotUI();save();toast('Download started: '+name);
 }
-async function onDownload(kind){
+async function onDownload(kind){window.gpTrack&&gpTrack('download',{detail:kind});
   if(!S.lesson)return;
   if(kind==='ws'){const b=pdfWorksheets();if(b)await saveFile(fname('worksheets','pdf'),b)}
   if(kind==='key'){const b=pdfFlow(keyBlocks());if(b)await saveFile(fname('answer-key','pdf'),b)}
@@ -5736,7 +5737,7 @@ const csvq=v=>'"'+String(v).replace(/"/g,'""')+'"';
 function showLesson(){['#step2','#step3','#pilot'].forEach(s=>$(s).classList.remove('hidden'));CTX.place=S.lesson.place??S.place;renderPlan();renderWS();renderKey();renderStep3();pilotUI()}
 function refreshAll(){if(!S.lesson)return;S.lesson.place=S.place;CTX.place=S.place;
   ['head','I','L','A','W'].forEach(s=>{if(!S.lesson.edited[s])S.lesson.secs[s]=genSec(S.lesson,s)});renderPlan();renderWS();renderKey()}
-function prepare(){S.lesson=newLesson();S.lesson.place=S.place;P={activeMs:P.started?P.activeMs:0,frozen:false,edits:{},items:0,redos:0,downloads:0,started:Date.now()};lastTick=Date.now();curLvl='C';showLesson();save();$('#step2').scrollIntoView({behavior:'smooth'});toast('Lesson ready. Review and edit, then download.')}
+function prepare(){S.lesson=newLesson();S.lesson.place=S.place;P={activeMs:P.started?P.activeMs:0,frozen:false,edits:{},items:0,redos:0,downloads:0,started:Date.now()};lastTick=Date.now();curLvl='C';showLesson();save();window.gpTrack&&gpTrack('lesson_prepared',{grade:S.lesson.grade,subject:S.lesson.subject});$('#step2').scrollIntoView({behavior:'smooth'});toast('Lesson ready. Review and edit, then download.')}
 function anyEdits(){const L=S.lesson;return L&&(Object.values(L.edited).some(Boolean)||P.items>0)}
 
 document.addEventListener('DOMContentLoaded',()=>{

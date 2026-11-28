@@ -6,6 +6,7 @@
 <title>GuroPrep · Lesson workspace</title>
 <meta name="description" content="Free lesson plans, worksheets and answer keys for Philippine public school teachers. Aligned with DepEd curriculum guides.">
 <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+<script defer src="./track.js"></script>
 <meta property="og:title" content="GuroPrep · Free lesson prep for Filipino teachers">
 <meta property="og:description" content="Prepare lesson plans, worksheets and answer keys in minutes. Free for teachers, aligned with DepEd curriculum guides.">
 <meta property="og:url" content="https://guroprep.com/">
@@ -28,7 +29,7 @@ fieldset{border:1px solid #d7dfd3;border-radius:8px;margin:0 0 14px;padding:10px
 </style>
 <link rel="stylesheet" href="./english-files.css"><script defer src="./english-files.js"></script></head>
 <body>
-<header><strong>GuroPrep</strong><span>by GuroWorks</span> <a href="./classroom-tools.html" style="color:inherit">Classroom tools</a> · <a href="./classroom-tools.html#weeklyPrep" style="color:inherit">Weekly prep pack</a> · <a style="color:inherit" href="./teacher-originals.html">Teacher originals</a> · <a style="color:inherit" href="./about.html">About</a></header>
+<header><strong>GuroPrep</strong><span>by GuroWorks</span> <a href="./classroom-tools.html" style="color:inherit">Classroom tools</a> · <a href="./classroom-tools.html#weeklyPrep" style="color:inherit">Weekly prep pack</a> · <a style="color:inherit" href="./teacher-originals.html">Teacher originals</a> · <a style="color:inherit" href="./about.html">About</a> · <a style="color:inherit" href="./careers.html">Teach online</a></header>
 <main>
 <h1>Prepare your next lesson.</h1>
 <p class="intro">Organize your teaching notes and prepare printable classroom materials.</p>
@@ -158,7 +159,7 @@ fieldset{border:1px solid #d7dfd3;border-radius:8px;margin:0 0 14px;padding:10px
 <small id="trialStatus" role="status">Share the file with the trial coordinator. Avoid names and student records.</small>
 </article>
 </section>
-<footer class="site-foot" style="text-align:center;color:#456154;font-size:.9rem;padding:24px 20px 36px">GuroPrep is free for teachers · Aligned with DepEd curriculum guides; <strong>not an official DepEd product</strong> · <a href="./about.html">About</a> · <a href="./about.html#privacy">Privacy</a></footer>
+<footer class="site-foot" style="text-align:center;color:#456154;font-size:.9rem;padding:24px 20px 36px">GuroPrep is free for teachers · Aligned with DepEd curriculum guides; <strong>not an official DepEd product</strong> · <a href="./about.html">About</a> · <a href="./about.html#privacy">Privacy</a> · <a href="./careers.html">Teach English online with Move Up Academy</a></footer>
 <div id="print"></div>
 <script src="pdf-export.js"></script>
 <script src="grade1.js"></script>
@@ -545,6 +546,7 @@ get('mode').onchange = () => { updateMode(); renderProcedures(); save(); };
 get('settings').oninput = save;
 get('settings').onsubmit = e => {
   e.preventDefault();
+  if (window.gpTrack) gpTrack('workspace_prepare',{grade:String(get('grade').value||'').replace(/\D/g,''),subject:get('g1area')?get('g1area').value:''});
   const required = [...get('settings').querySelectorAll('[required]')].find(field=>!field.disabled && !field.value.trim());
   if(required) {
     required.focus();
@@ -1008,7 +1010,7 @@ if(previous && tabs.every(tab=>typeof previous.draft?.[tab]==='string') && tabs.
     btn.disabled=true;
     try {
       const blob=format==='docx'?await GuroOffice.docx([text],'short'):await GuroOffice.pptx([text],title+' · '+kind);
-      GuroOffice.download(blob,prefix+'.'+format);
+      GuroOffice.download(blob,prefix+'.'+format);if(window.gpTrack)gpTrack('download',{detail:format});
       status.textContent='Editable '+format.toUpperCase()+' downloaded for the selected '+kind+' tab. You can open and change it in Word or PowerPoint.';
     } catch(error) {
       status.textContent='Office export failed: '+error.message;
