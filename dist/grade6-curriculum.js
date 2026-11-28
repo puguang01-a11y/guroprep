@@ -292,31 +292,31 @@ const gradeSixCurriculum = {
           "exemplars": []
         },
         {
-          "label": "Comprehend literary texts. — 3sequencing events — at least 8 events",
+          "label": "Comprehend literary texts. — sequencing events — at least 8 events",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-f897d61d5a",
           "exemplars": []
         },
         {
-          "label": "Comprehend literary texts. — 4identifying type of plot — flashback",
+          "label": "Comprehend literary texts. — identifying type of plot — flashback",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-fce36ce9e7",
           "exemplars": []
         },
         {
-          "label": "Comprehend literary texts. — 6analyzing figures of speech to get and clarify meaning — hyperbole",
+          "label": "Comprehend literary texts. — analyzing figures of speech to get and clarify meaning — hyperbole",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-fc03f88627",
           "exemplars": []
         },
         {
-          "label": "Comprehend literary texts. — 6analyzing figures of speech to get and clarify meaning — irony",
+          "label": "Comprehend literary texts. — analyzing figures of speech to get and clarify meaning — irony",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-5e914bbaa2",
           "exemplars": []
         },
         {
-          "label": "Comprehend literary texts. — 7inferring — author’s purpose, message, target audience",
+          "label": "Comprehend literary texts. — inferring — author’s purpose, message, target audience",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-7108083103",
           "exemplars": [
@@ -324,7 +324,7 @@ const gradeSixCurriculum = {
           ]
         },
         {
-          "label": "Comprehend literary texts. — 8making predictions — possible ending",
+          "label": "Comprehend literary texts. — making predictions — possible ending",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-96c30f8eef",
           "exemplars": [
@@ -352,37 +352,37 @@ const gradeSixCurriculum = {
           "exemplars": []
         },
         {
-          "label": "Comprehend literary texts. — 13applying the important story elements to one’s schema — learning vicariously from the text",
+          "label": "Comprehend literary texts. — applying the important story elements to one’s schema — learning vicariously from the text",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-49e7aefce7",
           "exemplars": []
         },
         {
-          "label": "Comprehend informational texts. — 1noting important information through outlining (topic, main idea, supporting details) — inductive-deductive organization (diamond)",
+          "label": "Comprehend informational texts. — noting important information through outlining (topic, main idea, supporting details) — inductive-deductive organization (diamond)",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-e240d2173f",
           "exemplars": []
         },
         {
-          "label": "Comprehend informational texts. — 2identifying text types — persuasive",
+          "label": "Comprehend informational texts. — identifying text types — persuasive",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-bc985cc1d8",
           "exemplars": []
         },
         {
-          "label": "Comprehend informational texts. — 3identifying author’s purpose — entertain",
+          "label": "Comprehend informational texts. — identifying author’s purpose — entertain",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-d8a1f96be3",
           "exemplars": []
         },
         {
-          "label": "Comprehend informational texts. — 3identifying author’s purpose — inform, explain, describe",
+          "label": "Comprehend informational texts. — identifying author’s purpose — inform, explain, describe",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-c3d884892f",
           "exemplars": []
         },
         {
-          "label": "Comprehend informational texts. — 3identifying author’s purpose — persuade",
+          "label": "Comprehend informational texts. — identifying author’s purpose — persuade",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-996e134721",
           "exemplars": []
@@ -412,55 +412,55 @@ const gradeSixCurriculum = {
           "exemplars": []
         },
         {
-          "label": "Comprehend informational texts. — 8identifying propaganda technique used to persuade audience to further an idea or agenda — name calling or labelling",
+          "label": "Comprehend informational texts. — identifying propaganda technique used to persuade audience to further an idea or agenda — name calling or labelling",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-3709b12ba5",
           "exemplars": []
         },
         {
-          "label": "Comprehend informational texts. — 8identifying propaganda technique used to persuade audience to further an idea or agenda — glittering generalities",
+          "label": "Comprehend informational texts. — identifying propaganda technique used to persuade audience to further an idea or agenda — glittering generalities",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-8e4400bb8d",
           "exemplars": []
         },
         {
-          "label": "Comprehend informational texts. — 8identifying propaganda technique used to persuade audience to further an idea or agenda — transfer",
+          "label": "Comprehend informational texts. — identifying propaganda technique used to persuade audience to further an idea or agenda — transfer",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-600896b28f",
           "exemplars": []
         },
         {
-          "label": "Use words with literal (denotative) and implied (connotative) meanings in sentences. — 1using context clues — punctuation",
+          "label": "Use words with literal (denotative) and implied (connotative) meanings in sentences. — using context clues — punctuation",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-92e28f95bd",
           "exemplars": []
         },
         {
-          "label": "Use words with literal (denotative) and implied (connotative) meanings in sentences. — 3using general references (print and online) — almanac",
+          "label": "Use words with literal (denotative) and implied (connotative) meanings in sentences. — using general references (print and online) — almanac",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-a2d2ba84e3",
           "exemplars": []
         },
         {
-          "label": "Compose appropriate sentences for clarity and coherence. — 2using kinds of verbs — intransitive",
+          "label": "Compose appropriate sentences for clarity and coherence. — using kinds of verbs — intransitive",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-070feb2429",
           "exemplars": []
         },
         {
-          "label": "Compose appropriate sentences for clarity and coherence. — 3using tenses of verbs — cperfect — present",
+          "label": "Compose appropriate sentences for clarity and coherence. — using tenses of verbs — perfect — present",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-18c1570e0a",
           "exemplars": []
         },
         {
-          "label": "Compose appropriate sentences for clarity and coherence. — 3using tenses of verbs — cperfect — past",
+          "label": "Compose appropriate sentences for clarity and coherence. — using tenses of verbs — perfect — past",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-19ca8fca95",
           "exemplars": []
         },
         {
-          "label": "Compose appropriate sentences for clarity and coherence. — 3using tenses of verbs — cperfect — future",
+          "label": "Compose appropriate sentences for clarity and coherence. — using tenses of verbs — perfect — future",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-adee2195bb",
           "exemplars": []
@@ -472,25 +472,25 @@ const gradeSixCurriculum = {
           "exemplars": []
         },
         {
-          "label": "Compose appropriate sentences for clarity and coherence. — 7using adverbs — order of adverbs (manner, place, frequency, time, purpose)",
+          "label": "Compose appropriate sentences for clarity and coherence. — using adverbs — order of adverbs (manner, place, frequency, time, purpose)",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-1d4653c98c",
           "exemplars": []
         },
         {
-          "label": "Compose appropriate sentences for clarity and coherence. — 9using complement — noun",
+          "label": "Compose appropriate sentences for clarity and coherence. — using complement — noun",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-36d927edc6",
           "exemplars": []
         },
         {
-          "label": "Compose appropriate sentences for clarity and coherence. — 9using complement — pronoun",
+          "label": "Compose appropriate sentences for clarity and coherence. — using complement — pronoun",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-9ddeeebccb",
           "exemplars": []
         },
         {
-          "label": "Compose appropriate sentences for clarity and coherence. — 9using complement — adjective",
+          "label": "Compose appropriate sentences for clarity and coherence. — using complement — adjective",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-06fc5dbc1b",
           "exemplars": []
@@ -512,13 +512,13 @@ const gradeSixCurriculum = {
           ]
         },
         {
-          "label": "Express ideas appropriately (age-appropriate, gender-responsive, culture sensitive) for one’s purpose, context, and target audience. — 1using text types — narrative",
+          "label": "Express ideas appropriately (age-appropriate, gender-responsive, culture sensitive) for one’s purpose, context, and target audience. — using text types — narrative",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-7f986e04d3",
           "exemplars": []
         },
         {
-          "label": "Express ideas appropriately (age-appropriate, gender-responsive, culture sensitive) for one’s purpose, context, and target audience. — 1using text types — persuasive",
+          "label": "Express ideas appropriately (age-appropriate, gender-responsive, culture sensitive) for one’s purpose, context, and target audience. — using text types — persuasive",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-4aa9924b26",
           "exemplars": []
@@ -622,13 +622,13 @@ const gradeSixCurriculum = {
           ]
         },
         {
-          "label": "Derive meaning for multimedia elements learned. — 3determining ideas that are explicitly used to influence viewers — author’s point of view/stand",
+          "label": "Derive meaning for multimedia elements learned. — determining ideas that are explicitly used to influence viewers — author’s point of view/stand",
           "section": "Viewing and Representing",
           "index": "c-e115a5ca59",
           "exemplars": []
         },
         {
-          "label": "Derive meaning for multimedia elements learned. — 3determining ideas that are explicitly used to influence viewers — propaganda technique used",
+          "label": "Derive meaning for multimedia elements learned. — determining ideas that are explicitly used to influence viewers — propaganda technique used",
           "section": "Viewing and Representing",
           "index": "c-960066567d",
           "exemplars": []
@@ -650,25 +650,25 @@ const gradeSixCurriculum = {
           "exemplars": []
         },
         {
-          "label": "Comprehend literary texts. — 3sequencing events — at least 8 events",
+          "label": "Comprehend literary texts. — sequencing events — at least 8 events",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-9ac6f8199a",
           "exemplars": []
         },
         {
-          "label": "Comprehend literary texts. — 4identifying type of plot — flashback",
+          "label": "Comprehend literary texts. — identifying type of plot — flashback",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-8ac2731d37",
           "exemplars": []
         },
         {
-          "label": "Comprehend literary texts. — 6analyzing figures of speech to get and clarify meaning — irony",
+          "label": "Comprehend literary texts. — analyzing figures of speech to get and clarify meaning — irony",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-2a813fbc0d",
           "exemplars": []
         },
         {
-          "label": "Comprehend literary texts. — 7inferring — author’s purpose, message, target audience",
+          "label": "Comprehend literary texts. — inferring — author’s purpose, message, target audience",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-25383b07ee",
           "exemplars": [
@@ -676,7 +676,7 @@ const gradeSixCurriculum = {
           ]
         },
         {
-          "label": "Comprehend literary texts. — 8making predictions — possible ending",
+          "label": "Comprehend literary texts. — making predictions — possible ending",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-74af16d6c1",
           "exemplars": [
@@ -704,37 +704,37 @@ const gradeSixCurriculum = {
           "exemplars": []
         },
         {
-          "label": "Comprehend literary texts. — 13applying the important story elements to one’s schema — learning vicariously from the text",
+          "label": "Comprehend literary texts. — applying the important story elements to one’s schema — learning vicariously from the text",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-15895b0aec",
           "exemplars": []
         },
         {
-          "label": "Comprehend informational texts. — 1noting important information through outlining (topic, main idea, supporting details) — inductive-deductive organization (diamond)",
+          "label": "Comprehend informational texts. — noting important information through outlining (topic, main idea, supporting details) — inductive-deductive organization (diamond)",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-1c2e19f06d",
           "exemplars": []
         },
         {
-          "label": "Comprehend informational texts. — 2identifying text types — persuasive",
+          "label": "Comprehend informational texts. — identifying text types — persuasive",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-a90ddd2c49",
           "exemplars": []
         },
         {
-          "label": "Comprehend informational texts. — 3identifying author’s purpose — entertain",
+          "label": "Comprehend informational texts. — identifying author’s purpose — entertain",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-8601d14554",
           "exemplars": []
         },
         {
-          "label": "Comprehend informational texts. — 3identifying author’s purpose — inform, explain, describe",
+          "label": "Comprehend informational texts. — identifying author’s purpose — inform, explain, describe",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-2a98f01edc",
           "exemplars": []
         },
         {
-          "label": "Comprehend informational texts. — 3identifying author’s purpose — persuade",
+          "label": "Comprehend informational texts. — identifying author’s purpose — persuade",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-6f7fdd7132",
           "exemplars": []
@@ -764,49 +764,49 @@ const gradeSixCurriculum = {
           "exemplars": []
         },
         {
-          "label": "Comprehend informational texts. — 8identifying propaganda technique used to persuade audience to further an idea or agenda — testimonies/testimonials",
+          "label": "Comprehend informational texts. — identifying propaganda technique used to persuade audience to further an idea or agenda — testimonies/testimonials",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-5a08e74792",
           "exemplars": []
         },
         {
-          "label": "Comprehend informational texts. — 8identifying propaganda technique used to persuade audience to further an idea or agenda — plain folks",
+          "label": "Comprehend informational texts. — identifying propaganda technique used to persuade audience to further an idea or agenda — plain folks",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-8d14735d48",
           "exemplars": []
         },
         {
-          "label": "Comprehend informational texts. — 8identifying propaganda technique used to persuade audience to further an idea or agenda — bandwagon",
+          "label": "Comprehend informational texts. — identifying propaganda technique used to persuade audience to further an idea or agenda — bandwagon",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-bbeb426db3",
           "exemplars": []
         },
         {
-          "label": "Use words with literal (denotative) and implied (connotative) meanings in sentences. — 3using general references (print and online) — Directories (acronyms and abbreviations used by organizations)",
+          "label": "Use words with literal (denotative) and implied (connotative) meanings in sentences. — using general references (print and online) — Directories (acronyms and abbreviations used by organizations)",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-8b43c4a531",
           "exemplars": []
         },
         {
-          "label": "Compose appropriate sentences for clarity and coherence. — 2using kinds of verbs — intransitive",
+          "label": "Compose appropriate sentences for clarity and coherence. — using kinds of verbs — intransitive",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-800b2894fb",
           "exemplars": []
         },
         {
-          "label": "Compose appropriate sentences for clarity and coherence. — 3using tenses of verbs — cperfect — present",
+          "label": "Compose appropriate sentences for clarity and coherence. — using tenses of verbs — perfect — present",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-72801f77bb",
           "exemplars": []
         },
         {
-          "label": "Compose appropriate sentences for clarity and coherence. — 3using tenses of verbs — cperfect — past",
+          "label": "Compose appropriate sentences for clarity and coherence. — using tenses of verbs — perfect — past",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-f1be6734b1",
           "exemplars": []
         },
         {
-          "label": "Compose appropriate sentences for clarity and coherence. — 3using tenses of verbs — cperfect — future",
+          "label": "Compose appropriate sentences for clarity and coherence. — using tenses of verbs — perfect — future",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-c488a40715",
           "exemplars": []
@@ -818,19 +818,19 @@ const gradeSixCurriculum = {
           "exemplars": []
         },
         {
-          "label": "Compose appropriate sentences for clarity and coherence. — 9using complement — noun",
+          "label": "Compose appropriate sentences for clarity and coherence. — using complement — noun",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-b62f622d2b",
           "exemplars": []
         },
         {
-          "label": "Compose appropriate sentences for clarity and coherence. — 9using complement — pronoun",
+          "label": "Compose appropriate sentences for clarity and coherence. — using complement — pronoun",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-04f72d7778",
           "exemplars": []
         },
         {
-          "label": "Compose appropriate sentences for clarity and coherence. — 9using complement — adjective",
+          "label": "Compose appropriate sentences for clarity and coherence. — using complement — adjective",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-253b7b4c36",
           "exemplars": []
@@ -852,13 +852,13 @@ const gradeSixCurriculum = {
           ]
         },
         {
-          "label": "Express ideas appropriately (age-appropriate, gender-responsive, culture sensitive) for one’s purpose, context, and target audience. — 1using text types — narrative",
+          "label": "Express ideas appropriately (age-appropriate, gender-responsive, culture sensitive) for one’s purpose, context, and target audience. — using text types — narrative",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-4a2ecc15e5",
           "exemplars": []
         },
         {
-          "label": "Express ideas appropriately (age-appropriate, gender-responsive, culture sensitive) for one’s purpose, context, and target audience. — 1using text types — persuasive",
+          "label": "Express ideas appropriately (age-appropriate, gender-responsive, culture sensitive) for one’s purpose, context, and target audience. — using text types — persuasive",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-af9bf8966c",
           "exemplars": []
@@ -970,13 +970,13 @@ const gradeSixCurriculum = {
           ]
         },
         {
-          "label": "Derive meaning for multimedia elements learned. — 3determining ideas that are explicitly used to influence viewers — author’s point of view/stand",
+          "label": "Derive meaning for multimedia elements learned. — determining ideas that are explicitly used to influence viewers — author’s point of view/stand",
           "section": "Viewing and Representing",
           "index": "c-9e21939d4b",
           "exemplars": []
         },
         {
-          "label": "Derive meaning for multimedia elements learned. — 3determining ideas that are explicitly used to influence viewers — propaganda technique used",
+          "label": "Derive meaning for multimedia elements learned. — determining ideas that are explicitly used to influence viewers — propaganda technique used",
           "section": "Viewing and Representing",
           "index": "c-acc96abd06",
           "exemplars": []
@@ -998,25 +998,25 @@ const gradeSixCurriculum = {
           "exemplars": []
         },
         {
-          "label": "Comprehend literary texts. — 3sequencing events — at least 8 events",
+          "label": "Comprehend literary texts. — sequencing events — at least 8 events",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-b729364b7e",
           "exemplars": []
         },
         {
-          "label": "Comprehend literary texts. — 4identifying type of plot — flashback",
+          "label": "Comprehend literary texts. — identifying type of plot — flashback",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-24f5d40de2",
           "exemplars": []
         },
         {
-          "label": "Comprehend literary texts. — 6analyzing figures of speech to get and clarify meaning — irony",
+          "label": "Comprehend literary texts. — analyzing figures of speech to get and clarify meaning — irony",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-d2006ebe7d",
           "exemplars": []
         },
         {
-          "label": "Comprehend literary texts. — 7inferring — author’s purpose, message, target audience",
+          "label": "Comprehend literary texts. — inferring — author’s purpose, message, target audience",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-3c2502f2fd",
           "exemplars": [
@@ -1024,7 +1024,7 @@ const gradeSixCurriculum = {
           ]
         },
         {
-          "label": "Comprehend literary texts. — 8making predictions — possible ending",
+          "label": "Comprehend literary texts. — making predictions — possible ending",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-eba527f5c8",
           "exemplars": [
@@ -1052,37 +1052,37 @@ const gradeSixCurriculum = {
           "exemplars": []
         },
         {
-          "label": "Comprehend literary texts. — 13applying the important story elements to one’s schema — learning vicariously from the text",
+          "label": "Comprehend literary texts. — applying the important story elements to one’s schema — learning vicariously from the text",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-525945f035",
           "exemplars": []
         },
         {
-          "label": "Comprehend informational texts. — 1noting important information through outlining (topic, main idea, supporting details) — inductive-deductive organization (diamond)",
+          "label": "Comprehend informational texts. — noting important information through outlining (topic, main idea, supporting details) — inductive-deductive organization (diamond)",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-550d6e7016",
           "exemplars": []
         },
         {
-          "label": "Comprehend informational texts. — 2identifying text types — persuasive",
+          "label": "Comprehend informational texts. — identifying text types — persuasive",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-331a9f8a8c",
           "exemplars": []
         },
         {
-          "label": "Comprehend informational texts. — 3identifying author’s purpose — entertain",
+          "label": "Comprehend informational texts. — identifying author’s purpose — entertain",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-79ca24f41f",
           "exemplars": []
         },
         {
-          "label": "Comprehend informational texts. — 3identifying author’s purpose — inform, explain, describe",
+          "label": "Comprehend informational texts. — identifying author’s purpose — inform, explain, describe",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-6bcaa9c108",
           "exemplars": []
         },
         {
-          "label": "Comprehend informational texts. — 3identifying author’s purpose — persuade",
+          "label": "Comprehend informational texts. — identifying author’s purpose — persuade",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-e71cd47fb5",
           "exemplars": []
@@ -1112,55 +1112,55 @@ const gradeSixCurriculum = {
           "exemplars": []
         },
         {
-          "label": "Comprehend informational texts. — 8identifying propaganda technique used to persuade audience to further an idea or agenda — fear",
+          "label": "Comprehend informational texts. — identifying propaganda technique used to persuade audience to further an idea or agenda — fear",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-aa3ace1450",
           "exemplars": []
         },
         {
-          "label": "Comprehend informational texts. — 8identifying propaganda technique used to persuade audience to further an idea or agenda — half-truths or spin",
+          "label": "Comprehend informational texts. — identifying propaganda technique used to persuade audience to further an idea or agenda — half-truths or spin",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-169ced0f1b",
           "exemplars": []
         },
         {
-          "label": "Comprehend informational texts. — 8identifying propaganda technique used to persuade audience to further an idea or agenda — bad logic/ unwarranted extrapolation",
+          "label": "Comprehend informational texts. — identifying propaganda technique used to persuade audience to further an idea or agenda — bad logic/ unwarranted extrapolation",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-a9b75343fc",
           "exemplars": []
         },
         {
-          "label": "Comprehend informational texts. — 8identifying propaganda technique used to persuade audience to further an idea or agenda — card stacking",
+          "label": "Comprehend informational texts. — identifying propaganda technique used to persuade audience to further an idea or agenda — card stacking",
           "section": "Listening and Reading (receptive skills)",
           "index": "c-eb332612b2",
           "exemplars": []
         },
         {
-          "label": "Use words with literal (denotative) and implied (connotative) meanings in sentences. — 3using general references (print and online) — handbooks and manuals",
+          "label": "Use words with literal (denotative) and implied (connotative) meanings in sentences. — using general references (print and online) — handbooks and manuals",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-c24df20df3",
           "exemplars": []
         },
         {
-          "label": "Compose appropriate sentences for clarity and coherence. — 2using kinds of verbs — intransitive",
+          "label": "Compose appropriate sentences for clarity and coherence. — using kinds of verbs — intransitive",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-8893457fed",
           "exemplars": []
         },
         {
-          "label": "Compose appropriate sentences for clarity and coherence. — 3using tenses of verbs — cperfect — present",
+          "label": "Compose appropriate sentences for clarity and coherence. — using tenses of verbs — perfect — present",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-f89b1676b1",
           "exemplars": []
         },
         {
-          "label": "Compose appropriate sentences for clarity and coherence. — 3using tenses of verbs — cperfect — past",
+          "label": "Compose appropriate sentences for clarity and coherence. — using tenses of verbs — perfect — past",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-419c5f329a",
           "exemplars": []
         },
         {
-          "label": "Compose appropriate sentences for clarity and coherence. — 3using tenses of verbs — cperfect — future",
+          "label": "Compose appropriate sentences for clarity and coherence. — using tenses of verbs — perfect — future",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-48e0b9f2aa",
           "exemplars": []
@@ -1172,19 +1172,19 @@ const gradeSixCurriculum = {
           "exemplars": []
         },
         {
-          "label": "Compose appropriate sentences for clarity and coherence. — 9using complement — noun",
+          "label": "Compose appropriate sentences for clarity and coherence. — using complement — noun",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-89111d0942",
           "exemplars": []
         },
         {
-          "label": "Compose appropriate sentences for clarity and coherence. — 9using complement — pronoun",
+          "label": "Compose appropriate sentences for clarity and coherence. — using complement — pronoun",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-f7f0c09349",
           "exemplars": []
         },
         {
-          "label": "Compose appropriate sentences for clarity and coherence. — 9using complement — adjective",
+          "label": "Compose appropriate sentences for clarity and coherence. — using complement — adjective",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-7d0e6c33ca",
           "exemplars": []
@@ -1206,13 +1206,13 @@ const gradeSixCurriculum = {
           ]
         },
         {
-          "label": "Express ideas appropriately (age-appropriate, gender-responsive, culture sensitive) for one’s purpose, context, and target audience. — 1using text types — narrative",
+          "label": "Express ideas appropriately (age-appropriate, gender-responsive, culture sensitive) for one’s purpose, context, and target audience. — using text types — narrative",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-727300d49f",
           "exemplars": []
         },
         {
-          "label": "Express ideas appropriately (age-appropriate, gender-responsive, culture sensitive) for one’s purpose, context, and target audience. — 1using text types — persuasive",
+          "label": "Express ideas appropriately (age-appropriate, gender-responsive, culture sensitive) for one’s purpose, context, and target audience. — using text types — persuasive",
           "section": "Speaking and Writing (productive skills)",
           "index": "c-5bf96c56d2",
           "exemplars": []
@@ -1316,13 +1316,13 @@ const gradeSixCurriculum = {
           ]
         },
         {
-          "label": "Derive meaning for multimedia elements learned. — 3determining ideas that are explicitly used to influence viewers — author’s point of view/stand",
+          "label": "Derive meaning for multimedia elements learned. — determining ideas that are explicitly used to influence viewers — author’s point of view/stand",
           "section": "Viewing and Representing",
           "index": "c-6ca3f52c54",
           "exemplars": []
         },
         {
-          "label": "Derive meaning for multimedia elements learned. — 3determining ideas that are explicitly used to influence viewers — propaganda technique used",
+          "label": "Derive meaning for multimedia elements learned. — determining ideas that are explicitly used to influence viewers — propaganda technique used",
           "section": "Viewing and Representing",
           "index": "c-a335c37365",
           "exemplars": []

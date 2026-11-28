@@ -164,7 +164,7 @@ const gradeTwoCurriculum = {
           ]
         },
         {
-          "label": "Identify words with different functions. — 1words that label persons, places, things, animals, events, ideas, and emotions (naming words - nouns) — common and proper nouns",
+          "label": "Identify words with different functions. — words that label persons, places, things, animals, events, ideas, and emotions (naming words - nouns) — common and proper nouns",
           "section": "Vocabulary and Word Knowledge(words)",
           "index": "c-b4c6a09c20",
           "exemplars": [
@@ -175,7 +175,7 @@ const gradeTwoCurriculum = {
           ]
         },
         {
-          "label": "Identify words with different functions. — 1words that label persons, places, things, animals, events, ideas, and emotions (naming words - nouns) — gender",
+          "label": "Identify words with different functions. — words that label persons, places, things, animals, events, ideas, and emotions (naming words - nouns) — gender",
           "section": "Vocabulary and Word Knowledge(words)",
           "index": "c-29db617eff",
           "exemplars": [
@@ -208,7 +208,7 @@ const gradeTwoCurriculum = {
           ]
         },
         {
-          "label": "Identify words with different functions. — 4words that replace persons, places, things, animals, events, ideas, and emotions — personal pronouns",
+          "label": "Identify words with different functions. — words that replace persons, places, things, animals, events, ideas, and emotions — personal pronouns",
           "section": "Vocabulary and Word Knowledge(words)",
           "index": "c-623bd9d7bf",
           "exemplars": [
@@ -878,7 +878,7 @@ const gradeTwoCurriculum = {
           ]
         },
         {
-          "label": "Identify words with different functions. — 1words that label persons, places, things, animals, events, ideas, and emotions (naming words - nouns) — common and proper nouns",
+          "label": "Identify words with different functions. — words that label persons, places, things, animals, events, ideas, and emotions (naming words - nouns) — common and proper nouns",
           "section": "Vocabulary and Word Knowledge(words)",
           "index": "c-44f38ed75c",
           "exemplars": [
@@ -889,7 +889,7 @@ const gradeTwoCurriculum = {
           ]
         },
         {
-          "label": "Identify words with different functions. — 1words that label persons, places, things, animals, events, ideas, and emotions (naming words - nouns) — gender",
+          "label": "Identify words with different functions. — words that label persons, places, things, animals, events, ideas, and emotions (naming words - nouns) — gender",
           "section": "Vocabulary and Word Knowledge(words)",
           "index": "c-c59c61820c",
           "exemplars": [
@@ -922,7 +922,7 @@ const gradeTwoCurriculum = {
           ]
         },
         {
-          "label": "Identify words with different functions. — 4words that replace persons, places, things, animals, events, ideas, and emotions — personal pronouns",
+          "label": "Identify words with different functions. — words that replace persons, places, things, animals, events, ideas, and emotions — personal pronouns",
           "section": "Vocabulary and Word Knowledge(words)",
           "index": "c-440031c1f1",
           "exemplars": [
@@ -933,7 +933,7 @@ const gradeTwoCurriculum = {
           ]
         },
         {
-          "label": "Identify words with different functions. — 4words that replace persons, places, things, animals, events, ideas, and emotions — interrogative pronouns",
+          "label": "Identify words with different functions. — words that replace persons, places, things, animals, events, ideas, and emotions — interrogative pronouns",
           "section": "Vocabulary and Word Knowledge(words)",
           "index": "c-9d452bd1fe",
           "exemplars": [
@@ -1717,7 +1717,7 @@ const gradeTwoCurriculum = {
           ]
         },
         {
-          "label": "Identify words with different functions. — 1words that label persons, places, things, animals, events, ideas, and emotions (naming words - nouns) — common and proper nouns",
+          "label": "Identify words with different functions. — words that label persons, places, things, animals, events, ideas, and emotions (naming words - nouns) — common and proper nouns",
           "section": "Vocabulary and Word Knowledge(words)",
           "index": "c-cf1ed5f30e",
           "exemplars": [
@@ -1728,7 +1728,7 @@ const gradeTwoCurriculum = {
           ]
         },
         {
-          "label": "Identify words with different functions. — 1words that label persons, places, things, animals, events, ideas, and emotions (naming words - nouns) — gender",
+          "label": "Identify words with different functions. — words that label persons, places, things, animals, events, ideas, and emotions (naming words - nouns) — gender",
           "section": "Vocabulary and Word Knowledge(words)",
           "index": "c-0b28a4a7fe",
           "exemplars": [
@@ -1761,7 +1761,7 @@ const gradeTwoCurriculum = {
           ]
         },
         {
-          "label": "Identify words with different functions. — 4words that replace persons, places, things, animals, events, ideas, and emotions — personal pronouns",
+          "label": "Identify words with different functions. — words that replace persons, places, things, animals, events, ideas, and emotions — personal pronouns",
           "section": "Vocabulary and Word Knowledge(words)",
           "index": "c-9c7b24120c",
           "exemplars": [
@@ -1772,7 +1772,7 @@ const gradeTwoCurriculum = {
           ]
         },
         {
-          "label": "Identify words with different functions. — 4words that replace persons, places, things, animals, events, ideas, and emotions — interrogative pronouns",
+          "label": "Identify words with different functions. — words that replace persons, places, things, animals, events, ideas, and emotions — interrogative pronouns",
           "section": "Vocabulary and Word Knowledge(words)",
           "index": "c-0cfacef09a",
           "exemplars": [
@@ -1782,7 +1782,7 @@ const gradeTwoCurriculum = {
           ]
         },
         {
-          "label": "Identify words with different functions. — 4words that replace persons, places, things, animals, events, ideas, and emotions — possessive pronouns",
+          "label": "Identify words with different functions. — words that replace persons, places, things, animals, events, ideas, and emotions — possessive pronouns",
           "section": "Vocabulary and Word Knowledge(words)",
           "index": "c-dc156f139a",
           "exemplars": [
@@ -1791,7 +1791,7 @@ const gradeTwoCurriculum = {
           ]
         },
         {
-          "label": "Identify words with different functions. — 4words that replace persons, places, things, animals, events, ideas, and emotions — demonstrative pronouns",
+          "label": "Identify words with different functions. — words that replace persons, places, things, animals, events, ideas, and emotions — demonstrative pronouns",
           "section": "Vocabulary and Word Knowledge(words)",
           "index": "c-8743918c74",
           "exemplars": [
